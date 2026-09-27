@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheat Sheet · IPR AI Frontend Workflow</title>
+<link rel="icon" href="../shared/brand/img/chloe/chloe-idle.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../shared/brand/tokens.css">
+<link rel="stylesheet" href="css/cheatsheet.css">
+</head><body>
+<header class="cs-top"><a href="index.html">&larr; Back to the course</a><button type="button" onclick="window.print()">Print / Save PDF</button></header>
+<main class="cs">
+<img class="cs-chloe" src="../shared/brand/img/chloe/chloe-celebrating.svg" alt="" width="96" height="126">
+<h1>IPR AI Frontend Workflow: Cheat Sheet</h1>
+<p><b>From a mood board to a live website in one evening.</b> A short course by Ian Ramírez, Invest Puerto Rico.</p>
+<p>Make a folder or note called <b>My Website</b>. Everything you collect goes there.</p>
+<h2>Collect</h2>
+<ol start="1">
+<li><b>Images</b>: save 5 to 10 looks you love to one board on <a href="https://www.pinterest.com/" target="_blank" rel="noopener">pinterest.com</a>.
+</li>
+<li><b>Animations</b>: save 1 or 2 effect links from <a href="https://www.originkit.dev/" target="_blank" rel="noopener">originkit.dev</a> and note which section each goes in.
+</li>
+<li><b>Colors</b>: copy one 4-color palette (the hex codes) from <a href="https://colorhunt.co/" target="_blank" rel="noopener">colorhunt.co</a>.
+</li>
+<li><b>Section order</b>: always start with <b>Navbar</b>, then <b>Hero</b>, then whatever else (About, Menu, Gallery, Contact...), ending with a Footer. Add a one-line idea for each.
+</li>
+</ol>
+<h2>Prompt</h2>
+<ol start="5">
+<li><b>Design spec</b>: combine what you like from all your inspiration. Fill in the blanks:
+</li>
+</ol>
+<div class="cs-code"><button type="button" class="copy" data-copy-text="Build a single-page, static website for… {EXPLAIN WEBSITE USE IN YOUR OWN WORDS}
+
+The section and layout are… {INSERT MOCKUP SECTION ORDER AND IDEAS}
+
+Use these colors… {PASTE YOUR 4 COLOR CODES} and this mood… {DESCRIBE THE MOOD}
+
+Extract and implement this element in the {DESIRED} section {PASTE LINK FROM OriginKit}">Copy</button><pre><code>Build a single-page, static website for… {EXPLAIN WEBSITE USE IN YOUR OWN WORDS}
+
+The section and layout are… {INSERT MOCKUP SECTION ORDER AND IDEAS}
+
+Use these colors… {PASTE YOUR 4 COLOR CODES} and this mood… {DESCRIBE THE MOOD}
+
+Extract and implement this element in the {DESIRED} section {PASTE LINK FROM OriginKit}</code></pre></div>
+<ol start="6">
+<li><b>Enhance</b>: on <a href="https://bolt.new/" target="_blank" rel="noopener">bolt.new</a>, create an account, paste your prompt, click <b>+</b> then <b>&quot;Enhance prompt&quot;</b>. Save the result.
+</li>
+</ol>
+<h2>Build</h2>
+<ol start="7">
+<li><b>Generate</b>: paste the enhanced prompt into
+<ul>
+<li><a href="https://arena.ai/" target="_blank" rel="noopener">arena.ai</a>: Model A <b>Gemini-3.8-flash</b>, Model B <b>Claude-sonnet-5-high</b></li>
+<li><a href="https://stitch.withgoogle.com/" target="_blank" rel="noopener">stitch.withgoogle.com</a></li>
+</ul>
+</li>
+<li><b>Download</b> the code from your favorite of the 4.
+</li>
+<li><b>Open</b> the code in your <a href="https://claude.com/download" target="_blank" rel="noopener">Claude app</a>.
+</li>
+<li><b>Paste this prompt</b> exactly:
+</li>
+</ol>
+<div class="cs-code"><button type="button" class="copy" data-copy-text="This is my first time creating a website. Help me polish and finish the website design. I downloaded this from an online tool and would like to work on it locally until we have a final version. Familiarize yourself with the file, open it for me locally so I can see the changes, and let's work section by section from top to bottom, including the elements and anchor links. This is a single page website, static. Guide me through all this process.">Copy</button><pre><code>This is my first time creating a website. Help me polish and finish the website design. I downloaded this from an online tool and would like to work on it locally until we have a final version. Familiarize yourself with the file, open it for me locally so I can see the changes, and let's work section by section from top to bottom, including the elements and anchor links. This is a single page website, static. Guide me through all this process.</code></pre></div>
+<h2>Ship</h2>
+<ol start="11">
+<li><b>Go live</b>
+<ul>
+<li>Publish free with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site" target="_blank" rel="noopener">step-by-step guide</a>). Your main file should be named <code>index.html</code>.</li>
+<li>Buy a $5 to $12 domain name (e.g. <a href="https://porkbun.com/" target="_blank" rel="noopener">Porkbun</a>, <a href="https://www.cloudflare.com/domains/" target="_blank" rel="noopener">Cloudflare Domains</a>, <a href="https://domains.squarespace.com/" target="_blank" rel="noopener">Squarespace Domains</a>). Check the renewal price too.</li>
+<li>Connect the domain to GitHub Pages for free (<a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site" target="_blank" rel="noopener">GitHub guide</a>), then turn on <b>Enforce HTTPS</b>.</li>
+</ul>
+</li>
+</ol>
+<h2>Teaching it at home</h2>
+<ul>
+<li>Let the kid pick the topic and the taste: pins, colors, animations.</li>
+<li>A grown-up owns the accounts and any purchases.</li>
+<li>Keep private info off the site: no home address, school, or phone numbers.</li>
+<li>Short sessions (about 30 minutes): Collect one day, Build the next.</li>
+<li>Tip: stuck on any step? Ask Claude: <i>&quot;Explain this step to me like it's my first time.&quot;</i></li>
+</ul>
+<footer class="cs-foot">&copy; 2026 Ian Ramírez &middot; Invest Puerto Rico &middot; IPR AI Frontend Workflow</footer>
+</main>
+<script>
+document.addEventListener('click', function (e) {
+  var b = e.target.closest('[data-copy-text]'); if (!b) return;
+  var t = b.getAttribute('data-copy-text');
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).catch(function () {
+    var ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (_) {} ta.remove();
+  }).then(function () { b.textContent = 'Copied!'; setTimeout(function () { b.textContent = 'Copy'; }, 1600); });
+});
+</script>
+</body></html>

@@ -1,0 +1,1652 @@
+[
+  {
+    "file": "photo/cover-hero-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Blue-hour view over the Condado lagoon and the San Juan skyline from a modern office, a laptop glowing with a colorful website layout on a desk at right",
+    "slide": "cover",
+    "use": "Full-bleed cover. Dark navy sky and interior across the LEFT 55% for white headline type (no scrim needed, per §8)."
+  },
+  {
+    "file": "photo/cover-hero-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Blue-hour view over the Condado lagoon and the San Juan skyline from a modern office, a laptop glowing with a colorful website layout on a desk at right",
+    "slide": "cover",
+    "use": "Full-bleed cover. Dark navy sky and interior across the LEFT 55% for white headline type (no scrim needed, per §8)."
+  },
+  {
+    "file": "photo/cover-hero-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Blue-hour view over the Condado lagoon and the San Juan skyline from a modern office, a laptop glowing with a colorful website layout on a desk at right",
+    "slide": "cover",
+    "use": "Full-bleed cover. Dark navy sky and interior across the LEFT 55% for white headline type (no scrim needed, per §8)."
+  },
+  {
+    "file": "photo/chapter-collect-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Overhead view of hands arranging printed website inspiration, color swatch strips and a phone showing a grid of saved website screenshots on a navy desk",
+    "slide": "chapter-collect",
+    "use": "Full-bleed chapter divider. Empty dark navy desk across the LEFT 45% for the giant word COLLECT."
+  },
+  {
+    "file": "photo/chapter-collect-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Overhead view of hands arranging printed website inspiration, color swatch strips and a phone showing a grid of saved website screenshots on a navy desk",
+    "slide": "chapter-collect",
+    "use": "Full-bleed chapter divider. Empty dark navy desk across the LEFT 45% for the giant word COLLECT."
+  },
+  {
+    "file": "photo/chapter-collect-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Overhead view of hands arranging printed website inspiration, color swatch strips and a phone showing a grid of saved website screenshots on a navy desk",
+    "slide": "chapter-collect",
+    "use": "Full-bleed chapter divider. Empty dark navy desk across the LEFT 45% for the giant word COLLECT."
+  },
+  {
+    "file": "photo/chapter-prompt-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Hands typing into an AI chat on a laptop at night, a notebook with a sketched section plan and a gold pen beside it",
+    "slide": "chapter-prompt",
+    "use": "Full-bleed chapter divider. LEFT half falls to deep navy for the giant word PROMPT."
+  },
+  {
+    "file": "photo/chapter-prompt-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Hands typing into an AI chat on a laptop at night, a notebook with a sketched section plan and a gold pen beside it",
+    "slide": "chapter-prompt",
+    "use": "Full-bleed chapter divider. LEFT half falls to deep navy for the giant word PROMPT."
+  },
+  {
+    "file": "photo/chapter-prompt-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Hands typing into an AI chat on a laptop at night, a notebook with a sketched section plan and a gold pen beside it",
+    "slide": "chapter-prompt",
+    "use": "Full-bleed chapter divider. LEFT half falls to deep navy for the giant word PROMPT."
+  },
+  {
+    "file": "photo/chapter-build-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "A professional at a large monitor in a San Juan office at dusk, building a website made of colorful bento blocks",
+    "slide": "chapter-build",
+    "use": "Full-bleed chapter divider. LEFT 50% dark navy wall for the giant word BUILD."
+  },
+  {
+    "file": "photo/chapter-build-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "A professional at a large monitor in a San Juan office at dusk, building a website made of colorful bento blocks",
+    "slide": "chapter-build",
+    "use": "Full-bleed chapter divider. LEFT 50% dark navy wall for the giant word BUILD."
+  },
+  {
+    "file": "photo/chapter-build-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "A professional at a large monitor in a San Juan office at dusk, building a website made of colorful bento blocks",
+    "slide": "chapter-build",
+    "use": "Full-bleed chapter divider. LEFT 50% dark navy wall for the giant word BUILD."
+  },
+  {
+    "file": "photo/chapter-ship-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Twilight over the rooftops of Old San Juan and the bay, a hand holding up a phone with a freshly published website",
+    "slide": "chapter-ship",
+    "use": "Full-bleed chapter divider. TOP half and upper-left is calm navy sky for the giant word SHIP."
+  },
+  {
+    "file": "photo/chapter-ship-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Twilight over the rooftops of Old San Juan and the bay, a hand holding up a phone with a freshly published website",
+    "slide": "chapter-ship",
+    "use": "Full-bleed chapter divider. TOP half and upper-left is calm navy sky for the giant word SHIP."
+  },
+  {
+    "file": "photo/chapter-ship-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Twilight over the rooftops of Old San Juan and the bay, a hand holding up a phone with a freshly published website",
+    "slide": "chapter-ship",
+    "use": "Full-bleed chapter divider. TOP half and upper-left is calm navy sky for the giant word SHIP."
+  },
+  {
+    "file": "photo/hook-desk-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Top-down light oak desk with a laptop showing a colorful one-page website layout, a notebook sketch of stacked sections, coffee and a plant",
+    "slide": "hook",
+    "use": "Hero/tile photo. Empty wood across the TOP 40% for type."
+  },
+  {
+    "file": "photo/hook-desk-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Top-down light oak desk with a laptop showing a colorful one-page website layout, a notebook sketch of stacked sections, coffee and a plant",
+    "slide": "hook",
+    "use": "Hero/tile photo. Empty wood across the TOP 40% for type."
+  },
+  {
+    "file": "photo/hook-desk-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Top-down light oak desk with a laptop showing a colorful one-page website layout, a notebook sketch of stacked sections, coffee and a plant",
+    "slide": "hook",
+    "use": "Hero/tile photo. Empty wood across the TOP 40% for type."
+  },
+  {
+    "file": "photo/people-office-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Three adult colleagues in a bright San Juan office reviewing a colorful website design on a wall screen",
+    "slide": "hook / agenda / share-at-home (alt)",
+    "use": "Humans at work; subjects on the right two-thirds, calm pale wall on the left third."
+  },
+  {
+    "file": "photo/people-office-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Three adult colleagues in a bright San Juan office reviewing a colorful website design on a wall screen",
+    "slide": "hook / agenda / share-at-home (alt)",
+    "use": "Humans at work; subjects on the right two-thirds, calm pale wall on the left third."
+  },
+  {
+    "file": "photo/people-office-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Three adult colleagues in a bright San Juan office reviewing a colorful website design on a wall screen",
+    "slide": "hook / agenda / share-at-home (alt)",
+    "use": "Humans at work; subjects on the right two-thirds, calm pale wall on the left third."
+  },
+  {
+    "file": "photo/people-home-teach-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "At home, a woman shows her mother a website she made on a laptop; both smile",
+    "slide": "share-at-home",
+    "use": "\"Share it: teach someone\" photo. Subjects right two-thirds, dim wall left third. Adults only."
+  },
+  {
+    "file": "photo/people-home-teach-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "At home, a woman shows her mother a website she made on a laptop; both smile",
+    "slide": "share-at-home",
+    "use": "\"Share it: teach someone\" photo. Subjects right two-thirds, dim wall left third. Adults only."
+  },
+  {
+    "file": "photo/people-home-teach-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "At home, a woman shows her mother a website she made on a laptop; both smile",
+    "slide": "share-at-home",
+    "use": "\"Share it: teach someone\" photo. Subjects right two-thirds, dim wall left third. Adults only."
+  },
+  {
+    "file": "photo/people-home-laptop-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "A man at home working on a website on his laptop, coffee beside him",
+    "slide": "step-09-claude / step-10-prompt",
+    "use": "Working-at-home mood photo; dark wall on the left 40% for type."
+  },
+  {
+    "file": "photo/people-home-laptop-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "A man at home working on a website on his laptop, coffee beside him",
+    "slide": "step-09-claude / step-10-prompt",
+    "use": "Working-at-home mood photo; dark wall on the left 40% for type."
+  },
+  {
+    "file": "photo/people-home-laptop-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "A man at home working on a website on his laptop, coffee beside him",
+    "slide": "step-09-claude / step-10-prompt",
+    "use": "Working-at-home mood photo; dark wall on the left 40% for type."
+  },
+  {
+    "file": "photo/example-piragua-cart-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Marisol shaving ice at her blue piragua cart on the Paseo de la Princesa, syrup bottles lined up, the old city wall and bay behind",
+    "slide": "example-1",
+    "use": "Worked-example hero (Piraguas de Marisol). Subject right 60%, calmer promenade on the left."
+  },
+  {
+    "file": "photo/example-piragua-cart-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Marisol shaving ice at her blue piragua cart on the Paseo de la Princesa, syrup bottles lined up, the old city wall and bay behind",
+    "slide": "example-1",
+    "use": "Worked-example hero (Piraguas de Marisol). Subject right 60%, calmer promenade on the left."
+  },
+  {
+    "file": "photo/example-piragua-cart-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Marisol shaving ice at her blue piragua cart on the Paseo de la Princesa, syrup bottles lined up, the old city wall and bay behind",
+    "slide": "example-1",
+    "use": "Worked-example hero (Piraguas de Marisol). Subject right 60%, calmer promenade on the left."
+  },
+  {
+    "file": "photo/example-marisol-portrait-960.webp",
+    "width": 960,
+    "height": 1286,
+    "alt": "Portrait of Marisol smiling beside her blue piragua cart on the Paseo de la Princesa",
+    "slide": "example-1 / example-2",
+    "use": "Portrait tile (3:4)."
+  },
+  {
+    "file": "photo/example-piragua-hero-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "A rainbow piragua held up in front of the old stone city wall of San Juan",
+    "slide": "example-1 / example-2",
+    "use": "Marisol site hero photo; object right third, wall texture left."
+  },
+  {
+    "file": "photo/example-piragua-hero-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "A rainbow piragua held up in front of the old stone city wall of San Juan",
+    "slide": "example-1 / example-2",
+    "use": "Marisol site hero photo; object right third, wall texture left."
+  },
+  {
+    "file": "photo/example-piragua-hero-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "A rainbow piragua held up in front of the old stone city wall of San Juan",
+    "slide": "example-1 / example-2",
+    "use": "Marisol site hero photo; object right third, wall texture left."
+  },
+  {
+    "file": "photo/flavor-parcha-960.webp",
+    "width": 960,
+    "height": 960,
+    "alt": "Piragua with yellow passion-fruit syrup and a halved passion fruit on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/flavor-parcha-1920.webp",
+    "width": 1920,
+    "height": 1920,
+    "alt": "Piragua with yellow passion-fruit syrup and a halved passion fruit on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/flavor-frambuesa-960.webp",
+    "width": 960,
+    "height": 960,
+    "alt": "Piragua with pink raspberry syrup and fresh raspberries on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/flavor-frambuesa-1920.webp",
+    "width": 1920,
+    "height": 1920,
+    "alt": "Piragua with pink raspberry syrup and fresh raspberries on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/flavor-coco-960.webp",
+    "width": 960,
+    "height": 960,
+    "alt": "Piragua with coconut syrup and toasted coconut beside a halved coconut on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/flavor-coco-1920.webp",
+    "width": 1920,
+    "height": 1920,
+    "alt": "Piragua with coconut syrup and toasted coconut beside a halved coconut on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/flavor-tamarindo-960.webp",
+    "width": 960,
+    "height": 960,
+    "alt": "Piragua with amber tamarind syrup and tamarind pods on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/flavor-tamarindo-1920.webp",
+    "width": 1920,
+    "height": 1920,
+    "alt": "Piragua with amber tamarind syrup and tamarind pods on cream",
+    "slide": "example (flavor card)",
+    "use": "Square flavor-card photo."
+  },
+  {
+    "file": "photo/example-paseo-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "The tree-lined Paseo de la Princesa promenade beside the old city wall on a sunny afternoon",
+    "slide": "example (Where & When)",
+    "use": "Supporting photo."
+  },
+  {
+    "file": "photo/example-paseo-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "The tree-lined Paseo de la Princesa promenade beside the old city wall on a sunny afternoon",
+    "slide": "example (Where & When)",
+    "use": "Supporting photo."
+  },
+  {
+    "file": "photo/example-event-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "A blue piragua cart at an evening garden office party, adults holding colorful shaved-ice cones",
+    "slide": "example (Book the Cart)",
+    "use": "Supporting photo."
+  },
+  {
+    "file": "photo/example-event-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "A blue piragua cart at an evening garden office party, adults holding colorful shaved-ice cones",
+    "slide": "example (Book the Cart)",
+    "use": "Supporting photo."
+  },
+  {
+    "file": "chloe/closing-san-juan-ipr-960.webp",
+    "width": 960,
+    "height": 536,
+    "alt": "Pixel-art Chloé the ghost glowing over the rooftops of Old San Juan at night, gold laser eyes zapping a laptop",
+    "slide": "closing",
+    "use": "Closing slide full-bleed; IPR-palette recolor of C01 (ghost on-model). Open navy sky left and right of the ghost for type."
+  },
+  {
+    "file": "chloe/closing-san-juan-ipr-1920.webp",
+    "width": 1920,
+    "height": 1072,
+    "alt": "Pixel-art Chloé the ghost glowing over the rooftops of Old San Juan at night, gold laser eyes zapping a laptop",
+    "slide": "closing",
+    "use": "Closing slide full-bleed; IPR-palette recolor of C01 (ghost on-model). Open navy sky left and right of the ghost for type."
+  },
+  {
+    "file": "chloe/closing-san-juan-ipr-3840.webp",
+    "width": 3840,
+    "height": 2143,
+    "alt": "Pixel-art Chloé the ghost glowing over the rooftops of Old San Juan at night, gold laser eyes zapping a laptop",
+    "slide": "closing",
+    "use": "Closing slide full-bleed; IPR-palette recolor of C01 (ghost on-model). Open navy sky left and right of the ghost for type."
+  },
+  {
+    "file": "ui/pinterest-board-960.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "A Pinterest-style board of eight saved website design pins: landing pages, a portfolio grid, a menu page, an event page, a mobile shop, a type poster and a bento layout",
+    "slide": "step-01-pinterest",
+    "use": "Full board composite (generic UI, no Pinterest logo)."
+  },
+  {
+    "file": "ui/pinterest-board-1920.webp",
+    "width": 1920,
+    "height": 1080,
+    "alt": "A Pinterest-style board of eight saved website design pins: landing pages, a portfolio grid, a menu page, an event page, a mobile shop, a type poster and a bento layout",
+    "slide": "step-01-pinterest",
+    "use": "Full board composite (generic UI, no Pinterest logo)."
+  },
+  {
+    "file": "ui/pinterest-board-3840.webp",
+    "width": 3840,
+    "height": 2160,
+    "alt": "A Pinterest-style board of eight saved website design pins: landing pages, a portfolio grid, a menu page, an event page, a mobile shop, a type poster and a bento layout",
+    "slide": "step-01-pinterest",
+    "use": "Full board composite (generic UI, no Pinterest logo)."
+  },
+  {
+    "file": "ui/originkit-fade-up-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "Animation preview: a headline whose lines fade in and rise into place",
+    "slide": "step-02-originkit / example-1",
+    "use": "UI motion still (the fade-up effect Marisol picks)."
+  },
+  {
+    "file": "ui/originkit-fade-up-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "Animation preview: a headline whose lines fade in and rise into place",
+    "slide": "step-02-originkit / example-1",
+    "use": "UI motion still (the fade-up effect Marisol picks)."
+  },
+  {
+    "file": "ui/originkit-fade-up-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "Animation preview: a headline whose lines fade in and rise into place",
+    "slide": "step-02-originkit / example-1",
+    "use": "UI motion still (the fade-up effect Marisol picks)."
+  },
+  {
+    "file": "ui/originkit-blob-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "Animation preview: a soft gradient blob changing shape",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-blob-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "Animation preview: a soft gradient blob changing shape",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-blob-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "Animation preview: a soft gradient blob changing shape",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-magnetic-button-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "Animation preview: a gradient button leaning toward the cursor with ripple rings",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-magnetic-button-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "Animation preview: a gradient button leaning toward the cursor with ripple rings",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-magnetic-button-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "Animation preview: a gradient button leaning toward the cursor with ripple rings",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-card-stack-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "Animation preview: a stack of cards fanning out",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-card-stack-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "Animation preview: a stack of cards fanning out",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/originkit-card-stack-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "Animation preview: a stack of cards fanning out",
+    "slide": "step-02-originkit",
+    "use": "UI motion still."
+  },
+  {
+    "file": "ui/colorhunt-board-960.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "A ColorHunt-style grid of ten four-color palettes, the Piragua palette circled",
+    "slide": "step-03-colorhunt",
+    "use": "Palette board composite; individual vector cards in palettes/."
+  },
+  {
+    "file": "ui/colorhunt-board-1920.webp",
+    "width": 1920,
+    "height": 1080,
+    "alt": "A ColorHunt-style grid of ten four-color palettes, the Piragua palette circled",
+    "slide": "step-03-colorhunt",
+    "use": "Palette board composite; individual vector cards in palettes/."
+  },
+  {
+    "file": "ui/colorhunt-board-3840.webp",
+    "width": 3840,
+    "height": 2160,
+    "alt": "A ColorHunt-style grid of ten four-color palettes, the Piragua palette circled",
+    "slide": "step-03-colorhunt",
+    "use": "Palette board composite; individual vector cards in palettes/."
+  },
+  {
+    "file": "ui/wireframe-generic-960.webp",
+    "width": 960,
+    "height": 1040,
+    "alt": "Wireframe of a one-page site, top to bottom: Navbar, Hero, About, Services, Gallery, Contact, Footer",
+    "slide": "step-04-layout",
+    "use": "Portrait section-layout art (IPR palette)."
+  },
+  {
+    "file": "ui/wireframe-generic-1920.webp",
+    "width": 1920,
+    "height": 2080,
+    "alt": "Wireframe of a one-page site, top to bottom: Navbar, Hero, About, Services, Gallery, Contact, Footer",
+    "slide": "step-04-layout",
+    "use": "Portrait section-layout art (IPR palette)."
+  },
+  {
+    "file": "ui/wireframe-marisol-960.webp",
+    "width": 960,
+    "height": 1040,
+    "alt": "Wireframe of Marisol’s page: Navbar, Hero, Flavors, Where & When, Book the Cart, Kind Words, Footer",
+    "slide": "step-04-layout / example-1",
+    "use": "Portrait section-layout art (IPR palette)."
+  },
+  {
+    "file": "ui/wireframe-marisol-1920.webp",
+    "width": 1920,
+    "height": 2080,
+    "alt": "Wireframe of Marisol’s page: Navbar, Hero, Flavors, Where & When, Book the Cart, Kind Words, Footer",
+    "slide": "step-04-layout / example-1",
+    "use": "Portrait section-layout art (IPR palette)."
+  },
+  {
+    "file": "ui/spec-mashup-960.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "Pins, an animation, a color palette and a section list flowing into one design spec card for Piraguas de Marisol",
+    "slide": "step-05-spec / example-1",
+    "use": "Spec mash-up collage."
+  },
+  {
+    "file": "ui/spec-mashup-1920.webp",
+    "width": 1920,
+    "height": 1080,
+    "alt": "Pins, an animation, a color palette and a section list flowing into one design spec card for Piraguas de Marisol",
+    "slide": "step-05-spec / example-1",
+    "use": "Spec mash-up collage."
+  },
+  {
+    "file": "ui/spec-mashup-3840.webp",
+    "width": 3840,
+    "height": 2160,
+    "alt": "Pins, an animation, a color palette and a section list flowing into one design spec card for Piraguas de Marisol",
+    "slide": "step-05-spec / example-1",
+    "use": "Spec mash-up collage."
+  },
+  {
+    "file": "ui/prompt-enhance-960.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "An 11-word sticky note becomes a detailed 62-word prompt after tapping Enhance prompt",
+    "slide": "step-06-bolt",
+    "use": "Before/after prompt visual (11 → 62 words, matches content stat)."
+  },
+  {
+    "file": "ui/prompt-enhance-1920.webp",
+    "width": 1920,
+    "height": 1080,
+    "alt": "An 11-word sticky note becomes a detailed 62-word prompt after tapping Enhance prompt",
+    "slide": "step-06-bolt",
+    "use": "Before/after prompt visual (11 → 62 words, matches content stat)."
+  },
+  {
+    "file": "ui/prompt-enhance-3840.webp",
+    "width": 3840,
+    "height": 2160,
+    "alt": "An 11-word sticky note becomes a detailed 62-word prompt after tapping Enhance prompt",
+    "slide": "step-06-bolt",
+    "use": "Before/after prompt visual (11 → 62 words, matches content stat)."
+  },
+  {
+    "file": "ui/drafts-gallery-960.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "Five website drafts for Piraguas de Marisol: Bolt.new, arena.ai Model A gemini-3.8-flash-high, Model B Claude-sonnet-5-high, Google Stitch light and Google Stitch dark, marked as the favorite",
+    "slide": "step-08-download / example-2",
+    "use": "Composite with labels baked in; use drafts/* for unlabeled thumbs."
+  },
+  {
+    "file": "ui/drafts-gallery-1920.webp",
+    "width": 1920,
+    "height": 1080,
+    "alt": "Five website drafts for Piraguas de Marisol: Bolt.new, arena.ai Model A gemini-3.8-flash-high, Model B Claude-sonnet-5-high, Google Stitch light and Google Stitch dark, marked as the favorite",
+    "slide": "step-08-download / example-2",
+    "use": "Composite with labels baked in; use drafts/* for unlabeled thumbs."
+  },
+  {
+    "file": "ui/drafts-gallery-3840.webp",
+    "width": 3840,
+    "height": 2160,
+    "alt": "Five website drafts for Piraguas de Marisol: Bolt.new, arena.ai Model A gemini-3.8-flash-high, Model B Claude-sonnet-5-high, Google Stitch light and Google Stitch dark, marked as the favorite",
+    "slide": "step-08-download / example-2",
+    "use": "Composite with labels baked in; use drafts/* for unlabeled thumbs."
+  },
+  {
+    "file": "pins/pin-01-coffee-landing-960.webp",
+    "width": 960,
+    "height": 1527,
+    "alt": "Coffee roaster landing page with a big hero photo and three product cards",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-01-coffee-landing-1920.webp",
+    "width": 1920,
+    "height": 3054,
+    "alt": "Coffee roaster landing page with a big hero photo and three product cards",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-02-dark-portfolio-960.webp",
+    "width": 960,
+    "height": 1735,
+    "alt": "Dark portfolio site with bold white type and six project thumbnails",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-02-dark-portfolio-1920.webp",
+    "width": 1920,
+    "height": 3469,
+    "alt": "Dark portfolio site with bold white type and six project thumbnails",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-03-restaurant-menu-960.webp",
+    "width": 960,
+    "height": 1155,
+    "alt": "Restaurant menu page with two columns, warm photos and gold accents",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-03-restaurant-menu-1920.webp",
+    "width": 1920,
+    "height": 2309,
+    "alt": "Restaurant menu page with two columns, warm photos and gold accents",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-04-event-landing-960.webp",
+    "width": 960,
+    "height": 989,
+    "alt": "Event landing page with a huge date, a countdown and one bright button",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-04-event-landing-1920.webp",
+    "width": 1920,
+    "height": 1978,
+    "alt": "Event landing page with a huge date, a countdown and one bright button",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-05-mobile-shop-960.webp",
+    "width": 960,
+    "height": 1312,
+    "alt": "Mobile shop site shown on a phone",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-05-mobile-shop-1920.webp",
+    "width": 1920,
+    "height": 2624,
+    "alt": "Mobile shop site shown on a phone",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-06-minimal-studio-960.webp",
+    "width": 960,
+    "height": 1398,
+    "alt": "Minimal studio site with lots of white space and one orange accent",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-06-minimal-studio-1920.webp",
+    "width": 1920,
+    "height": 2795,
+    "alt": "Minimal studio site with lots of white space and one orange accent",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-07-type-poster-960.webp",
+    "width": 960,
+    "height": 1280,
+    "alt": "Typography specimen poster with giant letters",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-07-type-poster-1920.webp",
+    "width": 1920,
+    "height": 2560,
+    "alt": "Typography specimen poster with giant letters",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-08-bento-ui-960.webp",
+    "width": 960,
+    "height": 888,
+    "alt": "Bento layout of rounded tiles with a color swatch strip",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "pins/pin-08-bento-ui-1920.webp",
+    "width": 1920,
+    "height": 1776,
+    "alt": "Bento layout of rounded tiles with a color swatch strip",
+    "slide": "step-01-pinterest",
+    "use": "Individual portrait pin (website design screenshot)."
+  },
+  {
+    "file": "drafts/draft-bolt-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "Bolt.new draft: light startup style, split hero with Marisol’s portrait (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-bolt-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "Bolt.new draft: light startup style, split hero with Marisol’s portrait (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-bolt-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "Bolt.new draft: light startup style, split hero with Marisol’s portrait (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-bolt-full-960.webp",
+    "width": 960,
+    "height": 1708,
+    "alt": "Bolt.new draft: light startup style, split hero with Marisol’s portrait (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-bolt-full-1920.webp",
+    "width": 1920,
+    "height": 3415,
+    "alt": "Bolt.new draft: light startup style, split hero with Marisol’s portrait (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-arena-a-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "arena.ai Model A (gemini-3.8-flash-high) draft: bold full-bleed photo hero with yellow and pink type (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-arena-a-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "arena.ai Model A (gemini-3.8-flash-high) draft: bold full-bleed photo hero with yellow and pink type (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-arena-a-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "arena.ai Model A (gemini-3.8-flash-high) draft: bold full-bleed photo hero with yellow and pink type (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-arena-a-full-960.webp",
+    "width": 960,
+    "height": 1894,
+    "alt": "arena.ai Model A (gemini-3.8-flash-high) draft: bold full-bleed photo hero with yellow and pink type (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-arena-a-full-1920.webp",
+    "width": 1920,
+    "height": 3788,
+    "alt": "arena.ai Model A (gemini-3.8-flash-high) draft: bold full-bleed photo hero with yellow and pink type (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-arena-b-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "arena.ai Model B (Claude-sonnet-5-high) draft: editorial serif layout on coconut cream (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-arena-b-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "arena.ai Model B (Claude-sonnet-5-high) draft: editorial serif layout on coconut cream (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-arena-b-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "arena.ai Model B (Claude-sonnet-5-high) draft: editorial serif layout on coconut cream (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-arena-b-full-960.webp",
+    "width": 960,
+    "height": 1414,
+    "alt": "arena.ai Model B (Claude-sonnet-5-high) draft: editorial serif layout on coconut cream (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-arena-b-full-1920.webp",
+    "width": 1920,
+    "height": 2827,
+    "alt": "arena.ai Model B (Claude-sonnet-5-high) draft: editorial serif layout on coconut cream (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-light-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "Google Stitch light draft: rounded cards and a hero card over the photo (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-stitch-light-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "Google Stitch light draft: rounded cards and a hero card over the photo (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-stitch-light-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "Google Stitch light draft: rounded cards and a hero card over the photo (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-stitch-light-full-960.webp",
+    "width": 960,
+    "height": 1317,
+    "alt": "Google Stitch light draft: rounded cards and a hero card over the photo (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-light-full-1920.webp",
+    "width": 1920,
+    "height": 2633,
+    "alt": "Google Stitch light draft: rounded cards and a hero card over the photo (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-960.webp",
+    "width": 960,
+    "height": 600,
+    "alt": "Google Stitch dark draft: the same layout in a dark theme with parcha-yellow accents (Marisol’s pick) (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-1920.webp",
+    "width": 1920,
+    "height": 1200,
+    "alt": "Google Stitch dark draft: the same layout in a dark theme with parcha-yellow accents (Marisol’s pick) (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-3840.webp",
+    "width": 3840,
+    "height": 2400,
+    "alt": "Google Stitch dark draft: the same layout in a dark theme with parcha-yellow accents (Marisol’s pick) (first screen)",
+    "slide": "step-08-download / step-07-arena / step-07-stitch / step-06-bolt",
+    "use": "Unlabeled 16:10 first-screen thumbnail, 1440×900 page."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-full-960.webp",
+    "width": 960,
+    "height": 1317,
+    "alt": "Google Stitch dark draft: the same layout in a dark theme with parcha-yellow accents (Marisol’s pick) (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-full-1920.webp",
+    "width": 1920,
+    "height": 2633,
+    "alt": "Google Stitch dark draft: the same layout in a dark theme with parcha-yellow accents (Marisol’s pick) (full page)",
+    "slide": "step-08-download",
+    "use": "Full-page scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-mobile-390.webp",
+    "width": 390,
+    "height": 844,
+    "alt": "Google Stitch dark draft on a phone-sized screen",
+    "slide": "example-2 / step-08-download",
+    "use": "Phone screen 390×844 @3x (first screen)."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-mobile-1170.webp",
+    "width": 1170,
+    "height": 2532,
+    "alt": "Google Stitch dark draft on a phone-sized screen",
+    "slide": "example-2 / step-08-download",
+    "use": "Phone screen 390×844 @3x (first screen)."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-mobile-full-390.webp",
+    "width": 390,
+    "height": 3038,
+    "alt": "Google Stitch dark draft, full mobile page",
+    "slide": "example-2",
+    "use": "Full mobile scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-dark-mobile-full-1170.webp",
+    "width": 1170,
+    "height": 9114,
+    "alt": "Google Stitch dark draft, full mobile page",
+    "slide": "example-2",
+    "use": "Full mobile scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-light-mobile-390.webp",
+    "width": 390,
+    "height": 844,
+    "alt": "Google Stitch light draft on a phone-sized screen",
+    "slide": "example-2 / step-08-download",
+    "use": "Phone screen 390×844 @3x (first screen)."
+  },
+  {
+    "file": "drafts/draft-stitch-light-mobile-1170.webp",
+    "width": 1170,
+    "height": 2532,
+    "alt": "Google Stitch light draft on a phone-sized screen",
+    "slide": "example-2 / step-08-download",
+    "use": "Phone screen 390×844 @3x (first screen)."
+  },
+  {
+    "file": "drafts/draft-stitch-light-mobile-full-390.webp",
+    "width": 390,
+    "height": 3038,
+    "alt": "Google Stitch light draft, full mobile page",
+    "slide": "example-2",
+    "use": "Full mobile scroll capture."
+  },
+  {
+    "file": "drafts/draft-stitch-light-mobile-full-1170.webp",
+    "width": 1170,
+    "height": 9114,
+    "alt": "Google Stitch light draft, full mobile page",
+    "slide": "example-2",
+    "use": "Full mobile scroll capture."
+  },
+  {
+    "file": "icons/I01-palette.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: palette",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I01-palette-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: palette",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I01-palette-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: palette",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I02-paintbrush.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: paintbrush",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I02-paintbrush-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: paintbrush",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I02-paintbrush-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: paintbrush",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I03-magic-wand.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: magic wand",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I03-magic-wand-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: magic wand",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I03-magic-wand-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: magic wand",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I04-rocket.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: rocket",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I04-rocket-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: rocket",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I04-rocket-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: rocket",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I05-globe.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: globe",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I05-globe-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: globe",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I05-globe-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: globe",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I06-cursor.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: cursor",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I06-cursor-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: cursor",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I06-cursor-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: cursor",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I07-sparkle.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: sparkle",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I07-sparkle-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: sparkle",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I07-sparkle-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: sparkle",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I08-laptop.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: laptop",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I08-laptop-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: laptop",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I08-laptop-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: laptop",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I09-puzzle.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: puzzle",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I09-puzzle-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: puzzle",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I09-puzzle-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: puzzle",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I10-house.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: house",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I10-house-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: house",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I10-house-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: house",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I11-heart-chat.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: heart chat",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I11-heart-chat-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: heart chat",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I11-heart-chat-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: heart chat",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I12-link-chain.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: link chain",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I12-link-chain-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: link chain",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I12-link-chain-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: link chain",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I13-pushpin.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: pushpin",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I13-pushpin-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: pushpin",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I13-pushpin-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: pushpin",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I14-download.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: download",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I14-download-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: download",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I14-download-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: download",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I15-code.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: code",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I15-code-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: code",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I15-code-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: code",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I16-check.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: check",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I16-check-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: check",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I16-check-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: check",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I17-play-motion.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: play motion",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I17-play-motion-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: play motion",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I17-play-motion-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: play motion",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I18-stack-cards.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: stack cards",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I18-stack-cards-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: stack cards",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I18-stack-cards-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: stack cards",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I19-coffee.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: coffee",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I19-coffee-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: coffee",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I19-coffee-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: coffee",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I20-lightbulb.png",
+    "width": 1024,
+    "height": 1024,
+    "alt": "3D clay sticker icon: lightbulb",
+    "slide": "any (sticker)",
+    "use": "Transparent PNG sticker, IPR palette. Renders crisp up to 512 stage px."
+  },
+  {
+    "file": "icons/I20-lightbulb-256.webp",
+    "width": 256,
+    "height": 256,
+    "alt": "3D clay sticker icon: lightbulb",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "icons/I20-lightbulb-512.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "3D clay sticker icon: lightbulb",
+    "slide": "any (sticker)",
+    "use": "Transparent WebP sticker; 256 for <=128 stage px, 512 for <=256."
+  },
+  {
+    "file": "palettes/palette-arecibo.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “arecibo”: #101935, #F2FDFF, #564787, #9AD4D6",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-cafe.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “cafe”: #2E1E17, #F5EBDD, #B07A4A, #E3B23C",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-coqui.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “coqui”: #233D4D, #FCFAF2, #FE7F2D, #A1C181",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-flamboyan.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “flamboyan”: #3A0F1F, #FFF4EC, #E4372C, #F2A541",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-guavate.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “guavate”: #2B2D42, #EDF2F4, #EF233C, #8D99AE",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-ipr.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “ipr”: #1A1B4A, #F0F5F3, #FFA300, #009A9D",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-lagoon.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “lagoon”: #0F3440, #EEF8F6, #4CC3C8, #F4A7BB",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-mangrove.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “mangrove”: #173B2F, #F4F1E6, #7FB77E, #E9B44C",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-piragua.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “piragua”: #0B3C5D, #FFF6E5, #FFB400, #FF5C8A",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-salinas.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “salinas”: #05668D, #F7F7F2, #02C39A, #F0F3BD",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-sunset.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “sunset”: #3B1F35, #FFEFE3, #FF8A5B, #F7C35F",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "palettes/palette-yunque.svg",
+    "width": 480,
+    "height": 658,
+    "alt": "ColorHunt-style palette card “yunque”: #10302A, #E8F3EC, #3FA66B, #C6E377",
+    "slide": "step-03-colorhunt / example-1",
+    "use": "Vector palette card (hex labels, heart count). Scales to any size."
+  },
+  {
+    "file": "pins/pin-09-shaved-ice-960.webp",
+    "width": 960,
+    "alt": "Website design: a shaved-ice stand landing page with a pink raspberry cup and three flavor cards",
+    "slide": "step-01-pinterest",
+    "use": "Pinterest board pin (round 4: matches the slide searches)."
+  },
+  {
+    "file": "pins/pin-09-shaved-ice-1920.webp",
+    "width": 1920,
+    "alt": "Website design: a shaved-ice stand landing page with a pink raspberry cup and three flavor cards",
+    "slide": "step-01-pinterest",
+    "use": "Pinterest board pin (round 4: matches the slide searches)."
+  },
+  {
+    "file": "pins/pin-10-food-cart-960.webp",
+    "width": 960,
+    "alt": "Website design: a food-cart booking page with guests at a party and a Check your date button",
+    "slide": "step-01-pinterest",
+    "use": "Pinterest board pin (round 4: matches the slide searches)."
+  },
+  {
+    "file": "pins/pin-10-food-cart-1920.webp",
+    "width": 1920,
+    "alt": "Website design: a food-cart booking page with guests at a party and a Check your date button",
+    "slide": "step-01-pinterest",
+    "use": "Pinterest board pin (round 4: matches the slide searches)."
+  },
+  {
+    "file": "pins/pin-11-tropical-landing-960.webp",
+    "width": 960,
+    "alt": "Website design: a bright yellow tropical landing page with a tree-lined promenade photo and three activity cards",
+    "slide": "step-01-pinterest",
+    "use": "Pinterest board pin (round 4: matches the slide searches)."
+  },
+  {
+    "file": "pins/pin-11-tropical-landing-1920.webp",
+    "width": 1920,
+    "alt": "Website design: a bright yellow tropical landing page with a tree-lined promenade photo and three activity cards",
+    "slide": "step-01-pinterest",
+    "use": "Pinterest board pin (round 4: matches the slide searches)."
+  }
+]

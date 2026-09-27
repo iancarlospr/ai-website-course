@@ -1,0 +1,1722 @@
+{
+  "meta": {
+    "courseTitle": "{{client.courseTitle}}",
+    "courseTitleFallback": "AI Frontend Workflow",
+    "subtitle": "From a mood board to a live website in one day. No coding experience needed.",
+    "presenter": "{{client.presenter.name}}",
+    "presenterRole": "{{client.presenter.role}}",
+    "audience": "Adult colleagues at {{client.name}}. Everyone already has a paid Claude account.",
+    "tone": "Client voice (IPR Voice & Tone, design.md section 4): professional, welcoming, confident. Plain words, warm and fun. Every slide ends with something you can do. Chloé is playful and kind, never sassy.",
+    "placeholders": {
+      "note": "Every {{client.*}} token is resolved by the Design C generator from client/<slug>/client.json. Nothing client-specific is hard-coded in this file, so presenting at another company means swapping the client folder only.",
+      "keys": [
+        "client.name",
+        "client.shortName",
+        "client.courseTitle",
+        "client.presenter.name",
+        "client.presenter.role",
+        "client.tagline",
+        "client.footer",
+        "client.deckUrl"
+      ]
+    },
+    "slideCount": 25,
+    "slideCountNote": "21 content slides plus 4 full-bleed chapter slides (Collect, Prompt, Build, Ship), in the order of the slides array below.",
+    "order": [
+      "cover",
+      "hook",
+      "agenda",
+      "chapter-collect",
+      "step-01-pinterest",
+      "step-02-originkit",
+      "step-03-colorhunt",
+      "step-04-layout",
+      "chapter-prompt",
+      "step-05-spec",
+      "step-05-template",
+      "step-06-bolt",
+      "chapter-build",
+      "step-07-arena",
+      "step-07-stitch",
+      "step-08-download",
+      "step-09-claude",
+      "step-10-prompt",
+      "chapter-ship",
+      "step-11-publish",
+      "step-11-domain",
+      "example-2",
+      "share-at-home",
+      "recap",
+      "closing"
+    ],
+    "chapters": [
+      {
+        "id": "chapter-collect",
+        "key": "collect",
+        "n": "01",
+        "title": "Collect",
+        "steps": "Steps 1–4",
+        "before": "step-01-pinterest"
+      },
+      {
+        "id": "chapter-prompt",
+        "key": "prompt",
+        "n": "02",
+        "title": "Prompt",
+        "steps": "Steps 5–6",
+        "before": "step-05-spec"
+      },
+      {
+        "id": "chapter-build",
+        "key": "build",
+        "n": "03",
+        "title": "Build",
+        "steps": "Steps 7–10",
+        "before": "step-07-arena"
+      },
+      {
+        "id": "chapter-ship",
+        "key": "ship",
+        "n": "04",
+        "title": "Ship",
+        "steps": "Step 11",
+        "before": "step-11-publish"
+      }
+    ],
+    "nav": [
+      [
+        "Intro",
+        "cover"
+      ],
+      [
+        "Collect",
+        "chapter-collect"
+      ],
+      [
+        "Prompt",
+        "chapter-prompt"
+      ],
+      [
+        "Build",
+        "chapter-build"
+      ],
+      [
+        "Ship",
+        "chapter-ship"
+      ],
+      [
+        "Example",
+        "example-2"
+      ],
+      [
+        "Share it",
+        "share-at-home"
+      ],
+      [
+        "Recap",
+        "recap"
+      ]
+    ],
+    "chloeSpeaks": [
+      "cover",
+      "hook",
+      "agenda",
+      "chapter-collect",
+      "step-01-pinterest",
+      "step-02-originkit",
+      "step-03-colorhunt",
+      "step-04-layout",
+      "chapter-prompt",
+      "step-05-spec",
+      "step-05-template",
+      "step-06-bolt",
+      "chapter-build",
+      "step-07-arena",
+      "step-07-stitch",
+      "step-08-download",
+      "step-09-claude",
+      "step-10-prompt",
+      "chapter-ship",
+      "step-11-publish",
+      "step-11-domain",
+      "example-2",
+      "share-at-home",
+      "recap"
+    ],
+    "titleEmphasisRule": "titleEmphasis is the leading word or phrase of each title, so the generator can apply the client headline rule (IPR design.md 10.4: first word in Gold on dark grounds, Teal on light grounds; one emphasis per headline, always at the front).",
+    "assetsNotForDesignC": [
+      "photo/A02-*, photo/A09-*, photo/A13-* (off-brief for this audience: do not use anywhere in Design C, including the cover)",
+      "photo/A01, A04, A06 and other lifestyle photos as Step 1 inspiration images (they must look like website layouts, not lifestyle shots)"
+    ],
+    "sourceOutline": "IPR AI frontend workflow (1).md (11 steps). Step 8 extended to five drafts per Ian's feedback (Bolt.new builds its own design, Google Stitch runs twice: light, then dark).",
+    "linksVerified": "2026-09-26 via curl -sL (every URL in this file returned HTTP 200)"
+  },
+  "blocks": {
+    "specTemplate": {
+      "label": "Step 5 · Design spec prompt (fill in the blanks)",
+      "text": "Build a single-page, static website for… {EXPLAIN WEBSITE USE IN YOUR OWN WORDS}\n\nThe section and layout are… {INSERT MOCKUP SECTION ORDER AND IDEAS}\n\nUse these colors and mood… {PASTE YOUR 4 COLOR CODES AND A MOOD}\n\nExtract and implement this element in the {DESIRED} section {PASTE LINK FROM OriginKit}",
+      "note": "Canonical version. The slide, both Copy buttons and cheatsheet.md all use exactly these four lines and these five blanks. Two animations? Repeat the last line once for each.",
+      "blanks": [
+        {
+          "token": "{EXPLAIN WEBSITE USE IN YOUR OWN WORDS}",
+          "short": "What it's for",
+          "hint": "Who is it for, and what should a visitor do? One or two sentences.",
+          "fromStep": null
+        },
+        {
+          "token": "{INSERT MOCKUP SECTION ORDER AND IDEAS}",
+          "short": "Your section list",
+          "hint": "Your list from Step 4: Navbar, Hero, then the rest, with a short idea for each.",
+          "fromStep": 4
+        },
+        {
+          "token": "{PASTE YOUR 4 COLOR CODES AND A MOOD}",
+          "short": "4 color codes + a mood",
+          "hint": "The four hex codes from ColorHunt, plus one or two words for the feel.",
+          "fromStep": 3
+        },
+        {
+          "token": "{DESIRED}",
+          "short": "A section name",
+          "hint": "The section the animation goes in, like Hero.",
+          "fromStep": 2
+        },
+        {
+          "token": "{PASTE LINK FROM OriginKit}",
+          "short": "Your OriginKit link",
+          "hint": "The link to the animation you saved in Step 2.",
+          "fromStep": 2
+        }
+      ],
+      "repeatNote": "Two animations? Repeat the last line once for each."
+    },
+    "stitchDarkPrompt": {
+      "label": "Step 7 · Ask Google Stitch for a dark version",
+      "text": "Make a second version of this design with a dark theme. Keep the same sections, layout and content, and adjust the colors so the text stays easy to read."
+    },
+    "starterPrompt": {
+      "label": "Step 10 · Claude starter prompt (copy exactly)",
+      "text": "This is my first time creating a website. Help me polish and finish the website design. I downloaded this from an online tool and would like to work on it locally until we have a final version. Familiarize yourself with the file, open it for me locally so I can see the changes, and let's work section by section from top to bottom, including the elements and anchor links. This is a single page website, static. Guide me through all this process.",
+      "note": "Word for word from the course outline. The only change is the apostrophe in \"let's\" (the outline has \"lets\")."
+    },
+    "workedExampleSpec": {
+      "label": "Worked example · Marisol's filled-in spec",
+      "text": "Build a single-page, static website for… Piraguas de Marisol, my weekend piragua cart on Paseo de la Princesa in Old San Juan. Visitors should see the flavors and prices, know when and where to find the cart, and book it for their own events.\n\nThe section and layout are… Navbar (logo + links to Flavors, Where & When, Book the Cart). Hero (big photo of a rainbow piragua in front of the old city wall, headline \"Shaved ice, the old San Juan way\"). Flavors (four cards: Parcha, Frambuesa, Coco, Tamarindo, each with its price). Where & When (Saturday and Sunday, 11am to 5pm, Paseo de la Princesa, with a map). Book the Cart (office parties, birthdays and weddings, with a button that emails the business inbox). Kind Words (three short quotes from customers). Footer (Instagram and business email).\n\nUse these colors and mood… #0B3C5D ocean, #FFF6E5 coconut, #FFB400 parcha, #FF5C8A frambuesa. Tropical, fresh and playful.\n\nExtract and implement this element in the Hero section https://www.originkit.dev/ (the fade-up headline effect I saved)",
+      "palette": [
+        {
+          "hex": "#0B3C5D",
+          "name": "ocean",
+          "role": "dark"
+        },
+        {
+          "hex": "#FFF6E5",
+          "name": "coconut",
+          "role": "light"
+        },
+        {
+          "hex": "#FFB400",
+          "name": "parcha",
+          "role": "accent"
+        },
+        {
+          "hex": "#FF5C8A",
+          "name": "frambuesa",
+          "role": "accent"
+        }
+      ],
+      "mood": "Tropical, fresh and playful",
+      "animation": {
+        "section": "Hero",
+        "effect": "fade-up headline",
+        "link": "https://www.originkit.dev/"
+      },
+      "sections": [
+        "Navbar",
+        "Hero",
+        "Flavors",
+        "Where & When",
+        "Book the Cart",
+        "Kind Words",
+        "Footer"
+      ],
+      "flavors": [
+        {
+          "name": "Parcha",
+          "note": "passion fruit",
+          "price": "$3",
+          "color": "#FFB400"
+        },
+        {
+          "name": "Frambuesa",
+          "note": "raspberry",
+          "price": "$3",
+          "color": "#FF5C8A"
+        },
+        {
+          "name": "Coco",
+          "note": "coconut",
+          "price": "$3",
+          "color": "#FFF6E5"
+        },
+        {
+          "name": "Tamarindo",
+          "note": "tamarind",
+          "price": "$3",
+          "color": "#B5651D"
+        }
+      ],
+      "mockSite": {
+        "brand": "Piraguas de Marisol",
+        "links": [
+          "Flavors",
+          "Where & When",
+          "Book the Cart"
+        ],
+        "headline": "Shaved ice, the old San Juan way",
+        "button": "See flavors",
+        "domain": "piraguasdemarisol.site",
+        "domainNote": "Illustrative address for the mock browser bar, not a real site."
+      }
+    },
+    "publishPrompt": {
+      "label": "Step 11 · Ask Claude to publish your site",
+      "text": "Publish the website in this folder to GitHub Pages. If I don't have a GitHub account yet, walk me through creating one first. Then create a public repository, upload the files, turn on GitHub Pages and give me the live link."
+    },
+    "domainPrompt": {
+      "label": "Step 11 · Ask Claude to connect your domain",
+      "text": "Connect my domain yourname.site to my GitHub Pages website. Do it for me if you can, or walk me through each step."
+    }
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "type": "content",
+      "section": "intro",
+      "kicker": "A short course by {{client.presenter.name}} · {{client.name}}",
+      "title": "Build a website today with AI",
+      "titleEmphasis": "Build",
+      "lead": "Eleven steps, mostly free tools, and one very helpful ghost. Nothing to install until the last steps.",
+      "body": "Eleven simple steps, a handful of free tools, and one very helpful ghost. Nothing to install until the very last steps.",
+      "bullets": [],
+      "try": "Grab a laptop. We start right away.",
+      "actionTip": "Open your laptop. You will start collecting ideas right away.",
+      "links": [],
+      "stat": {
+        "value": "11",
+        "label": "steps from idea to live website"
+      },
+      "chloeLine": "Boo! Don't worry, the only scary part today is how fast this goes.",
+      "speakerNotes": "Welcome everyone. The promise up front: nobody needs to know how to code. By the end you will know the full path from 'I like how this looks' to a real website with its own address, and you will be able to show someone else how to do it. The pixel ghost is Chloé, our course mascot. She'll pop up now and then.",
+      "layout": "Full-bleed cover (from Design A): one photograph, giant client headline type, the 11 stat, Start and Present buttons. Client logo lockup per client.json logo rules (bottom-left, never a strip across the top).",
+      "imagePrompt": "Cinematic wide photograph, 16:9, dusk over the Condado lagoon and the San Juan skyline seen from a modern office interior: a laptop on a light oak desk glowing with a half-built, colorful website (abstract shapes, no readable text), floor-to-ceiling window, warm gold practical light inside, deep navy sky outside with city lights starting to come on, the left 45% of the frame naturally dark and calm for large white headline type (no scrim needed), no people's faces, no logos, natural color, not over-saturated, crisp detail, 3840x2160 or larger."
+    },
+    {
+      "id": "hook",
+      "type": "content",
+      "section": "intro",
+      "kicker": "What you'll build today",
+      "title": "A real website with your name on it",
+      "titleEmphasis": "A real website",
+      "lead": "Pick a project you care about: a side business, a portfolio, a community group. Today it gets a home on the internet.",
+      "body": "Pick a project you care about: a side business, a portfolio, a community group, a favorite cause. By the end of this workflow it has a home on the internet.",
+      "bullets": [
+        "One page, clean and animated, that looks designed",
+        "Built by you, guided by AI, no code written from scratch",
+        "Hosted for free on GitHub Pages",
+        "Optional: your own domain, with a fun ending like .site or .party"
+      ],
+      "try": "Write down one small website idea. Right now.",
+      "actionTip": "Write down one website idea right now. A side business, a portfolio, a hobby, a community group. Keep it small.",
+      "links": [],
+      "stat": {
+        "value": "$0",
+        "label": "to host it on GitHub Pages"
+      },
+      "ui": {
+        "note": "One page. Built by you, guided by AI.",
+        "circles": [
+          {
+            "value": "1",
+            "label": "day"
+          },
+          {
+            "value": "$0",
+            "label": "to host it"
+          },
+          {
+            "value": ".party",
+            "label": "fun endings for your own domain"
+          }
+        ],
+        "ideas": [
+          "Side business",
+          "Portfolio",
+          "Community group",
+          "Event page"
+        ]
+      },
+      "chloeLine": "I'd build a website for my haunted house. Five stars, great views, very quiet neighbors.",
+      "speakerNotes": "Ask two or three people to call out their idea. Encourage small scopes: one page is plenty. The goal today is the full loop, not a perfect site. Hosting is free and a domain is optional.",
+      "imagePrompt": "Editorial photograph, 16:9, top-down view of a light work table: an open laptop showing a bright, abstract single-page website layout (colored blocks, no readable text), a paper notebook with a hand-drawn page sketch of stacked boxes, a coffee cup and a small potted plant, soft morning window light, navy and gold accents in the props, calm and professional, generous empty space at the top, 3840x2160 or larger, no logos, no faces."
+    },
+    {
+      "id": "agenda",
+      "type": "content",
+      "section": "intro",
+      "kicker": "The plan",
+      "title": "Collect. Prompt. Build. Ship.",
+      "titleEmphasis": "Collect.",
+      "lead": "Eleven steps in four moves, all in one day.",
+      "body": "Eleven steps in four moves, all in one day.",
+      "bullets": [
+        "Collect (Steps 1–4): images from Pinterest, animations from OriginKit, colors from ColorHunt, your section order",
+        "Prompt (Steps 5–6): fill in the design spec, then let Bolt.new \"Enhance prompt\"",
+        "Build (Steps 7–10): five drafts from arena.ai, Bolt.new and Google Stitch, download your favorite, polish it with Claude",
+        "Ship (Step 11): publish on GitHub Pages and connect your own domain"
+      ],
+      "try": "Make a folder called 'My Website'.",
+      "actionTip": "Open a notes app or make a folder called 'My Website'. Everything you collect goes there.",
+      "links": [],
+      "stat": {
+        "value": "4",
+        "label": "moves: collect, prompt, build, ship"
+      },
+      "ui": {
+        "moves": [
+          {
+            "n": "01",
+            "name": "Collect",
+            "desc": "Images, animations, colors, sections",
+            "count": 4,
+            "steps": [
+              [
+                "1",
+                "Pinterest"
+              ],
+              [
+                "2",
+                "OriginKit"
+              ],
+              [
+                "3",
+                "ColorHunt"
+              ],
+              [
+                "4",
+                "Section list"
+              ]
+            ],
+            "stat": {
+              "value": "4",
+              "label": "places to look"
+            }
+          },
+          {
+            "n": "02",
+            "name": "Prompt",
+            "desc": "Fill the spec, enhance it",
+            "count": 2,
+            "steps": [
+              [
+                "5",
+                "Design spec"
+              ],
+              [
+                "6",
+                "Bolt.new"
+              ]
+            ],
+            "stat": {
+              "value": "1",
+              "label": "clear spec"
+            }
+          },
+          {
+            "n": "03",
+            "name": "Build",
+            "desc": "Five drafts, pick one, polish",
+            "count": 4,
+            "steps": [
+              [
+                "7",
+                "arena.ai + Stitch"
+              ],
+              [
+                "8",
+                "Download"
+              ],
+              [
+                "9",
+                "Claude app"
+              ],
+              [
+                "10",
+                "Starter prompt"
+              ]
+            ],
+            "stat": {
+              "value": "5",
+              "label": "drafts to pick"
+            }
+          },
+          {
+            "n": "04",
+            "name": "Ship",
+            "desc": "Publish free, add your own domain",
+            "count": 1,
+            "steps": [
+              [
+                "11",
+                "GitHub Pages"
+              ]
+            ],
+            "stat": {
+              "value": "$0",
+              "label": "to host"
+            }
+          }
+        ]
+      },
+      "chloeLine": "Collect, prompt, build, ship. Or as ghosts say: haunt, taunt, flaunt, jaunt.",
+      "speakerNotes": "Give the map before the journey. Steps 1 to 4 are gathering, like shopping for ingredients. Steps 5 and 6 are writing the recipe. Steps 7 to 10 are cooking. Step 11 is serving it.",
+      "imagePrompt": null
+    },
+    {
+      "id": "chapter-collect",
+      "type": "chapter",
+      "chapter": "collect",
+      "section": "collect",
+      "n": "01",
+      "kicker": "Chapter 01",
+      "title": "Collect",
+      "titleEmphasis": "Collect",
+      "steps": "Steps 1–4",
+      "lead": "Images, animations, colors and your section order. Four places to look, one folder to fill.",
+      "bullets": [],
+      "links": [],
+      "stat": null,
+      "chloeLine": "Collect first. I’m a professional hoarder.",
+      "speakerNotes": "Chapter 1, Collect (Steps 1-4). Four places to look: inspiration images, one or two animations, a color palette and your section order. Everything goes into one 'My Website' folder.",
+      "layout": "Full-bleed chapter slide (from Design A): one photograph, one giant word bleeding off the bottom edge, chapter tag 01 · Steps 1–4, dither wipe in, laser sweeps the word.",
+      "photoFallback": "photo/A04-moodboard-wall",
+      "imagePrompt": "Cinematic photograph, 16:9, a designer's hands (no face) pinning printed website layout screenshots and color swatch cards to a large inspiration wall in a bright studio in San Juan, prints show abstract web layouts (navbars, hero blocks, card grids) with no readable text, gold and teal swatches among them, natural daylight, the lower third of the frame darker and uncluttered for one giant white word, authentic, not staged, 3840x2160 or larger, no logos."
+    },
+    {
+      "id": "step-01-pinterest",
+      "type": "content",
+      "section": "collect",
+      "step": 1,
+      "kicker": "Step 01 · Collect",
+      "title": "Find inspiration images",
+      "titleEmphasis": "Find",
+      "lead": "Search for sites like yours. Screenshot the looks you love.",
+      "body": "Start on Pinterest. Search for the kind of site you want, take a screenshot of each look you love and save it in your 'My Website' folder.",
+      "bullets": [
+        "Search terms that work: \"shaved ice website\", \"food cart website\", \"tropical landing page\"",
+        "Take a screenshot of each look you like",
+        "Save 2 or 3 images in your 'My Website' folder",
+        "Look for layout, mood and typography, not just pretty photos",
+        "Screenshot anything you like elsewhere, too"
+      ],
+      "try": "Screenshot 3 looks. Save them in 'My Website'.",
+      "actionTip": "Take a screenshot of 3 looks you like and save the images in your 'My Website' folder.",
+      "links": [
+        {
+          "label": "pinterest.com",
+          "url": "https://www.pinterest.com/"
+        }
+      ],
+      "stat": {
+        "value": "2-3",
+        "label": "images is the sweet spot"
+      },
+      "ui": {
+        "searchTerms": [
+          "shaved ice website",
+          "food cart website",
+          "tropical landing page"
+        ],
+        "boardQuery": "piragua cart",
+        "imageRule": "Inspiration images must look like website designs (screens, layouts, UI), never lifestyle photos of people.",
+        "folderName": "My Website"
+      },
+      "chloeLine": "Screenshot it! Ghosts never show up in photos.",
+      "speakerNotes": "Demo a quick search live if the Wi-Fi allows. Point out that we are looking for structure: where the headline sits, how big the photos are, how many sections. Two or three screenshots in the My Website folder is plenty, and it gives the AI a clearer signal later.",
+      "imagePrompt": "Six separate 3:4 and 4:5 website UI mockup images for a Pinterest-style search results grid, each a clean, realistic screenshot of a modern single-page website design (coffee roaster landing page, dark portfolio grid, restaurant menu, event landing page, mobile shop site on a phone, minimal studio site), varied palettes, placeholder text rendered as soft grey lines rather than words, no brand logos, crisp UI detail, 1600px on the long side or larger."
+    },
+    {
+      "id": "step-02-originkit",
+      "type": "content",
+      "section": "collect",
+      "step": 2,
+      "kicker": "Step 02 · Collect",
+      "title": "Find inspiration animations",
+      "titleEmphasis": "Find",
+      "lead": "Free animated website pieces. Save links to one or two you love.",
+      "body": "OriginKit is a free library of animated website pieces. Find one or two effects you love and copy their links.",
+      "bullets": [
+        "Browse by section: hero, buttons, cards, text effects",
+        "Pick one wow moment for the Hero, maybe one more elsewhere",
+        "Copy each link into your notes with the section it belongs in",
+        "Less is more: two great animations beat ten busy ones"
+      ],
+      "try": "Save one link. Note its section: 'Hero'.",
+      "actionTip": "Save one OriginKit link and write next to it which section it goes in, like 'Hero'.",
+      "links": [
+        {
+          "label": "originkit.dev",
+          "url": "https://www.originkit.dev/"
+        }
+      ],
+      "stat": {
+        "value": "1-2",
+        "label": "animations per site is plenty"
+      },
+      "ui": {
+        "example": "e.g. Hero → fade-up headline",
+        "marquee": [
+          "hero",
+          "buttons",
+          "cards",
+          "text effects"
+        ],
+        "tag": "This moves",
+        "effect": "Backgrounds · Butterfly Drift",
+        "cards": [
+          [
+            "ok-wordmark",
+            "Vector Wordmark",
+            "https://www.originkit.dev/components/vector-wordmark"
+          ],
+          [
+            "ok-carousel",
+            "RoundCarousel",
+            "https://www.originkit.dev/components/roundcarousel"
+          ],
+          [
+            "ok-border",
+            "Pulsating Border",
+            "https://www.originkit.dev/components/pulsating-border"
+          ]
+        ],
+        "big": [
+          "ok-butterfly",
+          "Backgrounds · Butterfly Drift",
+          "https://www.originkit.dev/components/butterfly-drift"
+        ],
+        "slotNote": "The four tiles are live, re-coloured OriginKit components mounted by js/originkit/* into #ok-butterfly, #ok-wordmark, #ok-carousel and #ok-border."
+      },
+      "chloeLine": "I float, I glide, I shoot lasers. Honestly, I am the animation.",
+      "speakerNotes": "Show the four OriginKit components moving: Butterfly Drift, Vector Wordmark, RoundCarousel and Pulsating Border. Emphasize writing down which section each goes in, because Step 5 asks for exactly that. Gently warn against piling on too many effects. Credit: Butterfly Drift, Vector Wordmark, RoundCarousel and Pulsating Border are OriginKit components (originkit.dev), used live and re-coloured for this deck.",
+      "imagePrompt": null
+    },
+    {
+      "id": "step-03-colorhunt",
+      "type": "content",
+      "section": "collect",
+      "step": 3,
+      "kicker": "Step 03 · Collect",
+      "title": "Pick a color palette",
+      "titleEmphasis": "Pick",
+      "lead": "Four-color palettes that already work together. Pick one, copy the codes.",
+      "body": "ColorHunt has thousands of ready-made palettes of four colors that already look good together. Pick one and copy the codes.",
+      "bullets": [
+        "Browse Popular or search a mood: pastel, warm, dark, retro",
+        "Click a color to copy its code, like {{client.colors.teal}}",
+        "Paste all four codes into your notes",
+        "Tip: one dark, one light, two accents is an easy mix"
+      ],
+      "try": "Copy one palette's four codes.",
+      "actionTip": "Copy one palette's four color codes into your notes.",
+      "links": [
+        {
+          "label": "colorhunt.co",
+          "url": "https://colorhunt.co/"
+        }
+      ],
+      "stat": {
+        "value": "4",
+        "label": "colors in every ColorHunt palette"
+      },
+      "ui": {
+        "roles": [
+          "dark",
+          "light",
+          "accent",
+          "accent"
+        ],
+        "caption": "Each code is a color's phone number.",
+        "palettes": [
+          {
+            "name": "{{client.shortName}}",
+            "colors": "{{client.palette4}}",
+            "note": "First palette comes from the client theme (client.json palette4)."
+          },
+          {
+            "name": "Piragua",
+            "colors": [
+              "#0B3C5D",
+              "#FFF6E5",
+              "#FFB400",
+              "#FF5C8A"
+            ]
+          },
+          {
+            "name": "Sunset",
+            "colors": [
+              "#3B1F35",
+              "#FFEFE3",
+              "#FF8A5B",
+              "#F7C35F"
+            ]
+          },
+          {
+            "name": "Lagoon",
+            "colors": [
+              "#0F3440",
+              "#EEF8F6",
+              "#4CC3C8",
+              "#F4A7BB"
+            ]
+          }
+        ]
+      },
+      "chloeLine": "Each code is a color’s phone number. Mine is #FFFFFF.",
+      "speakerNotes": "Explain hex codes simply: a color's phone number. Show copying a code. The AI will use these exact codes, which is why consistent colors make the result look professional. Tap the palettes on the slide to show how much color changes the feel.",
+      "imagePrompt": null
+    },
+    {
+      "id": "step-04-layout",
+      "type": "content",
+      "section": "collect",
+      "step": 4,
+      "kicker": "Step 04 · Collect",
+      "title": "Plan your sections",
+      "titleEmphasis": "Plan",
+      "lead": "List your sections in order: Navbar first, then Hero, then the rest.",
+      "body": "List your website's sections in order. Always start with the Navbar at the top, then the Hero. After that, it is up to you.",
+      "bullets": [
+        "1. Navbar: logo and links",
+        "2. Hero: the big first impression, headline and button",
+        "Then add 3 or more: About, Services, Menu, Gallery, Reviews, Contact",
+        "Last: Footer with contact info and social links",
+        "Add one short idea per section, like 'three cards with photos'"
+      ],
+      "try": "List Navbar, Hero and at least three more.",
+      "actionTip": "Write your section list: Navbar, Hero, and at least three more, each with a one-line idea.",
+      "links": [],
+      "stat": {
+        "value": "7",
+        "label": "sections make a great first site"
+      },
+      "ui": {
+        "rule": "Navbar first, Hero second",
+        "dragLabel": "Drag the sections",
+        "shuffle": "Shuffle",
+        "items": [
+          [
+            "navbar",
+            "Navbar",
+            "logo and links"
+          ],
+          [
+            "hero",
+            "Hero",
+            "headline and button"
+          ],
+          [
+            "about",
+            "About",
+            "who you are"
+          ],
+          [
+            "services",
+            "Services",
+            "what you offer"
+          ],
+          [
+            "gallery",
+            "Gallery",
+            "your best photos"
+          ],
+          [
+            "contact",
+            "Contact",
+            "how to reach you"
+          ],
+          [
+            "footer",
+            "Footer",
+            "contact and social"
+          ]
+        ]
+      },
+      "chloeLine": "Navbar first, Hero second. Even ghosts line up for the good stuff.",
+      "speakerNotes": "This is the most important thinking step. A website is just a stack of sections. Have people say their list out loud to a neighbor. This list gets pasted straight into the prompt in Step 5. Drag the cards on the slide to show that only the first two are fixed.",
+      "imagePrompt": null
+    },
+    {
+      "id": "chapter-prompt",
+      "type": "chapter",
+      "chapter": "prompt",
+      "section": "prompt",
+      "n": "02",
+      "kicker": "Chapter 02",
+      "title": "Prompt",
+      "titleEmphasis": "Prompt",
+      "steps": "Steps 5–6",
+      "lead": "Turn everything you collected into one clear design spec.",
+      "bullets": [],
+      "links": [],
+      "stat": null,
+      "chloeLine": "Now we turn your pile of ideas into one very clear wish.",
+      "speakerNotes": "Chapter 2, Prompt (Steps 5-6). Mash everything you collected into one design spec with the fill-in-the-blanks template, then let Bolt.new enhance it into a master prompt.",
+      "layout": "Full-bleed chapter slide (from Design A), same crop system as the other three.",
+      "photoFallback": "photo/A08-sketch-layout",
+      "imagePrompt": "Cinematic overhead photograph, 16:9, a hand-drawn website wireframe on paper (stacked boxes for navbar, hero, cards, footer, no readable words) beside a laptop showing a text editor with soft grey lines of text, a fountain pen and a teal notebook on a dark walnut desk, single warm window light from the left, the lower third darker and clear for one giant white word, authentic workspace, 3840x2160 or larger, no logos."
+    },
+    {
+      "id": "step-05-spec",
+      "type": "content",
+      "section": "prompt",
+      "step": 5,
+      "kicker": "Step 05 · Prompt",
+      "title": "Mash it into one design spec",
+      "titleEmphasis": "Mash it",
+      "lead": "Take what you like from every piece and describe it in one prompt.",
+      "body": "Take what you like from every inspiration piece and describe it in one prompt: mood from Pinterest, animations from OriginKit, colors from ColorHunt, layout from your list.",
+      "bullets": [
+        "Explain the website's purpose in your own words",
+        "Paste your section order and ideas from Step 4",
+        "Add your four color codes and describe the mood (warm, playful, elegant)",
+        "For each animation, name the section and paste the OriginKit link"
+      ],
+      "try": "Next: write what your site is for, in one line.",
+      "actionTip": "Open the template on the next slide and fill in the first blank: what is your website for?",
+      "links": [],
+      "stat": null,
+      "ui": {
+        "ingredients": [
+          {
+            "name": "Mood",
+            "from": "from Pinterest",
+            "example": "tropical, fresh",
+            "icon": "B07-sparkle"
+          },
+          {
+            "name": "Animations",
+            "from": "from OriginKit",
+            "example": "fade-up headline",
+            "icon": "B06-cursor"
+          },
+          {
+            "name": "Colors",
+            "from": "from ColorHunt",
+            "example": "#FFB400",
+            "icon": "B01-palette"
+          },
+          {
+            "name": "Layout",
+            "from": "from your list",
+            "example": "Navbar → Hero → …",
+            "icon": "B09-puzzle"
+          }
+        ],
+        "specLabel": "= Your spec",
+        "specMarker": "one prompt",
+        "specList": [
+          "Purpose, in your own words",
+          "Section order from Step 4",
+          "Color codes and a mood",
+          "OriginKit link per animation"
+        ]
+      },
+      "chloeLine": "It's like a smoothie, but for websites. Please don't drink the laptop.",
+      "speakerNotes": "The key idea: you are the art director. The AI is fast, but it needs your taste. Mashing ideas from different sources is how you get something that doesn't look generic.",
+      "imagePrompt": null
+    },
+    {
+      "id": "step-05-template",
+      "type": "content",
+      "section": "prompt",
+      "step": 5,
+      "kicker": "Step 05 · The template",
+      "title": "Fill in the blanks",
+      "titleEmphasis": "Fill in",
+      "lead": "Copy this template. Replace every highlighted blank with your own words and links.",
+      "body": "Copy this template and replace every {CURLY BRACKET} with your own words and links.",
+      "bullets": [],
+      "codeBlock": "specTemplate",
+      "try": "Copy it. Fill all five blanks.",
+      "actionTip": "Copy the template, replace all five blanks, and save it in your notes.",
+      "links": [],
+      "stat": null,
+      "ui": {
+        "codeLabel": "Design spec prompt",
+        "copy": "Copy",
+        "codeNote": "Two animations? Repeat the last line once for each.",
+        "copy2": "Copy the prompt"
+      },
+      "chloeLine": "Fill-in-the-blanks: my favorite game after hide-and-seek. I always win hide-and-seek.",
+      "speakerNotes": "Walk through each blank. The colors line takes the four codes from Step 3 plus a word or two for the mood. The last line can be repeated for each animation. Remind people the curly brackets must be replaced, not left in. There are two Copy buttons on the slide: both copy the same template.",
+      "imagePrompt": null,
+      "notesExtra": "Two animations? Repeat the last line once for each."
+    },
+    {
+      "id": "step-06-bolt",
+      "type": "content",
+      "section": "prompt",
+      "step": 6,
+      "kicker": "Step 06 · Prompt",
+      "title": "Let Bolt.new enhance your prompt",
+      "titleEmphasis": "Let Bolt.new",
+      "lead": "One button turns your rough notes into a detailed design spec.",
+      "body": "Bolt.new has a button that rewrites your prompt with more detail. It turns your notes into a spec a designer would be proud of. Then send it, and Bolt builds its own design too.",
+      "bullets": [
+        "Create a free Bolt.new account",
+        "Paste your filled-in prompt from Step 5",
+        "Click '+' then \"Enhance prompt\"",
+        "Copy the enhanced version and save it. That is your master prompt.",
+        "Then press send: Bolt builds a design of its own. Keep it, it's one of your five drafts."
+      ],
+      "try": "Paste, click + then Enhance prompt.",
+      "actionTip": "Create your Bolt.new account and run \"Enhance prompt\" once. Save the enhanced prompt, then send it and keep the design Bolt builds.",
+      "links": [
+        {
+          "label": "bolt.new",
+          "url": "https://bolt.new/"
+        }
+      ],
+      "stat": {
+        "value": "11 → 62",
+        "label": "words after one click on Enhance prompt"
+      },
+      "ui": {
+        "callout": "Tap + → Enhance prompt",
+        "bonus": "Bonus: Bolt builds draft #1. Keep it.",
+        "notes": "Website for my piragua cart. Flavors, schedule, booking. Tropical and fun.",
+        "enhanced": [
+          [
+            "Build:",
+            "a one-page static site for Piraguas de Marisol, a weekend piragua cart in Old San Juan."
+          ],
+          [
+            "Sections:",
+            "Navbar, Hero, Flavors with prices, Where & When, Book the Cart, Kind Words, Footer."
+          ],
+          [
+            "Style:",
+            "tropical, fresh and playful. Ocean blue, coconut cream, parcha yellow."
+          ],
+          [
+            "Hero:",
+            "big piragua photo, fade-up headline, a “See flavors” button."
+          ],
+          [
+            "Details:",
+            "mobile-friendly, fast and accessible. Booking button emails the business."
+          ]
+        ],
+        "enhancedNote": "Same text as the Remotion tile IprTileEnhance (packages/video/src/course/ipr/IprTiles.tsx): 11 words in, 62 words out.",
+        "statShort": "words, one click"
+      },
+      "chloeLine": "Enhance! Like in the movies, but it actually works.",
+      "speakerNotes": "Sign in first (a free account works), then paste the notes. Two jobs here. First, the Enhance prompt button (click the + at the bottom-left of the box): it adds details about spacing, fonts and responsiveness. Save the enhanced version, that's your master prompt for every tool that follows. Second, press send: Bolt builds a design of its own from that prompt. Keep it; it's one of the five drafts you'll choose from in Step 8.",
+      "notesExtra": "Bolt needs a free account: sign in first, paste the spec, tap + and then \"Enhance prompt\".",
+      "imagePrompt": null,
+      "media": {
+        "alt": "Bolt.new: Marisol’s 11-word notes are typed in, Enhance prompt is clicked, and a 62-word spec streams in"
+      }
+    },
+    {
+      "id": "chapter-build",
+      "type": "chapter",
+      "chapter": "build",
+      "section": "build",
+      "n": "03",
+      "kicker": "Chapter 03",
+      "title": "Build",
+      "titleEmphasis": "Build",
+      "steps": "Steps 7–10",
+      "lead": "Five drafts, one favorite, polished with Claude on your own computer.",
+      "bullets": [],
+      "links": [],
+      "stat": null,
+      "chloeLine": "This is the part where the AIs do the heavy lifting. My favorite.",
+      "speakerNotes": "Chapter 3, Build (Steps 7-10). Two AIs race on arena.ai, Google Stitch adds a light and a dark take, and with Bolt's draft from Step 6 you have five to choose from. Download your favorite, then polish it with Claude on your own computer.",
+      "layout": "Full-bleed chapter slide (from Design A); word bleeds off the top edge on this one.",
+      "photoFallback": "photo/A11-night-desk",
+      "imagePrompt": "Cinematic photograph, 16:9, a focused professional seen from behind at a desk at night in a San Juan apartment, two monitors glowing with two different colorful website designs side by side (abstract, no readable text), a desk lamp casting warm gold light, city lights through the window in deep navy, the top third of the frame dark and calm for one giant white word, authentic, not staged, 3840x2160 or larger, no logos."
+    },
+    {
+      "id": "step-07-arena",
+      "type": "content",
+      "section": "build",
+      "step": 7,
+      "kicker": "Step 07 · Build",
+      "title": "Let two models race on arena.ai",
+      "titleEmphasis": "Let two models",
+      "lead": "Choose “Side by side” in the mode menu, pick the two models, then paste your enhanced prompt.",
+      "body": "On arena.ai, open the mode menu and choose “Side by side”, so you can pick the two models yourself. Paste your enhanced prompt and both build your site at the same time. Both drafts go into your pile.",
+      "bullets": [
+        "Go to arena.ai, open the mode menu and select “Side by side”",
+        "Model A: gemini-3.8-flash-high",
+        "Model B: Claude-sonnet-5-high",
+        "Paste the enhanced prompt and send",
+        "Watch both previews build, then compare"
+      ],
+      "try": "Pick “Side by side”, then the two models.",
+      "actionTip": "On arena.ai, choose “Side by side” in the mode menu, then run your enhanced prompt with Model A gemini-3.8-flash-high and Model B Claude-sonnet-5-high.",
+      "links": [
+        {
+          "label": "arena.ai",
+          "url": "https://arena.ai/"
+        }
+      ],
+      "stat": {
+        "value": "2",
+        "label": "drafts from one prompt"
+      },
+      "ui": {
+        "models": [
+          {
+            "slot": "A",
+            "name": "gemini-3.8-flash-high"
+          },
+          {
+            "slot": "B",
+            "name": "Claude-sonnet-5-high"
+          }
+        ],
+        "headline": "Two drafts for your pile.",
+        "clipCaption": "How it works: two AIs, one prompt",
+        "modeCue": {
+          "k": "Mode",
+          "v": "Side by side",
+          "hint": "pick this first"
+        }
+      },
+      "chloeLine": "Two models enter, two websites leave. Everybody wins.",
+      "speakerNotes": "Show the mode menu at the top of arena.ai and pick “Side by side”: that is the mode where you choose the two models yourself. Say the model names exactly: gemini-3.8-flash-high and Claude-sonnet-5-high. Different AIs have different taste, so comparing gives you real choice. Keep both drafts; with Bolt's draft that's three so far. It's free to try.",
+      "notesExtra": "The clip on the slide is an animated walkthrough, not a screen recording, so the real arena.ai page looks a little different.",
+      "imagePrompt": null,
+      "media": {
+        "alt": "arena.ai side by side: Model A gemini-3.8-flash-high and Model B Claude-sonnet-5-high build Marisol’s site from the same prompt; they become drafts 2 and 3"
+      }
+    },
+    {
+      "id": "step-07-stitch",
+      "type": "content",
+      "section": "build",
+      "step": 7,
+      "kicker": "Step 07 · Build, round two",
+      "title": "Google Stitch,\nin light and dark",
+      "titleEmphasis": "Google Stitch",
+      "lead": "Paste the same prompt into Google Stitch, then ask for a dark version.",
+      "body": "Paste the same enhanced prompt into Google Stitch. It designs screens you can preview and export as code. When the first design is ready, ask for a second one with a dark theme.",
+      "bullets": [
+        "Sign in with a Google account",
+        "Paste the same enhanced prompt and generate",
+        "Then ask: \"Make a second version of this design with a dark theme\"",
+        "Preview both, and ask for changes if you like",
+        "Export the code of any version you might want"
+      ],
+      "codeBlock": "stitchDarkPrompt",
+      "try": "Generate one design, then ask for dark.",
+      "actionTip": "Paste your enhanced prompt into Google Stitch, generate a design, then paste the dark-theme request to get a second version.",
+      "links": [
+        {
+          "label": "stitch.withgoogle.com",
+          "url": "https://stitch.withgoogle.com/"
+        }
+      ],
+      "stat": {
+        "value": "2",
+        "label": "designs: light, then dark"
+      },
+      "ui": {
+        "formula": [
+          "Enhanced prompt",
+          "+ Google Stitch",
+          "= Light design",
+          "+ \"make it dark\"",
+          "= Dark design"
+        ],
+        "toggle": {
+          "light": "Light",
+          "dark": "Dark",
+          "note": "Interactive: the mock site on the slide flips between the light and dark draft."
+        },
+        "mockSite": "blocks.workedExampleSpec.mockSite"
+      },
+      "chloeLine": "Stitch? I know stitches. I'm basically a bedsheet. And yes, I look great in dark mode.",
+      "speakerNotes": "Same prompt, different tool. The point is variety. Generate once, then paste the dark-theme request so Stitch makes a second version with the same sections and content. With Bolt's draft and the two from arena.ai, that makes five drafts.",
+      "imagePrompt": null
+    },
+    {
+      "id": "step-08-download",
+      "type": "content",
+      "section": "build",
+      "step": 8,
+      "kicker": "Step 08 · Build",
+      "title": "Pick. Download.",
+      "titleEmphasis": "Pick.",
+      "lead": "One from Bolt.new, two from arena.ai, two from Stitch. Pick the one that feels most like you, then download its code.",
+      "body": "Look at all five drafts side by side and choose the one that feels most like you. Then download its code.",
+      "bullets": [
+        "Compare them in a phone-sized window, too",
+        "Choose the best starting point, not a perfect one; you'll polish it next",
+        "Download or copy the code (usually one index.html file or a small zip)",
+        "Save it in the 'My Website' folder you created earlier"
+      ],
+      "try": "Save it in the 'My Website' folder you created earlier.",
+      "actionTip": "Download the code from your favorite of the 5 and save it in the 'My Website' folder you created earlier.",
+      "links": [],
+      "stat": {
+        "value": "5",
+        "label": "drafts in, 1 favorite out"
+      },
+      "ui": {
+        "drafts": [
+          {
+            "tool": "Bolt.new",
+            "label": "Bolt",
+            "detail": "its own design",
+            "theme": "light"
+          },
+          {
+            "tool": "arena.ai",
+            "label": "Model A",
+            "detail": "gemini-3.8-flash-high",
+            "theme": "light"
+          },
+          {
+            "tool": "arena.ai",
+            "label": "Model B",
+            "detail": "Claude-sonnet-5-high",
+            "theme": "light"
+          },
+          {
+            "tool": "Google Stitch",
+            "label": "Stitch",
+            "detail": "light",
+            "theme": "light"
+          },
+          {
+            "tool": "Google Stitch",
+            "label": "Stitch",
+            "detail": "dark",
+            "theme": "dark"
+          }
+        ],
+        "winnerTag": "My favorite!",
+        "downloadHint": "Look for Download, Export or Code.",
+        "leadShort": "Pick the one that feels most like you, then download its code.",
+        "favorite": 4
+      },
+      "chloeLine": "Choosing a favorite is hard. I choose all of them, then haunt the rest.",
+      "speakerNotes": "None of the drafts will be perfect. We're picking the best foundation. Marisol picked the dark Stitch draft. Show where the download or export button is on arena.ai, Bolt.new and Stitch.",
+      "notesExtra": "arena.ai, Bolt.new and Stitch all put the code behind a Download, Export or Code button on the draft you pick. Save the file (usually index.html, or a small zip) into My Website.",
+      "imagePrompt": null
+    },
+    {
+      "id": "step-09-claude",
+      "type": "content",
+      "section": "build",
+      "step": 9,
+      "kicker": "Step 09 · Build",
+      "title": "Open it in Claude",
+      "titleEmphasis": "Open it",
+      "lead": "A patient helper that edits your site with you, section by section.",
+      "body": "Everyone already has Claude. Open the Claude desktop app (recommended) or claude.ai in your browser, and it works on your site with you, one section at a time.",
+      "bullets": [
+        "Open the Claude desktop app (recommended) or claude.ai in your browser",
+        "Click the Code tab",
+        "Choose your 'My Website' folder",
+        "Claude can read the file, make changes, and open it in your browser",
+        "You stay in charge: approve or ask for changes as you go"
+      ],
+      "try": "Open 'My Website' in Claude.",
+      "actionTip": "Open the Claude desktop app (recommended) or claude.ai in your browser, click the Code tab and choose your 'My Website' folder.",
+      "links": [
+        {
+          "label": "claude.ai",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "stat": null,
+      "ui": {
+        "threeClicks": [
+          {
+            "verb": "Open",
+            "text": "the Claude desktop app (recommended) or claude.ai"
+          },
+          {
+            "verb": "Click",
+            "text": "the Code tab"
+          },
+          {
+            "verb": "Choose",
+            "text": "the folder My Website"
+          }
+        ],
+        "stuck": "Stuck? Ask Claude: \"Help me open this folder.\"",
+        "chat": [
+          [
+            "me",
+            "You",
+            "Open my 'My Website' folder."
+          ],
+          [
+            "ai",
+            "Claude",
+            "Done. Your preview is open."
+          ],
+          [
+            "me",
+            "You",
+            "Make the Hero bigger, please."
+          ],
+          [
+            "ai",
+            "Claude",
+            "Changed it. Want to keep it?"
+          ]
+        ]
+      },
+      "chloeLine": "Claude is super patient. More patient than me waiting for Halloween.",
+      "speakerNotes": "This is where the draft becomes your site. Everyone already has Claude, so there is nothing to download. Demo it: open the Claude desktop app (recommended, or claude.ai in the browser), click the Code tab, choose the My Website folder. Next slide is the exact first message to send.",
+      "notesExtra": "Stuck? Ask Claude in a normal chat: \"Help me open this folder.\"",
+      "imagePrompt": null
+    },
+    {
+      "id": "step-10-prompt",
+      "type": "content",
+      "section": "build",
+      "step": 10,
+      "kicker": "Step 10 · The starter prompt",
+      "title": "Say this to Claude, word for word",
+      "titleEmphasis": "Say this",
+      "lead": "It tells Claude you are new, what the file is, and how to guide you.",
+      "body": "This first message sets up everything: it tells Claude you are new, what the file is, and how to guide you.",
+      "bullets": [],
+      "codeBlock": "starterPrompt",
+      "try": "Copy it. Paste it into Claude. Enter.",
+      "actionTip": "Copy this prompt, paste it into Claude, and press Enter.",
+      "links": [],
+      "stat": null,
+      "ui": {
+        "codeLabel": "Starter prompt",
+        "marker": "copy exactly",
+        "keys": [
+          {
+            "phrase": "This is my first time",
+            "note": "Tells Claude you are new"
+          },
+          {
+            "phrase": "I downloaded this from an online tool",
+            "note": "Says what the file is"
+          },
+          {
+            "phrase": "Guide me through all this process",
+            "note": "Asks it to guide you"
+          }
+        ]
+      },
+      "chloeLine": "Magic words! Not 'abracadabra'. These ones actually work.",
+      "speakerNotes": "Read the prompt aloud. Point out what each part does: 'first time' makes Claude explain things simply; 'open it locally' gives you a live preview; 'section by section from top to bottom' keeps it calm and organized; 'including the elements and anchor links' makes sure the menu links scroll to the right sections.",
+      "imagePrompt": null
+    },
+    {
+      "id": "chapter-ship",
+      "type": "chapter",
+      "chapter": "ship",
+      "section": "ship",
+      "n": "04",
+      "kicker": "Chapter 04",
+      "title": "Ship",
+      "titleEmphasis": "Ship",
+      "steps": "Step 11",
+      "lead": "Publish free on GitHub Pages, then give it your own domain.",
+      "bullets": [],
+      "links": [],
+      "stat": null,
+      "chloeLine": "Ship it! My favorite word after boo.",
+      "speakerNotes": "Chapter 4, Ship (Step 11). Ask Claude to publish your site for free on GitHub Pages, then optionally connect your own domain.",
+      "layout": "Full-bleed chapter slide (from Design A); word bleeds off the top edge.",
+      "photoFallback": "photo/A12-old-san-juan-street",
+      "imagePrompt": "Elevated cinematic photograph, 16:9, of Old San Juan at golden hour seen from above: pastel colonial rooftops, the blue-cobbled streets and the bay with the modern San Juan skyline and cargo cranes in the distance, people walking to work below, natural color, clear sky fading to deep navy at the top, the top third calm for one giant white word, territory not postcard, 3840x2160 or larger, no text, no logos."
+    },
+    {
+      "id": "step-11-publish",
+      "type": "content",
+      "section": "ship",
+      "step": 11,
+      "kicker": "Step 11 · Ship",
+      "title": "Publish on GitHub Pages",
+      "titleEmphasis": "Publish",
+      "lead": "Free hosting at yourname.github.io. Claude does the clicking with you.",
+      "body": "GitHub Pages hosts static websites at no cost. Ask Claude to publish your site: it walks you through a free GitHub account if you need one, creates the repository, uploads the files, turns on Pages and gives you the live link.",
+      "bullets": [
+        "Copy the publish prompt and paste it into Claude",
+        "No GitHub account yet? Claude walks you through creating a free one",
+        "Claude creates the repository, uploads your files and turns on Pages",
+        "You get a live link like yourname.github.io"
+      ],
+      "try": "Copy the prompt. Paste it into Claude.",
+      "actionTip": "Copy the publish prompt, paste it into Claude and follow along. If you have no GitHub account yet, Claude walks you through creating a free one.",
+      "links": [
+        {
+          "label": "github.com",
+          "url": "https://github.com/"
+        },
+        {
+          "label": "GitHub Pages",
+          "url": "https://pages.github.com/"
+        },
+        {
+          "label": "Step-by-step guide",
+          "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"
+        }
+      ],
+      "stat": {
+        "value": "$0",
+        "label": "GitHub Pages hosting"
+      },
+      "ui": {
+        "promptLabel": "Say this to Claude",
+        "copy": "Copy",
+        "addressLabel": "Your free address",
+        "typer": "yourname.github.io",
+        "clipCaption": "Ask Claude to publish it"
+      },
+      "chloeLine": "Live! I’m telling every ghost I know.",
+      "chloeLinePre": "One prompt. Claude does all the clicking.",
+      "speakerNotes": "Keep it light: publishing is one prompt. Claude checks whether you have a GitHub account, walks you through creating a free one if not, then creates the repository, uploads the files, turns on GitHub Pages and hands you the live link. The first publish can take a moment; refresh the link if it isn’t up yet.",
+      "notesExtra": "Doing it by hand instead: make a new repository, upload the website folder (the main file must be named index.html), then Settings → Pages → Branch: main → Save.",
+      "imagePrompt": null,
+      "media": {
+        "alt": "Claude is asked to publish the My Website folder to GitHub Pages: it creates the repository, uploads the files, turns on Pages and returns the live link"
+      },
+      "codeBlock": "publishPrompt"
+    },
+    {
+      "id": "step-11-domain",
+      "type": "content",
+      "section": "ship",
+      "step": 11,
+      "kicker": "Step 11 · Ship, the finishing touch",
+      "title": "Get your own domain",
+      "titleEmphasis": "Get",
+      "lead": "Buy a website name, then ask Claude to connect it to GitHub Pages for you.",
+      "body": "Buy a website name at Cloudflare or GoDaddy, then ask Claude to connect it to your GitHub Pages site, or to walk you through it.",
+      "bullets": [
+        "Search for a name at Cloudflare or GoDaddy",
+        ".com isn't always the cheapest: a fun ending like .site, .xyz, .party or .science can cost less",
+        "Check the first-year price and the renewal price",
+        "Ask Claude to connect the domain for you, or to walk you through it",
+        "Turn on 'Enforce HTTPS' once it's ready"
+      ],
+      "try": "Search your dream name. Try a fun ending.",
+      "actionTip": "Search your dream name at Cloudflare or GoDaddy. Compare a few endings: .com is not always the cheapest.",
+      "links": [
+        {
+          "label": "Cloudflare Domains",
+          "url": "https://www.cloudflare.com/products/registrar/"
+        },
+        {
+          "label": "GoDaddy",
+          "url": "https://www.godaddy.com/domains"
+        }
+      ],
+      "stat": {
+        "value": ".site",
+        "label": "or .xyz, .party, .science"
+      },
+      "ui": {
+        "steps": [
+          {
+            "verb": "Buy",
+            "text": "Pick a short name and a fun ending. .com isn’t always the cheapest."
+          },
+          {
+            "verb": "Point",
+            "text": "Ask Claude to connect it for you, or to walk you through it."
+          },
+          {
+            "verb": "Secure",
+            "text": "Turn on the padlock (“Enforce HTTPS”)."
+          }
+        ],
+        "shortLinks": [
+          "Cloudflare Domains",
+          "GoDaddy"
+        ],
+        "typer": "yourname.site",
+        "endings": [
+          ".site",
+          ".xyz",
+          ".party",
+          ".science"
+        ],
+        "endingsLabel": "Fun endings",
+        "promptLabel": "Say this to Claude",
+        "copy": "Copy",
+        "buyLabel": "Buy your domain here"
+      },
+      "chloeLine": "A domain is like a house address. Mine is 'the attic'.",
+      "speakerNotes": "Prices vary by name and ending, and the renewal price can differ from the first-year price, so check both. .com is not always the cheapest: endings like .site, .xyz, .party or .science are often cheaper and more fun. To connect the domain, just ask Claude: it can do it for you or walk you through each record. DNS changes can take a little while to kick in.",
+      "notesExtra": "Where to buy: Cloudflare or GoDaddy. \"Enforce HTTPS\" is the padlock switch in GitHub Pages settings.",
+      "imagePrompt": null,
+      "codeBlock": "domainPrompt"
+    },
+    {
+      "id": "example-2",
+      "type": "content",
+      "section": "example",
+      "kicker": "Worked example",
+      "title": "From five drafts to a live site",
+      "titleEmphasis": "From five drafts",
+      "lead": "The Build and Ship steps for Piraguas de Marisol, start to finish in one day.",
+      "body": "The Build and Ship steps for Piraguas de Marisol, start to finish in one day.",
+      "bullets": [
+        "Bolt.new: enhanced the prompt and kept Bolt's own draft",
+        "arena.ai: Model A gemini-3.8-flash-high vs Model B Claude-sonnet-5-high",
+        "Google Stitch: a light draft, then a dark one",
+        "Marisol picked the Stitch dark draft: the parcha yellow glows on the ocean blue",
+        "In the Claude app: pasted the Step 10 starter prompt, then fixed the Hero photo, the flavor prices, the Book the Cart button and the menu links, top to bottom",
+        "Published on GitHub Pages, then connected a short domain"
+      ],
+      "try": "Pick your first project and a date.",
+      "actionTip": "Pick your first project and put a day on your calendar to build it.",
+      "links": [],
+      "stat": {
+        "value": "1",
+        "label": "live site, start to finish"
+      },
+      "ui": {
+        "giant": {
+          "value": "1",
+          "word": "live site"
+        },
+        "ribbon": [
+          [
+            "06",
+            "Enhance",
+            "bolt.new + its draft"
+          ],
+          [
+            "07A",
+            "Race",
+            "arena.ai A + B"
+          ],
+          [
+            "07B",
+            "Stitch",
+            "light + dark"
+          ],
+          [
+            "08",
+            "Pick",
+            "one winner"
+          ],
+          [
+            "09–10",
+            "Polish",
+            "in Claude"
+          ],
+          [
+            "11",
+            "Publish",
+            "Pages + domain"
+          ]
+        ],
+        "liveTag": "LIVE!",
+        "mockSite": "blocks.workedExampleSpec.mockSite",
+        "mockTheme": "dark"
+      },
+      "chloeLine": "Marisol’s live! My review just says ‘Boo!’",
+      "speakerNotes": "The whole Build and Ship half in one day. Marisol's taste shows up in the Claude step: 'make the piragua photo bigger', 'show the prices on the cards', 'make Book the Cart open an email'. She kept her personal phone number off the page and used a business email instead.",
+      "imagePrompt": null,
+      "media": {
+        "alt": "Marisol’s five drafts, one at a time; she picks draft 5 (Stitch, dark), and it goes live on its own domain"
+      }
+    },
+    {
+      "id": "share-at-home",
+      "type": "content",
+      "section": "home",
+      "kicker": "Take it home",
+      "title": "Share it: teach someone",
+      "titleEmphasis": "Share it",
+      "lead": "The best way to lock in a new skill is to teach it. Pick one person and build their site together.",
+      "body": "The best way to lock in a new skill is to teach it. Pick someone at home or in your circle with a project in mind, and walk them through the eleven steps.",
+      "bullets": [
+        "Let them pick the topic: a side business, a hobby, a cause, a portfolio",
+        "They choose the images, colors and animations. It's their taste.",
+        "You guide the steps, with the cheat sheet next to you",
+        "Read Claude's answers together and ask \"does this look like what we wanted?\"",
+        "Keep personal info off the site: no home address, personal phone, personal email or other personal data",
+        "Build it together in one day"
+      ],
+      "links": [],
+      "stat": {
+        "value": "1",
+        "label": "to build it together"
+      },
+      "ui": {
+        "roles": [
+          {
+            "k": "They pick",
+            "v": "Topic, images, colors, animations"
+          },
+          {
+            "k": "You guide",
+            "v": "The eleven steps, cheat sheet in hand"
+          },
+          {
+            "k": "Together",
+            "v": "Read Claude's answers out loud"
+          }
+        ],
+        "safety": {
+          "h": "Keep personal info off your site",
+          "t": "No home address, personal phone, personal email or other personal data."
+        },
+        "plan": "Collect, prompt, build, ship. Together.",
+        "giant": {
+          "value": "1",
+          "unit": "day"
+        }
+      },
+      "chloeLine": "Teaching is the best way to learn. I learned to haunt from a YouTube tutorial.",
+      "speakerNotes": "This is the 'why' slide. Teaching someone else is how the workflow sticks. Let the other person lead on taste; you drive the steps. Keep personal details off public sites: no home address, personal phone, personal email or other personal data.",
+      "imagePrompt": "Warm editorial photograph, 16:9, two adults side by side at a kitchen island in a bright Puerto Rican home, one pointing at a laptop screen showing a colorful website layout (abstract, no readable text), printed color swatches and a notebook on the counter, afternoon window light, relaxed and collaborative, faces partly turned or softly out of focus, natural color, 3840x2160 or larger, no logos, no readable text."
+    },
+    {
+      "id": "recap",
+      "type": "content",
+      "section": "recap",
+      "kicker": "Cheat sheet",
+      "title": "Eleven steps. One slide.",
+      "titleEmphasis": "Eleven steps.",
+      "lead": "The whole workflow on one slide.",
+      "body": "The whole workflow on one slide.",
+      "bullets": [
+        "01 Images: pinterest.com (screenshot 2 or 3 looks)",
+        "02 Animations: originkit.dev",
+        "03 Colors: colorhunt.co",
+        "04 Section order: Navbar, Hero, then the rest",
+        "05 Fill in the design spec template",
+        "06 Bolt.new: '+' then \"Enhance prompt\" (and keep Bolt's draft)",
+        "07 arena.ai side by side (gemini-3.8-flash-high vs Claude-sonnet-5-high) + Google Stitch (light, then dark)",
+        "08 Download the code from your favorite of the 5",
+        "09 Open the code in Claude (desktop app or claude.ai)",
+        "10 Paste the starter prompt",
+        "11 Ask Claude to publish on GitHub Pages, then connect your own domain"
+      ],
+      "try": "Grab the one-page cheat sheet.",
+      "actionTip": "Open the one-page cheat sheet: every step and link.",
+      "links": [
+        {
+          "label": "pinterest.com",
+          "url": "https://www.pinterest.com/"
+        },
+        {
+          "label": "originkit.dev",
+          "url": "https://www.originkit.dev/"
+        },
+        {
+          "label": "colorhunt.co",
+          "url": "https://colorhunt.co/"
+        },
+        {
+          "label": "bolt.new",
+          "url": "https://bolt.new/"
+        },
+        {
+          "label": "arena.ai",
+          "url": "https://arena.ai/"
+        },
+        {
+          "label": "stitch.withgoogle.com",
+          "url": "https://stitch.withgoogle.com/"
+        },
+        {
+          "label": "claude.ai",
+          "url": "https://claude.ai/"
+        },
+        {
+          "label": "GitHub Pages",
+          "url": "https://pages.github.com/"
+        }
+      ],
+      "cheatsheetHref": "cheatsheet.html",
+      "cheatsheetSource": "cheatsheet.md",
+      "stat": {
+        "value": "11",
+        "label": "steps, one day"
+      },
+      "ui": {
+        "rows": [
+          {
+            "n": "01",
+            "v": "Screenshots",
+            "t": "pinterest.com",
+            "url": "https://www.pinterest.com/"
+          },
+          {
+            "n": "02",
+            "v": "Find animations",
+            "t": "originkit.dev",
+            "url": "https://www.originkit.dev/"
+          },
+          {
+            "n": "03",
+            "v": "Pick colors",
+            "t": "colorhunt.co",
+            "url": "https://colorhunt.co/"
+          },
+          {
+            "n": "04",
+            "v": "Order sections",
+            "t": "Navbar, Hero, rest"
+          },
+          {
+            "n": "05",
+            "v": "Fill the spec",
+            "t": "Step 5 template"
+          },
+          {
+            "n": "06",
+            "v": "Enhance it",
+            "t": "bolt.new + its draft",
+            "url": "https://bolt.new/"
+          },
+          {
+            "n": "07",
+            "v": "Generate",
+            "t": "arena.ai + Stitch",
+            "url": "https://arena.ai/"
+          },
+          {
+            "n": "08",
+            "v": "Download",
+            "t": "your favorite of 5"
+          },
+          {
+            "n": "09",
+            "v": "Open in Claude",
+            "t": "desktop app or claude.ai",
+            "url": "https://claude.ai/"
+          },
+          {
+            "n": "10",
+            "v": "Starter prompt",
+            "t": "copy, paste, Enter"
+          },
+          {
+            "n": "11",
+            "v": "Publish",
+            "t": "GitHub Pages + domain",
+            "url": "https://pages.github.com/"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Collect",
+            "range": "Steps 1–4",
+            "rows": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "name": "Prompt",
+            "range": "Steps 5–6",
+            "rows": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "Build",
+            "range": "Steps 7–10",
+            "rows": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "name": "Ship",
+            "range": "Step 11",
+            "rows": [
+              10
+            ],
+            "hero": {
+              "value": "$0",
+              "caption": "to host it"
+            },
+            "big": "Eleven steps. One day."
+          }
+        ]
+      },
+      "chloeLine": "Eleven steps. I counted twice. Ghosts are great at math.",
+      "speakerNotes": "Point to the take-home cheat sheet: every step and link on one page. Invite questions on any single step.",
+      "imagePrompt": null
+    },
+    {
+      "id": "closing",
+      "type": "content",
+      "section": "outro",
+      "kicker": "Thank you",
+      "title": "Look what you built.",
+      "titleEmphasis": "Look what",
+      "lead": "Share your live link with the team. We'll collect everyone's sites into one gallery.",
+      "body": "Share your live link with the team. We'll collect everyone's sites into one gallery.",
+      "bullets": [],
+      "try": "Share your live link with the team.",
+      "actionTip": "Scan the QR code to get this deck and the cheat sheet.",
+      "actionTipNoQr": "Share your live link with the team, and open the one-page cheat sheet whenever you need it.",
+      "links": [],
+      "qr": {
+        "placeholder": true,
+        "target": "{{client.deckUrl}}",
+        "targetUnset": "DECK_URL_TBD",
+        "caption": "Scan for the deck + cheat sheet",
+        "fallback": {
+          "heading": "Cheat sheet",
+          "text": "One page. All eleven steps and every link.",
+          "ask": "Ask me for the link before you head home.",
+          "printUrl": "Online: {{url}}",
+          "printNoUrl": "In this PDF: every step and link is on page {{page:recap}}."
+        }
+      },
+      "presenter": {
+        "name": "{{client.presenter.name}}",
+        "role": "{{client.presenter.role}}",
+        "label": "Presented by",
+        "question": "Questions? Find me after."
+      },
+      "stat": null,
+      "chloeLine": "Look at you, certified website builders! I'm framing every link in the attic.",
+      "speakerNotes": "Celebrate: everyone in the room built a website today. Ask everyone to share their live link with the team; I'll collect them all into one gallery and send it around. Leave this slide up during questions.",
+      "speakerNotesNoQr": "Celebrate: everyone in the room built a website today. Ask everyone to share their live link with the team; I'll collect them all into one gallery and send it around. Leave this slide up during questions. The deck and the one-page cheat sheet are the files people can take home.",
+      "layout": "Full-bleed closing (from Design A): Chloé over the Old San Juan town illustration (shared/img/chloe/C01-chloe-san-juan-night), 'Thank you' headline, presenter block, QR card or take-home card, client stacked logo per client.json.",
+      "photoFallback": "chloe/C01-chloe-san-juan-night",
+      "imagePrompt": null,
+      "ui": {
+        "badge": [
+          "Certified",
+          "website",
+          "builder"
+        ],
+        "badgeAlt": "Certified website builder"
+      }
+    }
+  ]
+}

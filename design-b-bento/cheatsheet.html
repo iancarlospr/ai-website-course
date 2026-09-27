@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build a Website with AI · Cheat Sheet</title>
+<meta name="description" content="All eleven steps of the IPR AI Frontend Workflow on one printable page.">
+<link rel="icon" href="../shared/brand/img/chloe/chloe-idle.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../shared/brand/tokens.css">
+<style>
+  :root {
+    --canvas: oklch(0.968 0.018 340); --paper: oklch(0.995 0.005 340); --ink: oklch(0.2 0.035 330);
+    --pink: #FFB2EF; --pinks: oklch(0.93 0.05 340); --lime: oklch(0.92 0.15 121); --peri: oklch(0.835 0.09 276);
+    --peris: oklch(0.92 0.04 276); --orange: oklch(0.68 0.19 38); --hot: oklch(0.6 0.215 352);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--canvas); color: var(--ink); }
+  body { font: 400 15px/1.55 var(--font-system); padding: 32px 16px 48px; }
+  .sheet { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+  .t { border-radius: 26px; padding: 24px 26px; background: var(--paper); position: relative; overflow: hidden; }
+  .span6 { grid-column: span 6; } .span4 { grid-column: span 4; } .span3 { grid-column: span 3; } .span2 { grid-column: span 2; }
+  h1 { font: 300 clamp(40px, 6vw, 72px)/.95 var(--font-display); margin: 14px 0 12px; letter-spacing: -.01em; }
+  h1 b { font-weight: 800; }
+  h2 { font: 800 34px/1 var(--font-display); text-transform: uppercase; margin: 0 0 12px; }
+  .pill { display: inline-block; font: 700 12px/1 var(--font-system); letter-spacing: .14em; text-transform: uppercase; padding: 9px 12px 8px; border-radius: 99px; background: var(--ink); color: var(--lime); }
+  ol, ul { margin: 0; padding-left: 1.3em; } li { margin: 6px 0; }
+  a { color: inherit; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  pre { white-space: pre-wrap; word-break: break-word; margin: 10px 0 0; padding: 16px 18px; border-radius: 16px; background: var(--ink); color: oklch(0.96 0.03 340); font: 400 14px/1.55 var(--font-system); }
+  .pink { background: var(--pink); } .lime { background: var(--lime); } .peri { background: var(--peri); } .peris { background: var(--peris); } .pinks { background: var(--pinks); } .ink { background: var(--ink); color: oklch(0.96 0.03 340); }
+  .ink .pill { background: var(--lime); color: var(--ink); }
+  .ink a { color: var(--lime); }
+  /* the one hot accent: step-number bullets only */
+  ol > li::marker { color: var(--orange); font-weight: 800; }
+  .ink ol > li::marker { color: var(--orange); }
+  .marker { font-family: var(--font-personality); color: var(--hot); }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .back { display: inline-flex; gap: 8px; align-items: center; padding: 11px 16px; border-radius: 99px; background: var(--ink); color: var(--lime); text-decoration: none; font-weight: 700; font-size: 14px; }
+  .btn2 { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 14px; }
+  @media (max-width: 760px) { .span4, .span3, .span2 { grid-column: span 6; } }
+  @media print {
+    @page { size: letter; margin: 10mm; }
+    body { padding: 0; background: #fff; font-size: 11.5px; }
+    .noprint { display: none !important; }
+    .t { break-inside: avoid; padding: 14px 16px; border-radius: 16px; }
+    h1 { font-size: 44px; } h2 { font-size: 24px; }
+    pre { font-size: 11px; padding: 10px 12px; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <section class="t span4">
+    <span class="pill">Cheat sheet · IPR AI Frontend Workflow</span>
+    <h1>Build a website with AI: <b>all 11 steps</b></h1>
+    <p style="margin:0"><b>From a mood board to a live website in one evening.</b> A short course by Ian Ramírez, Invest Puerto Rico.</p>
+  </section>
+  <section class="t span2 peris">
+    <p style="margin:0 0 14px">Make a folder or note called <b>My Website</b>. Everything you collect goes there.</p>
+    <div class="row noprint"><a class="back" href="index.html">&larr; Back to the deck</a><button class="back btn2" type="button" onclick="window.print()">Print</button></div>
+  </section>
+
+  <section class="t span3 pink">
+    <h2>Collect</h2>
+    <ol start="1">
+      <li><b>Images</b>: save 5 to 10 looks you love to one board on <a href="https://www.pinterest.com/" target="_blank" rel="noopener">pinterest.com</a>.</li>
+      <li><b>Animations</b>: save 1 or 2 effect links from <a href="https://www.originkit.dev/" target="_blank" rel="noopener">originkit.dev</a> and note which section each goes in.</li>
+      <li><b>Colors</b>: copy one 4-color palette (the hex codes) from <a href="https://colorhunt.co/" target="_blank" rel="noopener">colorhunt.co</a>.</li>
+      <li><b>Section order</b>: always start with <b>Navbar</b>, then <b>Hero</b>, then whatever else (About, Menu, Gallery, Contact...), ending with a Footer. Add a one-line idea for each.</li>
+    </ol>
+  </section>
+  <section class="t span3 lime">
+    <h2>Prompt</h2>
+    <ol start="5">
+      <li><b>Design spec</b>: combine what you like from all your inspiration. Fill in the blanks:
+<pre>Build a single-page, static website for… {WHAT IT’S FOR}
+
+The section and layout are… {YOUR SECTION LIST}
+
+Use these colors and mood… {4 COLOR CODES + A MOOD}
+
+Extract and implement this element in the {SECTION} section {ORIGINKIT LINK}</pre></li>
+      <li><b>Enhance</b>: on <a href="https://bolt.new/" target="_blank" rel="noopener">bolt.new</a>, create an account, paste your prompt, click <b>+</b> then <b>"Enhance prompt"</b>. Save the result.</li>
+    </ol>
+  </section>
+
+  <section class="t span6 peri">
+    <h2>Build</h2>
+    <ol start="7">
+      <li><b>Generate</b>: paste the enhanced prompt into <a href="https://arena.ai/" target="_blank" rel="noopener">arena.ai</a> (two mystery AIs build side by side; the model names show up after you vote) for two drafts, and <a href="https://stitch.withgoogle.com/" target="_blank" rel="noopener">stitch.withgoogle.com</a> for two more.</li>
+      <li><b>Download</b> the code from your favorite of the 4 drafts (2 from arena + 2 from Stitch).</li>
+      <li><b>Open</b> the code in your <a href="https://claude.com/download" target="_blank" rel="noopener">Claude app</a> (Code tab; needs a paid Claude plan, Pro or up).</li>
+      <li><b>Paste this prompt</b> exactly:
+<pre>This is my first time creating a website. Help me polish and finish the website design. I downloaded this from an online tool and would like to work on it locally until we have a final version. Familiarize yourself with the file, open it for me locally so I can see the changes, and let's work section by section from top to bottom, including the elements and anchor links. This is a single page website, static. Guide me through all this process.</pre></li>
+    </ol>
+  </section>
+
+  <section class="t span3 ink">
+    <h2>Ship</h2>
+    <ol start="11">
+      <li><b>Go live</b>
+        <ul>
+          <li>Publish free with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site" target="_blank" rel="noopener">step-by-step guide</a>). Put your files in a repository (a project folder on GitHub); the main file must be named <code>index.html</code>. Then <b>Settings &rarr; Pages &rarr; Branch: main &rarr; Save</b>. Stuck? Ask Claude: <i>&ldquo;Help me publish this on GitHub Pages.&rdquo;</i></li>
+          <li>Buy a $5 to $12 domain name (e.g. <a href="https://porkbun.com/" target="_blank" rel="noopener">Porkbun</a>, <a href="https://www.cloudflare.com/domains/" target="_blank" rel="noopener">Cloudflare Domains</a>, <a href="https://domains.squarespace.com/" target="_blank" rel="noopener">Squarespace Domains</a>). Check the renewal price too.</li>
+          <li>Connect it to GitHub Pages for free: copy the four numbers from GitHub's guide into your domain's settings (Claude can walk you through it; <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site" target="_blank" rel="noopener">GitHub guide</a>), then turn on <b>Enforce HTTPS</b>.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  <section class="t span3 pinks">
+    <span class="pill">Teaching it at home</span>
+    <ul style="margin-top:14px">
+      <li>Let the kid pick the topic and the taste: pins, colors, animations.</li>
+      <li>A grown-up owns the accounts (Claude, GitHub, Bolt) and any purchases; kids sit alongside and steer.</li>
+      <li>Keep private info off the site: no home address, school, or phone numbers.</li>
+      <li>Short sessions (about 30 minutes): Collect one day, Build the next.</li>
+      <li>Tip: stuck on any step? Ask Claude: <i>"Explain this step to me like it's my first time."</i></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

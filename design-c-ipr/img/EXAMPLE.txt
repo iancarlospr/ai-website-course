@@ -1,0 +1,12 @@
+WORKED EXAMPLE — aligned to content.json (blocks.workedExampleSpec). Imagery agent follows content.json.
+
+Name:     Piraguas de Marisol
+Who:      Marisol, a colleague, runs a weekend piragua cart on Paseo de la Princesa, Old San Juan
+Palette:  #0B3C5D ocean · #FFF6E5 coconut · #FFB400 parcha · #FF5C8A frambuesa  (mood: tropical, fresh, playful)
+Sections: Navbar, Hero, Flavors, Where & When, Book the Cart, Kind Words, Footer
+Flavors:  Parcha, Frambuesa, Coco, Tamarindo ($3 each)
+Hero:     "Shaved ice, the old San Juan way" · button "See flavors" · piraguasdemarisol.com (illustrative)
+Winner:   Stitch DARK draft
+
+Five draft images (Step 8): img/drafts/draft-bolt-*, draft-arena-a-*, draft-arena-b-*, draft-stitch-light-*, draft-stitch-dark-*
+(An earlier coffee-cart idea, "Café Brisa", was dropped; ignore it.)

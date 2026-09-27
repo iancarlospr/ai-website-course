@@ -1,0 +1,626 @@
+[
+ {
+  "file": "photo/A01-office-san-juan-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "Three smiling colleagues gathered around a laptop in a bright San Juan office overlooking the lagoon",
+  "intendedUse": "Title/hero or intro slide full-bleed; subjects on right, clear left for type",
+  "design": "A"
+ },
+ {
+  "file": "photo/A01-office-san-juan-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "Three smiling colleagues gathered around a laptop in a bright San Juan office overlooking the lagoon",
+  "intendedUse": "Title/hero or intro slide full-bleed; subjects on right, clear left for type",
+  "design": "A"
+ },
+ {
+  "file": "photo/A02-family-laptop-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "A Puerto Rican family with two kids leaning in excitedly toward a laptop at the kitchen table",
+  "intendedUse": "'Teach your family' / why-this-matters slide, full-bleed",
+  "design": "both"
+ },
+ {
+  "file": "photo/A02-family-laptop-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "A Puerto Rican family with two kids leaning in excitedly toward a laptop at the kitchen table",
+  "intendedUse": "'Teach your family' / why-this-matters slide, full-bleed",
+  "design": "both"
+ },
+ {
+  "file": "photo/A03-phone-website-1920.webp",
+  "width": 1920,
+  "height": 2572,
+  "alt": "Hands holding a smartphone showing a pastel mobile website in a sunny cafe",
+  "intendedUse": "Portrait card / split layout: mobile-friendly result, step 11 publish",
+  "design": "A"
+ },
+ {
+  "file": "photo/A03-phone-website-3840.webp",
+  "width": 3840,
+  "height": 5143,
+  "alt": "Hands holding a smartphone showing a pastel mobile website in a sunny cafe",
+  "intendedUse": "Portrait card / split layout: mobile-friendly result, step 11 publish",
+  "design": "A"
+ },
+ {
+  "file": "photo/A04-moodboard-wall-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "A designer pinning photos onto an inspiration moodboard wall with color swatches",
+  "intendedUse": "Step 1 Pinterest inspiration slide",
+  "design": "A"
+ },
+ {
+  "file": "photo/A04-moodboard-wall-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "A designer pinning photos onto an inspiration moodboard wall with color swatches",
+  "intendedUse": "Step 1 Pinterest inspiration slide",
+  "design": "A"
+ },
+ {
+  "file": "photo/A05-color-swatches-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "Overhead flat lay of pink, coral, sand, teal and plum color swatch cards with coffee and bougainvillea",
+  "intendedUse": "Step 3 ColorHunt palettes slide; empty left side for type",
+  "design": "both"
+ },
+ {
+  "file": "photo/A05-color-swatches-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "Overhead flat lay of pink, coral, sand, teal and plum color swatch cards with coffee and bougainvillea",
+  "intendedUse": "Step 3 ColorHunt palettes slide; empty left side for type",
+  "design": "both"
+ },
+ {
+  "file": "photo/A06-cafe-old-san-juan-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "A smiling woman working on a laptop in a sunny Old San Juan cafe with colonial facades outside",
+  "intendedUse": "Step 2 OriginKit / general working slide, full-bleed",
+  "design": "A"
+ },
+ {
+  "file": "photo/A06-cafe-old-san-juan-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "A smiling woman working on a laptop in a sunny Old San Juan cafe with colonial facades outside",
+  "intendedUse": "Step 2 OriginKit / general working slide, full-bleed",
+  "design": "A"
+ },
+ {
+  "file": "photo/A07-publish-celebration-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "Two colleagues celebrating with arms raised at a laptop after publishing their website, palm trees at sunset outside",
+  "intendedUse": "Step 11 GitHub Pages publish celebration / finale",
+  "design": "both"
+ },
+ {
+  "file": "photo/A07-publish-celebration-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "Two colleagues celebrating with arms raised at a laptop after publishing their website, palm trees at sunset outside",
+  "intendedUse": "Step 11 GitHub Pages publish celebration / finale",
+  "design": "both"
+ },
+ {
+  "file": "photo/A08-sketch-layout-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "A hand sketching a website wireframe of boxes on paper with pink sticky notes",
+  "intendedUse": "Step 4 section layout order slide",
+  "design": "A"
+ },
+ {
+  "file": "photo/A08-sketch-layout-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "A hand sketching a website wireframe of boxes on paper with pink sticky notes",
+  "intendedUse": "Step 4 section layout order slide",
+  "design": "A"
+ },
+ {
+  "file": "photo/A09-abuela-nieta-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "A grandmother and granddaughter laughing together over a tablet on a tropical balcony",
+  "intendedUse": "Families & kids takeaway / closing slide",
+  "design": "both"
+ },
+ {
+  "file": "photo/A09-abuela-nieta-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "A grandmother and granddaughter laughing together over a tablet on a tropical balcony",
+  "intendedUse": "Families & kids takeaway / closing slide",
+  "design": "both"
+ },
+ {
+  "file": "photo/A10-presenter-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "A presenter gesturing at a pink screen while colleagues around a table listen and smile",
+  "intendedUse": "Agenda / 'about this course' slide",
+  "design": "A"
+ },
+ {
+  "file": "photo/A10-presenter-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "A presenter gesturing at a pink screen while colleagues around a table listen and smile",
+  "intendedUse": "Agenda / 'about this course' slide",
+  "design": "A"
+ },
+ {
+  "file": "photo/A11-night-desk-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "An open laptop glowing pink on a desk at night with the San Juan coastline lights behind",
+  "intendedUse": "Steps 8-10 download code and open in Claude app",
+  "design": "A"
+ },
+ {
+  "file": "photo/A11-night-desk-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "An open laptop glowing pink on a desk at night with the San Juan coastline lights behind",
+  "intendedUse": "Steps 8-10 download code and open in Claude app",
+  "design": "A"
+ },
+ {
+  "file": "photo/A12-old-san-juan-street-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "A woman walking down a pastel Old San Juan street at golden hour holding up her phone",
+  "intendedUse": "Buy a domain / go live / outro slide, full-bleed",
+  "design": "A"
+ },
+ {
+  "file": "photo/A12-old-san-juan-street-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "A woman walking down a pastel Old San Juan street at golden hour holding up her phone",
+  "intendedUse": "Buy a domain / go live / outro slide, full-bleed",
+  "design": "A"
+ },
+ {
+  "file": "photo/A13-kid-proud-1920.webp",
+  "width": 1920,
+  "height": 2572,
+  "alt": "A proud girl grinning and pointing at a colorful website on her laptop in a sunny bedroom",
+  "intendedUse": "Portrait card: kids can do this too",
+  "design": "both"
+ },
+ {
+  "file": "photo/A13-kid-proud-3840.webp",
+  "width": 3840,
+  "height": 5143,
+  "alt": "A proud girl grinning and pointing at a colorful website on her laptop in a sunny bedroom",
+  "intendedUse": "Portrait card: kids can do this too",
+  "design": "both"
+ },
+ {
+  "file": "icons/B01-palette.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a painter's palette",
+  "intendedUse": "Bento tile sticker: Step 3 palettes",
+  "design": "B"
+ },
+ {
+  "file": "icons/B01-palette-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a painter's palette",
+  "intendedUse": "Bento tile sticker: Step 3 palettes",
+  "design": "B"
+ },
+ {
+  "file": "icons/B01-palette-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a painter's palette",
+  "intendedUse": "Bento tile sticker: Step 3 palettes",
+  "design": "B"
+ },
+ {
+  "file": "icons/B02-paintbrush.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a paintbrush with paint drip",
+  "intendedUse": "Bento tile sticker: Step 5 design spec",
+  "design": "B"
+ },
+ {
+  "file": "icons/B02-paintbrush-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a paintbrush with paint drip",
+  "intendedUse": "Bento tile sticker: Step 5 design spec",
+  "design": "B"
+ },
+ {
+  "file": "icons/B02-paintbrush-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a paintbrush with paint drip",
+  "intendedUse": "Bento tile sticker: Step 5 design spec",
+  "design": "B"
+ },
+ {
+  "file": "icons/B03-magic-wand.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a magic wand with star",
+  "intendedUse": "Bento tile sticker: Step 6 Bolt.new Enhance prompt",
+  "design": "B"
+ },
+ {
+  "file": "icons/B03-magic-wand-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a magic wand with star",
+  "intendedUse": "Bento tile sticker: Step 6 Bolt.new Enhance prompt",
+  "design": "B"
+ },
+ {
+  "file": "icons/B03-magic-wand-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a magic wand with star",
+  "intendedUse": "Bento tile sticker: Step 6 Bolt.new Enhance prompt",
+  "design": "B"
+ },
+ {
+  "file": "icons/B04-rocket.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a rocket ship",
+  "intendedUse": "Bento tile sticker: Step 11 publish/launch",
+  "design": "B"
+ },
+ {
+  "file": "icons/B04-rocket-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a rocket ship",
+  "intendedUse": "Bento tile sticker: Step 11 publish/launch",
+  "design": "B"
+ },
+ {
+  "file": "icons/B04-rocket-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a rocket ship",
+  "intendedUse": "Bento tile sticker: Step 11 publish/launch",
+  "design": "B"
+ },
+ {
+  "file": "icons/B05-globe.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a globe",
+  "intendedUse": "Bento tile sticker: Step 11 domain",
+  "design": "B"
+ },
+ {
+  "file": "icons/B05-globe-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a globe",
+  "intendedUse": "Bento tile sticker: Step 11 domain",
+  "design": "B"
+ },
+ {
+  "file": "icons/B05-globe-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a globe",
+  "intendedUse": "Bento tile sticker: Step 11 domain",
+  "design": "B"
+ },
+ {
+  "file": "icons/B06-cursor.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a mouse cursor arrow",
+  "intendedUse": "Bento tile sticker: Step 2 animations / interaction",
+  "design": "B"
+ },
+ {
+  "file": "icons/B06-cursor-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a mouse cursor arrow",
+  "intendedUse": "Bento tile sticker: Step 2 animations / interaction",
+  "design": "B"
+ },
+ {
+  "file": "icons/B06-cursor-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a mouse cursor arrow",
+  "intendedUse": "Bento tile sticker: Step 2 animations / interaction",
+  "design": "B"
+ },
+ {
+  "file": "icons/B07-sparkle.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a sparkle stars",
+  "intendedUse": "Bento tile sticker: Step 7 arena.ai + Stitch AI magic",
+  "design": "B"
+ },
+ {
+  "file": "icons/B07-sparkle-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a sparkle stars",
+  "intendedUse": "Bento tile sticker: Step 7 arena.ai + Stitch AI magic",
+  "design": "B"
+ },
+ {
+  "file": "icons/B07-sparkle-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a sparkle stars",
+  "intendedUse": "Bento tile sticker: Step 7 arena.ai + Stitch AI magic",
+  "design": "B"
+ },
+ {
+  "file": "icons/B08-laptop.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a laptop",
+  "intendedUse": "Bento tile sticker: Steps 8-10 code in Claude app",
+  "design": "B"
+ },
+ {
+  "file": "icons/B08-laptop-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a laptop",
+  "intendedUse": "Bento tile sticker: Steps 8-10 code in Claude app",
+  "design": "B"
+ },
+ {
+  "file": "icons/B08-laptop-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a laptop",
+  "intendedUse": "Bento tile sticker: Steps 8-10 code in Claude app",
+  "design": "B"
+ },
+ {
+  "file": "icons/B09-puzzle.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a puzzle pieces",
+  "intendedUse": "Bento tile sticker: Step 4 layout order",
+  "design": "B"
+ },
+ {
+  "file": "icons/B09-puzzle-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a puzzle pieces",
+  "intendedUse": "Bento tile sticker: Step 4 layout order",
+  "design": "B"
+ },
+ {
+  "file": "icons/B09-puzzle-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a puzzle pieces",
+  "intendedUse": "Bento tile sticker: Step 4 layout order",
+  "design": "B"
+ },
+ {
+  "file": "icons/B10-house.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a house with heart window",
+  "intendedUse": "Bento tile sticker: Families & kids / home",
+  "design": "B"
+ },
+ {
+  "file": "icons/B10-house-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a house with heart window",
+  "intendedUse": "Bento tile sticker: Families & kids / home",
+  "design": "B"
+ },
+ {
+  "file": "icons/B10-house-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a house with heart window",
+  "intendedUse": "Bento tile sticker: Families & kids / home",
+  "design": "B"
+ },
+ {
+  "file": "icons/B11-heart-chat.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a speech bubble with heart",
+  "intendedUse": "Bento tile sticker: Step 10 Claude starter prompt",
+  "design": "B"
+ },
+ {
+  "file": "icons/B11-heart-chat-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a speech bubble with heart",
+  "intendedUse": "Bento tile sticker: Step 10 Claude starter prompt",
+  "design": "B"
+ },
+ {
+  "file": "icons/B11-heart-chat-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a speech bubble with heart",
+  "intendedUse": "Bento tile sticker: Step 10 Claude starter prompt",
+  "design": "B"
+ },
+ {
+  "file": "icons/B12-link-chain.png",
+  "width": 1024,
+  "height": 1024,
+  "alt": "3D pink clay sticker icon of a chain link",
+  "intendedUse": "Bento tile sticker: Step 11 connect domain to GitHub Pages",
+  "design": "B"
+ },
+ {
+  "file": "icons/B12-link-chain-1920.webp",
+  "width": 1920,
+  "height": 1920,
+  "alt": "3D pink clay sticker icon of a chain link",
+  "intendedUse": "Bento tile sticker: Step 11 connect domain to GitHub Pages",
+  "design": "B"
+ },
+ {
+  "file": "icons/B12-link-chain-3840.webp",
+  "width": 3840,
+  "height": 3840,
+  "alt": "3D pink clay sticker icon of a chain link",
+  "intendedUse": "Bento tile sticker: Step 11 connect domain to GitHub Pages",
+  "design": "B"
+ },
+ {
+  "file": "chloe/C01-chloe-san-juan-night-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "Chloe the pixel ghost floating over Old San Juan rooftops at night, rainbow lasers beaming from her eyes to a laptop",
+  "intendedUse": "Title or closing hero; dark sky space for type",
+  "design": "both"
+ },
+ {
+  "file": "chloe/C01-chloe-san-juan-night-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "Chloe the pixel ghost floating over Old San Juan rooftops at night, rainbow lasers beaming from her eyes to a laptop",
+  "intendedUse": "Title or closing hero; dark sky space for type",
+  "design": "both"
+ },
+ {
+  "file": "chloe/C02-chloe-desk-1920.webp",
+  "width": 1920,
+  "height": 1072,
+  "alt": "Chloe the pixel ghost floating beside a laptop in a pink neon-lit room",
+  "intendedUse": "Steps 9-10 'open in Claude' slide or section divider; dark left for type",
+  "design": "both"
+ },
+ {
+  "file": "chloe/C02-chloe-desk-3840.webp",
+  "width": 3840,
+  "height": 2143,
+  "alt": "Chloe the pixel ghost floating beside a laptop in a pink neon-lit room",
+  "intendedUse": "Steps 9-10 'open in Claude' slide or section divider; dark left for type",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-celebrating.png",
+  "width": 2048,
+  "height": 2688,
+  "alt": "Chloe pixel ghost sprite, celebrating state (exact brand sprite, 64x scale)",
+  "intendedUse": "Exact on-model sprite for overlays; render with image-rendering: pixelated",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-celebrating@1x.png",
+  "width": 32,
+  "height": 42,
+  "alt": "Chloe sprite celebrating 32x42 source pixels",
+  "intendedUse": "Scale up with CSS image-rendering: pixelated (crisp at any size)",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-chat.png",
+  "width": 2048,
+  "height": 2688,
+  "alt": "Chloe pixel ghost sprite, chat state (exact brand sprite, 64x scale)",
+  "intendedUse": "Exact on-model sprite for overlays; render with image-rendering: pixelated",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-chat@1x.png",
+  "width": 32,
+  "height": 42,
+  "alt": "Chloe sprite chat 32x42 source pixels",
+  "intendedUse": "Scale up with CSS image-rendering: pixelated (crisp at any size)",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-critical.png",
+  "width": 2048,
+  "height": 2688,
+  "alt": "Chloe pixel ghost sprite, critical state (exact brand sprite, 64x scale)",
+  "intendedUse": "Exact on-model sprite for overlays; render with image-rendering: pixelated",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-critical@1x.png",
+  "width": 32,
+  "height": 42,
+  "alt": "Chloe sprite critical 32x42 source pixels",
+  "intendedUse": "Scale up with CSS image-rendering: pixelated (crisp at any size)",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-idle.png",
+  "width": 2048,
+  "height": 2688,
+  "alt": "Chloe pixel ghost sprite, idle state (exact brand sprite, 64x scale)",
+  "intendedUse": "Exact on-model sprite for overlays; render with image-rendering: pixelated",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-idle@1x.png",
+  "width": 32,
+  "height": 42,
+  "alt": "Chloe sprite idle 32x42 source pixels",
+  "intendedUse": "Scale up with CSS image-rendering: pixelated (crisp at any size)",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-mischief.png",
+  "width": 2048,
+  "height": 2688,
+  "alt": "Chloe pixel ghost sprite, mischief state (exact brand sprite, 64x scale)",
+  "intendedUse": "Exact on-model sprite for overlays; render with image-rendering: pixelated",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-mischief@1x.png",
+  "width": 32,
+  "height": 42,
+  "alt": "Chloe sprite mischief 32x42 source pixels",
+  "intendedUse": "Scale up with CSS image-rendering: pixelated (crisp at any size)",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-scanning.png",
+  "width": 2048,
+  "height": 2688,
+  "alt": "Chloe pixel ghost sprite, scanning state (exact brand sprite, 64x scale)",
+  "intendedUse": "Exact on-model sprite for overlays; render with image-rendering: pixelated",
+  "design": "both"
+ },
+ {
+  "file": "chloe/chloe-sprite-scanning@1x.png",
+  "width": 32,
+  "height": 42,
+  "alt": "Chloe sprite scanning 32x42 source pixels",
+  "intendedUse": "Scale up with CSS image-rendering: pixelated (crisp at any size)",
+  "design": "both"
+ }
+]

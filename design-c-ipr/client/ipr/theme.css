@@ -1,0 +1,326 @@
+/* =================================================================
+   CLIENT THEME — Invest Puerto Rico (IPR)
+   design-c-ipr/client/ipr/theme.css
+
+   The ONLY file that holds this client's colours, fonts and brand rules.
+   Design C's own CSS references the SEMANTIC tokens in section 2 and
+   never a hex value or a font name. To theme for another client, copy
+   this folder, change sections 0-1 (and the logos in client.json), keep
+   the token NAMES in section 2 exactly as they are. See CLIENT-THEMING.md.
+
+   Load order in a page:  shared/brand/tokens.css → shared/brand/deck.css
+                          → client/<id>/theme.css → css/<design>.css
+   Source of every value: "design system/design.md" (IPR brand system 2026)
+     §6 palette (official values only, never sampled)   §7 typography
+     §5 logo (clear space, min sizes)   §9/§10 devices   §11A static fonts
+   Stage convention: 1920 x 1080 stage px (deck.js scales to 4K).
+   ================================================================= */
+
+/* -- 0. Fonts: STATIC instances only (§11A: variable fonts turn into
+        Type 3 in Chrome PDFs). Latin + Latin-1 subset, OFL (see fonts/). */
+@font-face { font-family: 'Teko'; src: url('fonts/Teko-300.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Teko'; src: url('fonts/Teko-400.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Teko'; src: url('fonts/Teko-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Teko'; src: url('fonts/Teko-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('fonts/Montserrat-400.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('fonts/Montserrat-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('fonts/Montserrat-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('fonts/Montserrat-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('fonts/Montserrat-800.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Space Grotesk'; src: url('fonts/SpaceGrotesk-400.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Space Grotesk'; src: url('fonts/SpaceGrotesk-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Space Grotesk'; src: url('fonts/SpaceGrotesk-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono Static'; src: url('fonts/JetBrainsMono-400.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono Static'; src: url('fonts/JetBrainsMono-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono Static'; src: url('fonts/JetBrainsMono-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono Static'; src: url('fonts/JetBrainsMono-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+
+:root {
+  /* -- 1. RAW CLIENT PALETTE (design.md §6, official values; never re-derive) --
+        Client-private names. Design CSS must NOT use these directly.        */
+  --pal-navy:        #1A1B4A;   /* principal */
+  --pal-gold:        #FFA300;   /* principal */
+  --pal-teal:        #009A9D;   /* principal */
+  --pal-light-blue:  #BEE6FA;
+  --pal-mint:        #67DEC6;
+  --pal-orange-red:  #F2541C;
+  --pal-sky:         #16BFFF;
+  --pal-red:         #FF0000;
+  --pal-deep-teal:   #114C5A;
+  --pal-dark-slate:  #172836;
+  --pal-yellow:      #FFC701;
+  --pal-bright-yellow:#FFFA08;
+  --pal-bright-orange:#FF9832;
+  --pal-off-white:   #F0F5F3;
+  --pal-pale-sage:   #D8E7E1;
+  --pal-pink-red:    #ED2052;
+  --pal-white:       #FFFFFF;
+  /* logo wave spec (§5) — for the logo artwork only, never layout colour */
+  --pal-logo-gold:   #FBAA1C;
+  --pal-logo-red:    #ED1C24;
+
+  /* =================================================================
+     2. SEMANTIC TOKENS — the white-label contract (same names for every client)
+     ================================================================= */
+
+  /* Grounds */
+  --c-canvas:      var(--pal-off-white);       /* page / slide ground (§10.4: new light work = Off-White) */
+  --c-paper:       var(--pal-white);           /* default tile */
+  --c-ink:         var(--pal-navy);            /* dark tile / dark slide ground */
+  --c-ink-2:       var(--pal-deep-teal);       /* second dark (panels on navy) */
+  --c-ink-3:       var(--pal-dark-slate);      /* deepest (overlays, scrims) */
+
+  /* Bento tile tones (light tiles carry NAVY text; dark tiles carry WHITE text) */
+  --tone-sky:       var(--pal-light-blue);                         /* the brand's emphasis tint */
+  --tone-sky-soft:  var(--pal-light-blue);                         /* §6: palette colours only, no tints */
+  --tone-mint:      var(--pal-mint);
+  --tone-mint-soft: var(--pal-pale-sage);
+  --tone-sage:      var(--pal-pale-sage);
+  --tone-bright:    var(--pal-sky);            /* saturated light tile, navy text 7.6:1 */
+  --tone-bright-soft: var(--pal-light-blue);
+  --tone-teal:      var(--pal-teal);           /* mid tile, WHITE text, large type only (3.4:1) */
+  --tone-gold:      var(--pal-gold);           /* one hero tile max per slide, navy text 8.4:1 */
+  --tone-gold-soft: var(--pal-off-white);    /* warm light row: Off-White (§6 has no gold tint) */
+  --tone-dark:      var(--pal-navy);
+  --tone-dark-2:    var(--pal-deep-teal);
+
+  /* Text */
+  --c-text:        var(--pal-navy);            /* body text is Navy (§10.3), never grey */
+  --c-muted:       var(--pal-navy);            /* §6: Navy at full strength; secondary text steps down in weight, not tint */
+  --c-text-inv:    var(--pal-white);
+  --c-muted-inv:   var(--pal-light-blue);      /* qualifiers on dark (§11.4) */
+  --c-line:        rgba(26, 27, 74, .12);      /* navy hairline */
+  --c-line-inv:    rgba(255, 255, 255, .18);
+  --c-panel:       rgba(26, 27, 74, .055);     /* §10.3 pale content panel, navy tint (no off-palette grey) */
+
+  /* Emphasis — two colour states, as the brand deck does (§10.4):
+       on LIGHT grounds the emphasis is Teal, on DARK grounds it is Gold. */
+  --c-emph:        var(--pal-teal);
+  --c-emph-inv:    var(--pal-gold);
+  /* Subheads (§7: Montserrat Medium in Teal beneath the Teko title) */
+  --c-subhead:     var(--pal-teal);
+  --c-subhead-inv: var(--pal-light-blue);
+
+  /* The ONE hot graphic accent (arrows, circles, swashes, stickers, focus):
+       Gold on dark grounds (principal colour, gold-first-word rule),
+       Orange-Red on light grounds (gold "does not hold" on light, §10.4).
+       .on-dark / .tone-ink scopes flip it automatically (section 4).        */
+  --c-accent:      var(--pal-orange-red);
+  --c-accent-dark: var(--pal-gold);
+  --c-accent-2:    var(--pal-sky);             /* secondary rule/marker colour (§10.3 note: Sky as rule) */
+  --c-focus:       var(--pal-sky);
+  --c-success:     var(--pal-teal);            /* "Try this" checks */
+  --c-danger:      var(--pal-pink-red);
+
+  /* Gradients. Axis rule (§6): light stop top-right, dark stop bottom-left = 225deg. */
+  --grad-warm:      linear-gradient(225deg, var(--pal-gold), var(--pal-orange-red));        /* Orange-Red × Gold */
+  --grad-hot:       linear-gradient(225deg, var(--pal-gold), var(--pal-red));               /* Red × Gold (graphic elements) */
+  --grad-cool:      linear-gradient(225deg, var(--pal-mint), var(--pal-teal));              /* Mint × Teal */
+  --grad-sky:       linear-gradient(225deg, var(--pal-sky), var(--pal-mint));               /* Sky × Mint */
+  --grad-pale:      linear-gradient(225deg, var(--pal-light-blue), var(--pal-mint));        /* Light Blue × Mint */
+  --grad-deep:      linear-gradient(225deg, var(--pal-teal), var(--pal-navy));              /* Navy × Teal, 2-stop */
+  /* Navy × Teal with the playbook's own intermediate stops (§6, image5.svg) */
+  --grad-deep-ramp: linear-gradient(225deg, #009B9E 0%, #05818D 11%, #0C5C75 29%, #124062 47%, #162B54 65%, #191F4C 83%, #1A1B4A 100%);
+  /* Mint × Teal measured ramp */
+  --grad-cool-ramp: linear-gradient(225deg, #67DFC7 0%, #65DDC6 2%, #1CADA9 69%, #009B9E 100%);
+  /* The logo wave colours (§5 spec) for wave-shaped accents that echo the mark */
+  --grad-wave:      linear-gradient(225deg, var(--pal-logo-gold), var(--pal-logo-red));
+  /* Ground fields (§6 "ground gradients"): teal endpoint sits OFF-canvas on purpose */
+  --ground-hero:    linear-gradient(150deg, var(--pal-navy) 0%, var(--pal-deep-teal) 78%, var(--pal-teal) 165%);  /* social 1080 */
+  --ground-band:    linear-gradient(145deg, var(--pal-navy) 0%, var(--pal-teal) 205%);                            /* ads */
+  --ground-print:   linear-gradient(180deg, var(--pal-navy) 0%, var(--pal-deep-teal) 100%);                       /* lead-gen print */
+  /* §10.2 hard-stop showcase shadow: solid left -> clear right */
+  --showcase-shadow: linear-gradient(to right, rgba(0, 154, 157, .13) 0%, rgba(0, 154, 157, 0) 100%);
+
+  /* Chart colours (§11.1): Gold + Teal lead, Deep Teal second, Navy labels */
+  --chart-1: var(--pal-gold);
+  --chart-2: var(--pal-teal);
+  --chart-3: var(--pal-deep-teal);
+  --chart-4: var(--pal-sky);
+  --chart-track: #9AA0A6;                       /* OFF-PALETTE chart neutral, flagged §11.1/§12.6 */
+
+  /* Palette-picker toy defaults (step 03) — the client's own four */
+  --p1: var(--pal-navy); --p2: var(--pal-off-white); --p3: var(--pal-gold); --p4: var(--pal-teal);
+
+  /* -- Typography (§7) ---------------------------------------------------
+     display  = Teko Light, ALL CAPS ALWAYS (titles, section numbers, stats)
+     headline = Space Grotesk, sentence case (campaign display: payoffs, big lines)
+     body     = Montserrat (400 body, 500 subheads, 600 section titles, 700 labels)
+     code     = JetBrains Mono (course-only: prompts / URLs; not a brand face)
+     hand     = Permanent Marker (Chloé's bubble only; she is the course mascot)   */
+  --font-display:  'Teko', 'Arial Narrow', sans-serif;
+  --font-headline: 'Space Grotesk', 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:     'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-label:    'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-code:     'JetBrains Mono Static', 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  --font-hand:     'Permanent Marker', cursive;
+  --display-weight: 300;               /* Teko Light */
+  --display-case: uppercase;           /* §7 rule: Teko is all caps, always */
+  --display-tracking: 0;               /* deck class: ≈0 (§7 two-speed system) */
+  --display-tracking-wide: .15em;      /* brand-document class: small Teko labels */
+  --display-lh: .80;                   /* §10.4: line-height = 0.80 × size */
+  --headline-weight: 700;
+  --headline-tracking: 0;              /* display words ~0 */
+  --headline-tracking-setup: -.03em;   /* setup lines −0.03em */
+  --headline-lh: .95;
+  --body-lh: 1.5;
+  --label-tracking: .14em;             /* letterspaced Montserrat labels */
+  --num-features: "tnum" 1, "lnum" 1;  /* tabular figures for data (§7) */
+
+  /* Type ramp, STAGE px at 1920x1080 (projector floors: label ≥13, body ≥18, lead ≥26) */
+  --fs-label:    16px;
+  --fs-caption:  18px;
+  --fs-body:     24px;
+  --fs-body-lg:  28px;
+  --fs-lead:     34px;
+  --fs-sub:      44px;    /* Montserrat Medium subtitle under a Teko title (§10.4 support line 43px) */
+  --fs-h3:       56px;    /* Space Grotesk / Montserrat headline (light data slides: 56/60) */
+  --fs-h2:       96px;    /* Teko Light, playbook two-line title */
+  --fs-h1:       150px;   /* Teko Light statement (§10.4 120–180) */
+  --fs-hero:     178px;   /* Teko Light, approved three-line statement */
+  --fs-mega:     400px;   /* giant section numeral (§7 ladder) */
+
+  /* Shape & depth. The brand is flat (no shadows in 86 pages of editorial);
+     bento tiles keep a soft radius and a hairline instead of drop shadows. */
+  --r-tile:  28px;
+  --r-inner: 18px;
+  --r-pill:  999px;       /* §10.5 stadium = radius height/2 */
+  --tile-edge: inset 0 0 0 1px rgba(26, 27, 74, .06);
+  --tile-edge-inv: inset 0 0 0 1px rgba(255, 255, 255, .06);
+  --shadow-lift: 0 18px 50px rgba(26, 27, 74, .16), 0 2px 6px rgba(26, 27, 74, .10);  /* only for dragged / lifted cards */
+
+  /* Logo geometry (§5). Clear space = "PUERTO RICO" cap height:
+       horizontal lockup: 0.221 × logo height · stacked: 0.103 × logo height.
+       Minimums: horizontal 82 × 22 px, stacked 45 × 45 px (screen px).   */
+  --logo-aspect-h: 4.117;          /* ipr-horizontal-*.svg  1488.2 × 361.5 */
+  --logo-aspect-s: 1.0405;         /* ipr-stacked-*.svg     2215.5 × 2129.2 */
+  --logo-clear-h: .221;
+  --logo-clear-s: .103;
+  --logo-min-h: 22px;
+  --logo-min-s: 45px;
+
+  /* Chloé (course mascot) — brand-recoloured glow / ring / zap (lasers are set in client.json) */
+  --chloe-glow-rgb: 22, 191, 255;              /* Sky */
+  --chloe-ring: var(--pal-gold);
+  --chloe-zap: var(--pal-gold);
+  --chloe-who: var(--pal-teal);
+  --chloe-who-paper: var(--pal-teal);        /* her name tag on her (always paper) bubble, on any ground */
+  --chloe-bubble-scale: 1;
+
+  /* =================================================================
+     3. SHARED-KIT REMAP — makes shared/brand (deck HUD, focus rings, bubble,
+        shaders) speak the client's colours without touching shared files.
+     ================================================================= */
+  --gs-void:   var(--pal-navy);
+  --gs-deep:   var(--pal-dark-slate);
+  --gs-mid:    var(--pal-deep-teal);
+  --gs-base:   var(--pal-gold);
+  --gs-bright: var(--pal-yellow);
+  --gs-light:  var(--pal-white);
+  --gs-selection: rgba(22, 191, 255, .35);
+  --font-system:      var(--font-body);
+  --font-data:        var(--font-body);
+  --font-terminal:    var(--font-code);
+  --font-personality: var(--font-hand);
+  --slide-bg: var(--c-canvas);
+
+  /* -- Design-B compatibility aliases (so a forked bento.css renders on-brand
+        before every rule is renamed). Prefer the semantic names above.      */
+  --c-pink:      var(--tone-sky);
+  --c-pink-soft: var(--tone-sky-soft);
+  --c-lime:      var(--tone-mint);
+  --c-lime-soft: var(--tone-mint-soft);
+  --c-peri:      var(--tone-bright);
+  --c-peri-soft: var(--tone-bright-soft);
+  --c-orange:    var(--c-accent);
+  --c-hot:       var(--c-emph);
+}
+
+/* -- 4. Ground-aware scopes: anything dark flips emphasis + accent ----- */
+.on-dark, .tone-ink, .tone-dark, .tone-dark-2, [data-ground="dark"] {
+  color: var(--pal-white);
+  --c-text: var(--pal-white);
+  --c-muted: var(--pal-light-blue);
+  --c-emph: var(--pal-gold);
+  --c-subhead: var(--pal-light-blue);
+  --c-accent: var(--pal-gold);
+  --c-line: rgba(255, 255, 255, .18);
+  --c-panel: rgba(255, 255, 255, .06);
+  --c-success: var(--pal-mint);
+  --chloe-who: var(--pal-gold);
+}
+
+/* -- 5. Brand primitives every design can use --------------------------- */
+::selection { background: var(--gs-selection); color: var(--pal-navy); }
+:focus-visible { outline: 3px solid var(--c-focus); outline-offset: 3px; }
+
+.t-display {           /* Teko Light, all caps */
+  font-family: var(--font-display); font-weight: var(--display-weight);
+  text-transform: var(--display-case); letter-spacing: var(--display-tracking);
+  line-height: var(--display-lh);
+}
+.t-headline {          /* Space Grotesk, sentence case */
+  font-family: var(--font-headline); font-weight: var(--headline-weight);
+  letter-spacing: var(--headline-tracking); line-height: var(--headline-lh);
+}
+.t-subhead { font-family: var(--font-body); font-weight: 500; color: var(--c-subhead); }
+.t-label {             /* letterspaced caps label (not an eyebrow: never above a heading) */
+  font-family: var(--font-label); font-weight: 700; font-size: var(--fs-label);
+  letter-spacing: var(--label-tracking); text-transform: uppercase;
+}
+.t-num { font-feature-settings: var(--num-features); font-variant-numeric: tabular-nums lining-nums; }
+.t-emph { color: var(--c-emph); }
+
+/* Logo with its clear space built in. Set --h (logo height) on the element.
+   <span class="client-logo client-logo--h"><img src="client/ipr/logos/…"></span> */
+.client-logo { --h: 64px; display: inline-block; line-height: 0; box-sizing: content-box; }
+.client-logo--h { padding: calc(max(var(--h), var(--logo-min-h)) * var(--logo-clear-h)); }
+.client-logo--s { padding: calc(max(var(--h), var(--logo-min-s)) * var(--logo-clear-s)); }
+.client-logo--h img { height: max(var(--h), var(--logo-min-h)); width: auto; display: block; }
+.client-logo--s img { height: max(var(--h), var(--logo-min-s)); width: auto; display: block; }
+
+/* §9: exactly two bullet markers — the gold pill, or a ▶ triangle. This theme uses the pill. */
+.brand-list { list-style: none; margin: 0; padding: 0; }
+.brand-list > li { position: relative; padding-left: 1.6em; }
+.brand-list > li::before {
+  content: ''; position: absolute; left: 0; top: calc(.75em - .3em);
+  width: 1em; height: .58em; border-radius: 999px; background: var(--pal-gold);
+}
+
+/* §10.5 standard CTA: outlined stadium, 1px, no fill */
+.brand-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .7em 1.6em; border-radius: var(--r-pill); border: 1px solid currentColor;
+  font: 500 var(--fs-label)/1 var(--font-body); letter-spacing: .09em; text-transform: uppercase;
+}
+
+/* Wave-slice marker (§9): Navy / Gold / Teal bars lifted from the wave */
+.wave-slice { display: inline-grid; gap: 3px; width: 14px; }
+.wave-slice i { display: block; border-radius: 1px; }
+.wave-slice i:nth-child(1) { height: 11px; background: var(--pal-navy); }
+.wave-slice i:nth-child(2) { height: 46px; background: var(--pal-gold); border-top-left-radius: 50% 6px; }
+.wave-slice i:nth-child(3) { height: 28px; background: var(--pal-teal); margin-top: 5px; border-top-right-radius: 50% 6px; }
+.on-dark .wave-slice i:nth-child(1), .tone-ink .wave-slice i:nth-child(1) { background: var(--pal-white); }
+
+/* -- 6. Deck chrome in client colours (overrides shared/brand/deck.css) - */
+html.deck-overview, html.deck-overview body { background: var(--c-ink-3); }
+html.deck-overview [data-slide] { outline-color: rgba(190, 230, 250, .22); }
+html.deck-overview [data-slide].is-active { box-shadow: 0 0 40px rgba(255, 163, 0, .28); }
+html.deck-overview [data-slide]::after { color: var(--pal-navy); background: var(--pal-gold); }
+html.deck-overview .deck-overview-title { background: rgba(23, 40, 54, .9); border-bottom-color: rgba(190, 230, 250, .16); }
+.deck-progress > i { background: var(--grad-warm); box-shadow: 0 0 10px rgba(255, 163, 0, .5); }
+.deck-counter, .deck-btn, html.deck-present .deck-btn--primary {
+  background: rgba(26, 27, 74, .82); border-color: rgba(190, 230, 250, .24); color: var(--pal-white);
+}
+.deck-btn:hover, html.deck-present .deck-btn--primary:hover { background: rgba(17, 76, 90, .92); border-color: var(--pal-gold); }
+.deck-btn--primary { background: var(--pal-gold); color: var(--pal-navy); border-color: var(--pal-yellow); }
+.deck-help { background: rgba(23, 40, 54, .72); }
+.deck-help > div { background: rgba(26, 27, 74, .97); border-color: var(--pal-gold); box-shadow: 0 0 48px rgba(22, 191, 255, .16); }
+.deck-help kbd { background: rgba(190, 230, 250, .12) !important; border-color: rgba(190, 230, 250, .3) !important; }
+
+/* Chloé's bubble: white card, navy type, gold ring (glow/ring vars above) */
+.chloe-bubble { --gs-light: var(--pal-white); --gs-void: var(--pal-navy); }
+
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}

@@ -1,0 +1,145 @@
+/* GENERATED from client.json by client/sync.mjs — do not edit */
+window.CLIENT = {
+  "id": "ipr",
+  "name": "Invest Puerto Rico",
+  "shortName": "IPR",
+  "legalName": "Invest Puerto Rico",
+  "courseTitle": "IPR AI Frontend Workflow",
+  "tagline": "It's not just what's next. It's where.",
+  "taglineCaps": "IT'S NOT WHAT'S NEXT, IT'S WHERE",
+  "presenter": {
+    "name": "Ian Ramírez Rivera",
+    "title": "",
+    "role": ""
+  },
+  "footerText": "",
+  "footerNote": "Internal workshop · for colleagues",
+  "website": "INVESTPR.ORG",
+  "deckUrl": "DECK_URL_TBD",
+  "theme": "theme.css",
+  "logos": {
+    "onDark": "logos/ipr-horizontal-on-dark.svg",
+    "onLight": "logos/ipr-horizontal-on-light.svg",
+    "stackedOnDark": "logos/ipr-stacked-on-dark.svg",
+    "stackedOnLight": "logos/ipr-stacked-on-light.svg",
+    "solidOnPhoto": "logos/ipr-horizontal-solid-white.svg",
+    "solidOnLight": "logos/ipr-horizontal-solid-navy.svg",
+    "mark": "logos/ipr-wave-mark.svg",
+    "alt": "Invest Puerto Rico",
+    "aspect": {
+      "horizontal": 4.117,
+      "stacked": 1.0405,
+      "mark": 1.773
+    },
+    "clearSpace": {
+      "horizontal": 0.221,
+      "stacked": 0.103,
+      "rule": "height of the PUERTO RICO cap line (design.md §5)"
+    },
+    "minSize": {
+      "horizontal": [
+        82,
+        22
+      ],
+      "stacked": [
+        45,
+        45
+      ]
+    },
+    "placement": "Inside the first real thing on the slide (cover hero, closing slide, chapter slides) — never a logo-only strip across the top (design.md §5)."
+  },
+  "colors": {
+    "navy": "#1A1B4A",
+    "gold": "#FFA300",
+    "teal": "#009A9D",
+    "lightBlue": "#BEE6FA",
+    "sky": "#16BFFF",
+    "mint": "#67DEC6",
+    "orangeRed": "#F2541C",
+    "deepTeal": "#114C5A",
+    "offWhite": "#F0F5F3",
+    "accentOnLight": "#F2541C",
+    "accentOnDark": "#FFA300",
+    "emphOnLight": "#009A9D",
+    "emphOnDark": "#FFA300"
+  },
+  "chloe": {
+    "palette": [
+      "#FFA300",
+      "#F2541C",
+      "#16BFFF",
+      "#67DEC6"
+    ],
+    "glow": "#16BFFF",
+    "ring": "#FFA300",
+    "spriteColors": {
+      "body": "#FFFFFF",
+      "shade": "#BEE6FA",
+      "outline": "#1A1B4A",
+      "eyes": "#FFA300",
+      "glow": "#FFA300",
+      "sleep": "#114C5A",
+      "alert": "#FFA300"
+    }
+  },
+  "shader": {
+    "void": "#1A1B4A",
+    "pink": "#009A9D",
+    "high": "#114C5A"
+  },
+  "fonts": {
+    "display": "Teko",
+    "displayWeight": 300,
+    "displayCase": "uppercase",
+    "headline": "Space Grotesk",
+    "body": "Montserrat",
+    "code": "JetBrains Mono",
+    "hand": "Permanent Marker",
+    "files": "fonts/ (static woff2, OFL)",
+    "codeException": "Off-system, on record: JetBrains Mono is used only for copy-paste prompt text (Step 5 template and Step 10 starter prompt panels) so beginners read it as 'copy this exactly'. Not a brand face (design.md §7); hex codes and URLs stay Space Grotesk."
+  },
+  "palette4": [
+    "#1A1B4A",
+    "#F0F5F3",
+    "#FFA300",
+    "#009A9D"
+  ],
+  "art": {
+    "waveLined": "art/wave-lined.svg",
+    "waveSolid": "art/wave-solid.svg",
+    "halfCircle": "art/half-circle.svg",
+    "pointer": "art/circle-pointer.svg",
+    "doubleHalf": "art/double-half-circle.svg",
+    "note": "Brand shape library (design.md §9), recoloured in CSS via currentColor. Another client may point these at its own shapes, or remove the block (the deck then skips the accents)."
+  },
+  "footer": "",
+  "notesFonts": [
+    [
+      "Teko",
+      "fonts/Teko-300.woff2",
+      300
+    ],
+    [
+      "Teko",
+      "fonts/Teko-400.woff2",
+      400
+    ],
+    [
+      "Montserrat",
+      "fonts/Montserrat-400.woff2",
+      400
+    ],
+    [
+      "Montserrat",
+      "fonts/Montserrat-600.woff2",
+      600
+    ],
+    [
+      "Montserrat",
+      "fonts/Montserrat-700.woff2",
+      700
+    ]
+  ],
+  "closingArt": "chloe/closing-san-juan-ipr",
+  "closingArtAlt": "Chloé the pixel ghost glowing over the rooftops of Old San Juan at night, her gold laser eyes zapping a laptop"
+};

@@ -1,0 +1,33 @@
+/* One-page cheat sheet — cinematic editorial, prints on a single Letter/A4 page */
+:root { color-scheme: dark; }
+html, body { margin: 0; background: #080808; color: oklch(0.93 0.025 340); font: 400 16px/1.6 var(--font-system); -webkit-font-smoothing: antialiased; }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none; background: url('../../shared/brand/img/grain-512.png') 0 0 / 256px; opacity: .05; mix-blend-mode: overlay; }
+a { color: var(--gs-base); text-underline-offset: 3px; }
+.cs-top { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; background: rgba(8,8,8,.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,178,239,.15); font: 600 12px/1 var(--font-system); letter-spacing: .12em; text-transform: uppercase; }
+.cs-top a { color: oklch(0.85 0.03 340); text-decoration: none; }
+.cs-top button, .cs-code .copy { cursor: pointer; border: 0; border-radius: 999px; padding: 10px 16px; background: var(--gs-base); color: #080808; font: 700 12px/1 var(--font-system); letter-spacing: .1em; text-transform: uppercase; }
+.cs { position: relative; max-width: 860px; margin: 0 auto; padding: 56px 24px 80px; }
+.cs-chloe { position: absolute; right: 24px; top: 48px; image-rendering: pixelated; filter: drop-shadow(0 0 12px rgba(255,178,239,.6)); animation: gs-ghost-float 3s ease-in-out infinite; }
+h1 { margin: 0 120px 20px 0; font: 800 clamp(44px, 8vw, 84px)/.9 var(--font-display); text-transform: uppercase; letter-spacing: -.02em; color: oklch(0.96 0.04 340); }
+h2 { margin: 44px 0 12px; padding-top: 16px; border-top: 1px solid rgba(255,178,239,.2); font: 800 36px/1 var(--font-display); text-transform: uppercase; color: var(--gs-base); }
+p, li { font-size: 16px; }
+b { color: oklch(0.97 0.02 340); }
+ol, ul { padding-left: 1.4em; } li { margin: 8px 0; } li::marker { color: var(--gs-base); font-weight: 700; }
+code { font-family: var(--font-terminal); font-size: .92em; color: var(--gs-base); }
+.cs-code { position: relative; margin: 14px 0; border: 1px solid rgba(255,178,239,.25); border-radius: 14px; background: rgba(255,178,239,.05); }
+.cs-code pre { margin: 0; padding: 20px 22px; white-space: pre-wrap; font: 400 14px/1.6 var(--font-terminal); }
+.cs-code pre code { color: oklch(0.93 0.025 340); }
+.cs-code .copy { position: absolute; right: 10px; top: -14px; padding: 8px 12px; }
+.cs-foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid rgba(255,178,239,.15); font: 500 12px/1.4 var(--font-system); letter-spacing: .12em; text-transform: uppercase; color: oklch(0.7 0.04 340); }
+@media (prefers-reduced-motion: reduce) { .cs-chloe { animation: none; } }
+@media print {
+  @page { size: letter; margin: 0.45in; }
+  html, body { background: #fff; color: #1a161a; font-size: 10.5px; }
+  body::before, .cs-top, .cs-code .copy { display: none; }
+  .cs { padding: 0; max-width: none; }
+  .cs-chloe { width: 56px; height: auto; top: 0; right: 0; animation: none; filter: none; }
+  h1 { font-size: 40px; color: #1a161a; margin-bottom: 6px; } h2 { font-size: 20px; margin: 12px 0 4px; padding-top: 6px; color: #b0287f; border-color: #eee; }
+  p, li { font-size: 10.5px; line-height: 1.4; margin: 2px 0; } b { color: #000; } a { color: #b0287f; }
+  .cs-code { border-color: #e6cfe0; background: #fbf3f9; margin: 6px 0; } .cs-code pre { padding: 8px 10px; font-size: 9.5px; } .cs-code pre code, code { color: #1a161a; }
+  .cs-foot { margin-top: 10px; color: #777; }
+}

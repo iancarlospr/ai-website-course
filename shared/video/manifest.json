@@ -1,0 +1,53 @@
+[
+  {
+    "file": "hero-loop.mp4",
+    "webm": "hero-loop.webm",
+    "poster": "hero-loop-poster.jpg",
+    "width": 1920, "height": 1080, "fps": 30,
+    "duration": 10,
+    "loop": true,
+    "description": "Chloé drifts in and laser-scans an empty browser; the site (navbar, hero, features, palette, footer) assembles section by section, gets a 'Built with AI!' sticker, dissolves, and she drifts out. The whole course in one visual.",
+    "suggestedSlide": "cover / hero (slide 1)",
+    "hires": { "file": "hero-loop-4k.mp4", "webm": "hero-loop-4k.webm", "poster": "hero-loop-4k-poster.jpg", "width": 3840, "height": 2160 }
+  },
+  {
+    "file": "workflow-pipeline.mp4",
+    "webm": "workflow-pipeline.webm",
+    "poster": "workflow-pipeline-poster.jpg",
+    "width": 1920, "height": 1080, "fps": 30,
+    "duration": 12,
+    "loop": true,
+    "description": "'11 steps. One website.' Snake pipeline of all 11 steps (Pinterest, OriginKit, ColorHunt, Layout, Design spec, Bolt.new, arena.ai + Stitch, Download, Claude, GitHub Pages, Your domain). A glowing pulse carries Chloé along the path, lighting each step and a live step counter.",
+    "suggestedSlide": "agenda / course overview (slide 2)"
+  },
+  {
+    "file": "prompt-enhance.mp4",
+    "webm": "prompt-enhance.webm",
+    "poster": "prompt-enhance-poster.jpg",
+    "width": 1920, "height": 1080, "fps": 30,
+    "duration": 10,
+    "loop": true,
+    "description": "Bolt.new window: a rough 11-word prompt is typed, '+' then 'Enhance prompt' is clicked, Chloé zaps it, and a 62-word structured design-spec prompt streams in (Build / Sections / Hero / Palette / Animation / Details) with a before/after word-count chip.",
+    "suggestedSlide": "step 06 Bolt.new (also works for step 05 design spec)"
+  },
+  {
+    "file": "arena-battle.mp4",
+    "webm": "arena-battle.webm",
+    "poster": "arena-battle-poster.jpg",
+    "width": 1920, "height": 1080, "fps": 30,
+    "duration": 10,
+    "loop": true,
+    "description": "Illustrative animation, not a screen recording: the model names in it (Gemini-3.8-flash, Claude-sonnet-5-high) are placeholders, so caption it as 'how it works', never as real footage. 'Same prompt. Two AIs.' Model A vs Model B build two different bakery sites live (bento vs editorial) with code streaming; Chloé inspects both with lasers, 'Pick your favorite!' then a pick gets a 'my favorite!' sticker and 'download the code'. Callout: stitch.withgoogle.com = 4 designs to choose from.",
+    "suggestedSlide": "step 07 arena.ai + Stitch (and step 08 download)"
+  },
+  {
+    "file": "publish-celebration.mp4",
+    "webm": "publish-celebration.webm",
+    "poster": "publish-celebration-poster.jpg",
+    "width": 1920, "height": 1080, "fps": 30,
+    "duration": 8,
+    "loop": true,
+    "description": "New tab: yourname.com is typed, the page loads and goes LIVE (https lock), confetti bursts, Chloé celebrates and fires laser fireworks; chips for 'GitHub Pages · free hosting', 'Domain · $5-12 / year', 'HTTPS · secure'; caption 'You're live on the internet!'.",
+    "suggestedSlide": "steps 10-11 publish + domain / closing slide"
+  }
+]

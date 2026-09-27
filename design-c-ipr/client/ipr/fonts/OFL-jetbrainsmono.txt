@@ -1,0 +1,4 @@
+JetBrains Mono — Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+Licensed under the SIL Open Font License, Version 1.1 (https://openfontlicense.org).
+Static instances (400/500/600/700) cut from the variable font in shared/brand/fonts with fontTools,
+so Chrome embeds real TrueType fonts in PDFs instead of Type 3 glyphs (design.md §11A).
