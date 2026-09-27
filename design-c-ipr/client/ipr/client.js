@@ -15,7 +15,7 @@ window.CLIENT = {
   "footerText": "",
   "footerNote": "Internal workshop · for colleagues",
   "website": "INVESTPR.ORG",
-  "deckUrl": "DECK_URL_TBD",
+  "deckUrl": "https://iancarlospr.github.io/ai-website-course/design-c-ipr/",
   "theme": "theme.css",
   "logos": {
     "onDark": "logos/ipr-horizontal-on-dark.svg",

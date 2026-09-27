@@ -2151,3 +2151,9 @@ html.deck-reflow .code-body .blank[data-blank="3"] { margin-bottom: 8px; }
 /* chapters: no '0N Chapter / Steps' plate (removed from the markup); the lead row keeps its place */
 .c-chapter .ch-tag { display: none !important; }
 html:not(.deck-reflow) #step-05-template .code-body.xl { line-height: 1.4; }
+
+/* Round 12: deck QR moves from the closing slide to the cover's bottom-right corner */
+.cover-qr { position: absolute; right: 96px; bottom: 80px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.cover-qr .qr-box { width: 184px; height: 184px; padding: 14px; border-radius: 20px; margin: 0; display: grid; box-shadow: 0 12px 32px rgba(0,0,0,.35); }
+.cover-qr span { font: 700 18px/1 var(--font-body); color: var(--c-paper); letter-spacing: .02em; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
+html.deck-reflow .cover-qr { display: none; }
