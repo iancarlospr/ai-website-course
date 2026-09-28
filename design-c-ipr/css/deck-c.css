@@ -2157,3 +2157,20 @@ html:not(.deck-reflow) #step-05-template .code-body.xl { line-height: 1.4; }
 .cover-qr .qr-box { width: 184px; height: 184px; padding: 14px; border-radius: 20px; margin: 0; display: grid; box-shadow: 0 12px 32px rgba(0,0,0,.35); }
 .cover-qr span { font: 700 18px/1 var(--font-body); color: var(--c-paper); letter-spacing: .02em; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
 html.deck-reflow .cover-qr { display: none; }
+
+/* PDF polish: Chrome's PDF backend rasterises every BLURRED shadow (box-shadow / text-shadow blur > 0) into a
+   rectangular image with a soft mask, and many PDF viewers (macOS Preview / Quartz) draw that image as a hard,
+   square box. Print keeps only zero-blur shadows (drawn as vector shapes): rings stay, soft lifts become a crisp
+   hairline edge or go away. Screen rendering is untouched (this whole block is print-only). */
+@media print {
+  :root { --lift: 0 0 0 1px var(--ink-a12); }
+  .cover-by { text-shadow: 0 1px 0 rgb(0 0 0 / .7); }
+  .cover-qr .qr-box { box-shadow: 0 0 0 1px rgb(255 255 255 / .22); }
+  .cover-qr span { text-shadow: 0 1px 0 rgb(0 0 0 / .7); }
+  .photo-note, .d-chip { box-shadow: none; }
+  .chatmock .msg { box-shadow: none; }
+  .addr-xl { box-shadow: 0 0 0 1px var(--ink-a12); }
+  .phone { box-shadow: 0 0 0 8px var(--c-ink), 0 0 0 10px var(--paper-a18); }
+  .ok-live-slot .ok-bar > * { box-shadow: 0 0 0 1px rgb(255 255 255 / .10); }
+  /* carousel (.okc-*) shadows: see the print block at the end of originkit.css (it loads after this file) */
+}

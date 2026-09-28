@@ -49,8 +49,22 @@
   });
 
   /* -- Print twin of the floating Chloé: a static vector sprite in her zone (screen: hidden) -- */
+  /* Print face: 'chat' (open eyes + blush) with a small U smile and no chin ticks, so the still reads happy
+     at print size (the idle dash mouth + chin ticks read as a 'tooth' on paper). Same vector path merge as Chloe.toSVG. */
+  function happyPrintSVG(colors) {
+    var g = Chloe.getStateGrid('chat', 0), c, r, W = Chloe.GRID_W, H = Chloe.GRID_H;
+    for (c = 12; c <= 19; c++) if (g[19][c] === 'outline') g[19][c] = 'body';
+    g[18][13] = 'outline'; g[18][18] = 'outline'; for (c = 14; c <= 17; c++) g[19][c] = 'outline';
+    for (r = 23; r <= 24; r++) for (c = 0; c < W; c++) if (g[r][c] === 'shade') g[r][c] = 'body';
+    var col = Object.assign({}, Chloe.COLORS, colors || {}), paths = {};
+    for (var y = 0; y < H; y++) { var x = 0; while (x < W) { var k = g[y][x]; if (!k) { x++; continue; } var s0 = x; while (x + 1 < W && g[y][x + 1] === k) x++;
+      (paths[k] = paths[k] || []).push('M' + s0 + ' ' + y + 'h' + (x - s0 + 1) + 'v1h-' + (x - s0 + 1) + 'z'); x++; } }
+    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + W + ' ' + H + '" width="100%" height="100%" shape-rendering="crispEdges" aria-hidden="true" focusable="false">' +
+      Object.keys(paths).map(function (k) { return '<path fill="' + col[k] + '" d="' + paths[k].join('') + '"/>'; }).join('') + '</svg>';
+  }
   $$('.chloe-print .cp-sprite').forEach(function (el) {
-    try { el.innerHTML = Chloe.toSVG('idle', 0, { width: '100%', height: '100%', title: false, colors: (CL.chloe || {}).spriteColors || null }).replace(' role="img"', ' aria-hidden="true" focusable="false"'); } catch (e) {}
+    try { el.innerHTML = happyPrintSVG((CL.chloe || {}).spriteColors || null); }
+    catch (e) { try { el.innerHTML = Chloe.toSVG('idle', 0, { width: '100%', height: '100%', title: false, colors: (CL.chloe || {}).spriteColors || null }).replace(' role="img"', ' aria-hidden="true" focusable="false"'); } catch (e2) {} }
   });
 
   /* -- Dither strips (exact AlphaScan DitherTitlebar) --------------- */

@@ -139,3 +139,11 @@
 
 /* inside the deck's small OriginKit cards (the Step 02 slide) the CTA is card-sized */
 .ok-card-slot .okx-cta { font-size: 18px; padding: .95em 1.4em; margin-bottom: 34px; }
+
+/* PDF polish: blurred shadows print as hard square boxes in many PDF viewers; print keeps only the zero-blur rings */
+@media print {
+  .okc-orbit { box-shadow: none; }
+  .okc-card.is-front .okc-front { box-shadow: 0 0 0 calc(2.2px * var(--okc-ss, 1)) #0B0C26,
+    0 0 0 calc((3px + 1.6px * var(--okc-p, 0)) * var(--okc-ss, 1)) color-mix(in srgb, var(--tone-gold) calc(var(--okc-p, 0) * 100%), rgba(255, 255, 255, .22)); }
+  .okc-cap > span { box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-ink) 70%, transparent); }
+}
