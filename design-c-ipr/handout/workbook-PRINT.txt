@@ -1,0 +1,9 @@
+WORKBOOK: HOW TO PRINT
+
+workbook.pdf (4 pages, US Letter)
+  Paper: Letter 8.5x11. Scale: Actual size / 100% (not "Fit").
+  Double-sided, flip on LONG edge. 2 sheets per person. Black & white / grayscale is fine.
+
+workbook-booklet.pdf (folded booklet, 1 sheet per person)
+  Paper: 11x17 (Tabloid / Ledger). Scale: Actual size / 100%.
+  Double-sided, flip on SHORT edge. Fold in half; page 1 is the cover.
