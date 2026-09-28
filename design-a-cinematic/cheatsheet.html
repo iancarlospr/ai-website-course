@@ -80,13 +80,5 @@ Extract and implement this element in the {DESIRED} section {PASTE LINK FROM Ori
 </ul>
 <footer class="cs-foot">&copy; 2026 Ian Ramírez &middot; Invest Puerto Rico &middot; IPR AI Frontend Workflow</footer>
 </main>
-<script>
-document.addEventListener('click', function (e) {
-  var b = e.target.closest('[data-copy-text]'); if (!b) return;
-  var t = b.getAttribute('data-copy-text');
-  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).catch(function () {
-    var ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (_) {} ta.remove();
-  }).then(function () { b.textContent = 'Copied!'; setTimeout(function () { b.textContent = 'Copy'; }, 1600); });
-});
-</script>
+<script src="../_inline/e6393faa6dc6ec55.js"></script>
 </body></html>

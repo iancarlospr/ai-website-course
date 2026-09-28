@@ -1,0 +1,1 @@
+location.replace('design-c-ipr/' + location.hash);

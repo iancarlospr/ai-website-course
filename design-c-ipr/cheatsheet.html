@@ -59,13 +59,5 @@ Extract and implement this element in the {DESIRED} section {PASTE LINK FROM Ori
 <p>Send your live link to the team. Everyone's sites will be collected into one gallery.</p>
 <footer class="cs-foot"><span>IPR AI Frontend Workflow</span><span>Ian Ramírez Rivera</span></footer>
 </main>
-<script>
-document.addEventListener('click', function (e) {
-  var b = e.target.closest('[data-copy-text]'); if (!b) return;
-  var t = b.getAttribute('data-copy-text');
-  var done = function () { b.textContent = 'Copied!'; setTimeout(function () { b.textContent = 'Copy'; }, 1600); };
-  var fb = function () { var ta = document.createElement('textarea'); ta.value = t; ta.style.cssText = 'position:fixed;left:-9999px'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (_) {} ta.remove(); done(); };
-  if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(done, fb); else fb();
-});
-</script>
+<script src="../_inline/bc772b406878ff31.js"></script>
 </body></html>
