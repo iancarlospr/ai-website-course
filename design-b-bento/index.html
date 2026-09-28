@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="css/bento.css">
 </head>
 <body>
-<a class="b-link" href="#s-main" style="position:fixed;left:-999px;top:8px;z-index:999" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Skip to slides</a>
+<a class="b-link" href="#s-main" style="position:fixed;left:-999px;top:8px;z-index:999" data-h-focus="skipShow" data-h-blur="skipHide">Skip to slides</a>
 
 <nav class="site-nav" aria-label="Course">
   <a class="brand" href="#cover" data-nav="cover"><span class="logo"><img src="../shared/brand/img/chloe/chloe-idle.svg" alt="" width="22" height="29"></span><b>IPR AI <span>Frontend</span> Workflow</b></a>
@@ -406,5 +406,5 @@ Extract and implement this element in the Hero section originkit.dev/…/bouncy-
 <script src="../shared/brand/deck.js"></script>
 <script src="js/vendor/qrcode.js"></script>
 <script src="js/bento.js"></script>
-</body>
+<script src="../_inline/handlers.js" defer></script></body>
 </html>
