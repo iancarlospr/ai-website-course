@@ -4,7 +4,7 @@ window.CLIENT = {
   "name": "Invest Puerto Rico",
   "shortName": "IPR",
   "legalName": "Invest Puerto Rico",
-  "courseTitle": "IPR AI Frontend Workflow",
+  "courseTitle": "IPR AI Website Workshop",
   "tagline": "It's not just what's next. It's where.",
   "taglineCaps": "IT'S NOT WHAT'S NEXT, IT'S WHERE",
   "presenter": {

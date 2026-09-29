@@ -1,7 +1,7 @@
 {
   "meta": {
     "courseTitle": "{{client.courseTitle}}",
-    "courseTitleFallback": "AI Frontend Workflow",
+    "courseTitleFallback": "AI Website Workshop",
     "subtitle": "From a mood board to a live website in one day. No coding experience needed.",
     "presenter": "{{client.presenter.name}}",
     "presenterRole": "{{client.presenter.role}}",
@@ -293,8 +293,8 @@
       "type": "content",
       "section": "intro",
       "kicker": "A short course by {{client.presenter.name}} · {{client.name}}",
-      "title": "Build a website today with AI",
-      "titleEmphasis": "Build",
+      "title": "Make a website today with AI",
+      "titleEmphasis": "Make",
       "lead": "Eleven steps, mostly free tools, and one very helpful ghost. Nothing to install until the last steps.",
       "body": "Eleven simple steps, a handful of free tools, and one very helpful ghost. Nothing to install until the very last steps.",
       "bullets": [],

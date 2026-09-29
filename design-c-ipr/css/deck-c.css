@@ -2381,3 +2381,14 @@ html.deck-reflow #cover .cover-eyebrow span { text-wrap: balance; }
 }
 /* phones: presenting is desktop-only, so every Present trigger (navbar ▶ and hero button) is hidden */
 html.deck-reflow [data-present] { display: none !important; }
+/* eyebrow, smaller (Ian: "too big"): desktop keeps the 18px projector minimum, phones the 12px minimum */
+.cover-eyebrow { gap: 12px; margin-bottom: 24px; padding: 6px 22px 6px 6px; box-shadow: 0 6px 18px rgb(0 0 0 / .3); }
+.cover-eyebrow b { width: 42px; height: 42px; font-size: 28px; }
+.cover-eyebrow span { font-size: 18px; letter-spacing: .12em; }
+html.deck-reflow #cover .cover-eyebrow { gap: 7px; margin-bottom: 14px; padding: 3px 12px 3px 3px; box-shadow: 0 4px 12px rgb(0 0 0 / .3); }
+html.deck-reflow #cover .cover-eyebrow b { width: 26px; height: 26px; font-size: 18px; flex: none; }
+html.deck-reflow #cover .cover-eyebrow span { font-size: 12px; letter-spacing: .06em; }
+@media (max-width: 400px) {
+  html.deck-reflow #cover .cover-eyebrow { gap: 7px; padding-right: 12px; }
+  html.deck-reflow #cover .cover-eyebrow b { width: 26px; height: 26px; font-size: 18px; }
+}
