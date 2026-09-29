@@ -702,6 +702,7 @@
   var confRunning = false;
   function confetti() {
     if (!confCanvas || REDUCED || confRunning) return;
+    if (de.classList.contains('deck-reflow')) { confettiPhone(); return; }
     if (!confCanvas.offsetParent && getComputedStyle(confCanvas).display === 'none') { burst($('[data-confetti]') || confCanvas.parentNode, 40); return; }
     var ctx = confCanvas.getContext('2d');
     var s = stageScale(confCanvas), dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -736,6 +737,45 @@
       });
       if (alive && now - t0 < 6000) requestAnimationFrame(frame);
       else { ctx.clearRect(0, 0, W, H); confRunning = false; }
+    })(t0);
+  }
+  /* Phones (reflow only): the slide canvas is 1920x1080 stage space and hidden, so a viewport-sized
+     canvas is laid over the screen for the burst and removed afterwards. Desktop and present never get here. */
+  function confettiPhone() {
+    var W = window.innerWidth, H = window.innerHeight, dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var cv = document.createElement('canvas');
+    cv.setAttribute('aria-hidden', 'true');
+    cv.style.cssText = 'position:fixed;left:0;top:0;width:' + W + 'px;height:' + H + 'px;pointer-events:none;z-index:960;';
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    document.body.appendChild(cv);
+    var ctx = cv.getContext('2d'); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var cols = PAL, P = [], f = Math.max(0.8, Math.min(1.3, H / 800));
+    for (var i = 0; i < 150; i++) {
+      var fromLeft = i % 2 === 0;
+      P.push({
+        x: fromLeft ? -10 : W + 10, y: H * (0.6 + Math.random() * 0.35),
+        vx: (fromLeft ? 1 : -1) * (2.5 + Math.random() * 6) * f, vy: -(9 + Math.random() * 9) * f,
+        w: 7 + Math.random() * 7, h: 4 + Math.random() * 6, r: Math.random() * 6, vr: (Math.random() - .5) * .4,
+        c: cols[i % cols.length], shape: Math.random() < .25 ? 1 : 0, life: 0
+      });
+    }
+    confRunning = true;
+    var t0 = performance.now();
+    (function frame(now) {
+      ctx.clearRect(0, 0, W, H);
+      var alive = 0;
+      P.forEach(function (p) {
+        p.vy += 0.3 * f; p.vx *= 0.99; p.vy *= 0.99;
+        p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life++;
+        if (p.y < H + 30) alive++;
+        ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r);
+        ctx.fillStyle = p.c;
+        if (p.shape) { ctx.beginPath(); ctx.arc(0, 0, p.h / 1.4, 0, Math.PI * 2); ctx.fill(); }
+        else { ctx.scale(1, Math.cos(p.life * 0.18)); ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h); }
+        ctx.restore();
+      });
+      if (alive && now - t0 < 5000) requestAnimationFrame(frame);
+      else { cv.remove(); confRunning = false; }
     })(t0);
   }
   $$('[data-confetti]').forEach(function (b) { b.addEventListener('click', function () { confetti(); if (window.__chloe) window.__chloe.setState('celebrating', 2400); }); });

@@ -2174,3 +2174,182 @@ html.deck-reflow .cover-qr { display: none; }
   .ok-live-slot .ok-bar > * { box-shadow: 0 0 0 1px rgb(255 255 255 / .10); }
   /* carousel (.okc-*) shadows: see the print block at the end of originkit.css (it loads after this file) */
 }
+
+/* ==== Mobile polish 2026-09-29 ==== */
+/* phone-only copy of the cover credit line (new element; hidden on desktop, present and print) */
+.cover-by .by-m { display: none; }
+/* Screen only: phone print keeps its previous reflowed layout. */
+@media screen {
+/* Phones only: every rule is scoped under html.deck-reflow (desktop, present and print never match).
+   Cover (01), closing (25) and the chapter dividers become ONE full-bleed section each:
+   the photo covers the section with a navy scrim, and the content sits over it, as on desktop. */
+html.deck-reflow :is(#cover, #closing, .c-chapter) { position: relative; overflow: hidden; isolation: isolate; }
+html.deck-reflow :is(#cover, #closing, .c-chapter) > .bg-photo { position: absolute !important; inset: 0 !important; margin: 0; height: auto; aspect-ratio: auto; z-index: 0; }
+html.deck-reflow :is(#cover, #closing, .c-chapter) > .bg-photo::after { content: ''; position: absolute; inset: 0; pointer-events: none; }
+html.deck-reflow :is(#cover, #closing, .c-chapter) .deck-stage { position: relative; z-index: 1; }
+
+/* 01 cover: one hero screen */
+html.deck-reflow #cover { min-height: 100svh; display: flex; flex-direction: column; }
+/* the photo is fit to the section height and lifted 240px, so the lagoon lights and the glowing laptop land in the
+   open band between the logo row and the title (measured 360-430 wide); its bottom melts into the ink ground.
+   (top/height, not transform: the Ken Burns zoom owns transform) */
+html.deck-reflow #cover > .bg-photo img { object-position: 94% 50% !important; top: -240px; height: calc(100% + 2px);
+  -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - 110px), transparent 100%); mask-image: linear-gradient(180deg, #000 calc(100% - 110px), transparent 100%); }
+/* under the words: the same photo's lagoon and skyline lights (left side of the frame), the ground desktop's text sits on */
+html.deck-reflow #cover > .bg-photo::before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 380px; pointer-events: none;
+  background: url("../img/photo/cover-hero-1920.webp") 4% -100px / auto 640px no-repeat;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 40%); mask-image: linear-gradient(180deg, transparent 0, #000 40%); }
+html.deck-reflow #cover > .bg-photo::after { background: linear-gradient(180deg, rgb(12 13 36 / .6) 0, rgb(12 13 36 / .12) 18%, rgb(12 13 36 / 0) 30%, rgb(12 13 36 / 0) 40%, rgb(12 13 36 / .58) 50%, rgb(12 13 36 / .7) 62%, rgb(12 13 36 / .72) 78%, rgb(12 13 36 / .8) 100%); }
+html.deck-reflow #cover .deck-stage { flex: 1 1 auto; display: grid !important; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr auto; grid-template-areas: "logo stat" ". ." "block block"; column-gap: 12px; row-gap: 0; padding: calc(var(--nav-h) + 18px) 20px max(28px, env(safe-area-inset-bottom)) !important; }
+html.deck-reflow #cover .cover-top { grid-area: logo; align-self: start; order: 0; padding-top: 6px; margin-left: -8px; }
+html.deck-reflow #cover .cover-stat { grid-area: stat; align-self: start; justify-self: end; width: 122px !important; height: 122px; min-width: 122px; gap: 0; box-shadow: 0 10px 30px rgb(0 0 0 / .35); }
+html.deck-reflow #cover .cover-stat b { font-size: 64px; }
+html.deck-reflow #cover .cover-stat span { font-size: 12px; max-width: 10ch; line-height: 1.12; }
+html.deck-reflow #cover .cover-block { grid-area: block; align-self: end; }
+html.deck-reflow #cover .cover-title { font-size: clamp(58px, 17.5vw, 84px); text-shadow: 0 2px 18px rgb(26 27 74 / .75), 0 0 2px rgb(26 27 74 / .5); }
+html.deck-reflow #cover .cover-sub { font-size: 18px; margin-top: 14px; color: var(--c-muted-inv); max-width: 26ch; text-shadow: 0 1px 12px rgb(12 13 36 / .8); }
+html.deck-reflow #cover .cover-by { margin-top: 14px; line-height: 1.5; }
+/* credit line as a two-line lockup: name on one line, the org below it (the dot is only a one-line separator) */
+html.deck-reflow #cover .cover-by { font-size: 0; }
+html.deck-reflow #cover .cover-by .by-m { display: block; font-size: 12px; letter-spacing: var(--label-tracking); text-shadow: 0 1px 10px rgb(12 13 36 / .8); }
+html.deck-reflow #cover .cover-by .by-m > span { display: block; }
+html.deck-reflow #cover .btn-row { margin-top: 22px; gap: 10px; flex-wrap: wrap; }
+html.deck-reflow #cover .btn-row .c-btn { flex: 1 1 auto; justify-content: center; font-size: 17px; padding: 0 20px; min-height: 52px; white-space: nowrap; }
+html.deck-reflow #cover .btn-row .c-btn svg { width: 20px; height: 20px; }
+@media (max-width: 370px) { html.deck-reflow #cover .btn-row .c-btn { padding: 0 16px; font-size: 16px; } }
+
+/* 25 closing: the scene flows straight into the sign-off */
+html.deck-reflow #closing > .bg-photo { background: #1d1a4f; }
+html.deck-reflow #closing > .bg-photo img { top: calc(var(--nav-h) + 110px); height: 520px; object-position: 42% 50%;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 16%, #000 84%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 16%, #000 84%, transparent 100%); }
+/* the scene's rooftops come back at the bottom (second layer: right-hand buildings of the same art, no ghost),
+   so the cheat sheet and the buttons sit on Old San Juan as on desktop; the ink scrim only spans the words between */
+html.deck-reflow #closing > .bg-photo::before { content: ''; position: absolute; left: 0; right: 0; top: calc(var(--nav-h) + 560px); bottom: 0; pointer-events: none;
+  background: url("../img/chloe/closing-san-juan-ipr-1920.webp") 100% 100% / auto 1000px no-repeat; image-rendering: pixelated;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 160px); mask-image: linear-gradient(180deg, transparent 0, #000 160px); }
+html.deck-reflow #closing > .bg-photo img { image-rendering: pixelated; }
+html.deck-reflow #closing > .bg-photo::after { background: linear-gradient(180deg, rgb(26 27 74 / 0) 0, rgb(26 27 74 / 0) 600px, rgb(26 27 74 / .84) 740px, rgb(26 27 74 / .74) 900px, rgb(26 27 74 / .8) calc(100% - 420px), rgb(26 27 74 / .76) calc(100% - 200px), rgb(26 27 74 / .72) 100%); }
+html.deck-reflow #closing .deck-stage { padding: calc(var(--nav-h) + 26px) 20px 36px !important; gap: 0 !important; }
+html.deck-reflow #closing :is(.close-l, .close-r) { display: contents; }
+html.deck-reflow #closing .close-title { order: 1; min-height: 550px; font-size: clamp(60px, 17vw, 86px); position: relative; z-index: 2; }
+/* seal: 20px gutter and 20px under the nav measured on the outer gold ring (box-shadow reaches 10px past the box); desktop's -9deg */
+html.deck-reflow #closing .cert-badge { position: absolute !important; right: 30px !important; left: auto !important; top: calc(var(--nav-h) + 30px) !important; width: 116px !important; height: 116px; min-width: 0; max-width: none; margin: 0; rotate: -9deg; z-index: 3; }
+html.deck-reflow #closing .cb-w { font-size: 20px; }
+html.deck-reflow #closing .cb-w1 { font-size: 12px; letter-spacing: .12em; }
+html.deck-reflow #closing .cb-in svg { width: 26px; height: 26px; }
+html.deck-reflow #closing .close-bub { order: 2; margin: 0; align-self: stretch; }
+html.deck-reflow #closing .close-bub::after { display: block; left: 46%; top: -14px; border-left: 2px solid var(--tone-dark); border-top: 2px solid var(--tone-dark); border-bottom: 0; }
+html.deck-reflow #closing .close-lead { order: 3; margin-top: 26px; font-size: 18px; }
+html.deck-reflow #closing .presenter { order: 4; margin-top: 22px; }
+html.deck-reflow #closing .take-card { order: 6; margin-top: 30px; width: 100%; background: rgb(26 27 74 / .92); box-shadow: inset 0 0 0 1px var(--paper-a18), 0 18px 40px rgb(0 0 0 / .3); }
+/* IPR mark signs off under the presenter (the scene frame holds only title, seal and ghost) */
+html.deck-reflow #closing .close-logo { position: relative !important; left: auto !important; top: auto !important; order: 5; align-self: flex-start; margin: 20px 0 0; z-index: 3; }
+html.deck-reflow #closing .close-logo .client-logo { --h: 56px !important; }
+html.deck-reflow #closing .close-logo .client-logo img { height: 56px; }
+html.deck-reflow #closing .close-btns { order: 7; margin-top: 22px; gap: 10px; flex-wrap: wrap; }
+/* finale: Celebrate is the gold call to action (cover's Start button style), Back to the start stays a line button on ink */
+html.deck-reflow #closing .close-btns [data-confetti] { background: var(--tone-gold); color: var(--tone-dark); box-shadow: 0 10px 28px rgb(0 0 0 / .35); }
+html.deck-reflow #closing .close-btns .c-btn { min-height: 48px; font-size: 17px; }
+
+/* chapter dividers (04, 09, 13, 19): photo behind, word + lead anchored to the bottom */
+html.deck-reflow .c-chapter { min-height: min(100svh, 640px); display: flex; flex-direction: column; }
+html.deck-reflow .c-chapter > .bg-photo::after { background: linear-gradient(180deg, rgb(26 27 74 / .55) 0, rgb(26 27 74 / 0) 30%, rgb(26 27 74 / .2) 48%, rgb(26 27 74 / .82) 70%, rgb(26 27 74 / .96) 100%); }
+html.deck-reflow .c-chapter .deck-stage { flex: 1 1 auto; justify-content: flex-end; padding: calc(var(--nav-h) + 24px) 20px 34px !important; }
+html.deck-reflow .c-chapter .ch-word { text-shadow: 0 2px 24px rgb(0 0 0 / .35); }
+html.deck-reflow .c-chapter .ch-lead { text-shadow: 0 1px 12px rgb(0 0 0 / .4); }
+
+/* sweep fixes: footer labels, tap targets, 12px floor */
+html.deck-reflow .c-foot { height: auto; min-height: 44px; gap: 12px; align-items: center; padding: 6px 0; }
+html.deck-reflow .cf-k { flex: 1 1 auto; min-width: 0; line-height: 1.25; }
+html.deck-reflow .cf-r { flex: none; gap: 14px; }
+html.deck-reflow .tip-check { width: 44px; height: 44px; }
+html.deck-reflow .c-link { min-height: 44px; }
+html.deck-reflow .theme-sw button { min-height: 44px; }
+html.deck-reflow .recap-head .c-link { min-height: 44px; }
+html.deck-reflow .ok-l { font-size: 12px; }
+html.deck-reflow .ing-n { width: 60px; height: 60px; }
+html.deck-reflow .ing-n small { font-size: 12px; }
+html.deck-reflow .code-body .bn { font-size: 12px; width: 18px; height: 18px; }
+html.deck-reflow #closing .close-btns { align-self: stretch; }
+html.deck-reflow #closing .close-btns .c-btn { flex: 1 1 auto; justify-content: center; white-space: nowrap; }
+@media (max-width: 370px) { html.deck-reflow #closing .close-title { font-size: 56px; } html.deck-reflow #closing .presenter b { font-size: 40px; } html.deck-reflow #closing .cert-badge { width: 104px !important; height: 104px; right: 26px !important; } html.deck-reflow #closing :is(.cb-w2, .cb-w3) { font-size: 18px; } html.deck-reflow #closing .cb-w1 { letter-spacing: .1em; } }
+html.deck-reflow .c-foot .cf-logo { --h: 22px !important; }
+html.deck-reflow .c-foot .cf-logo img { height: 22px; width: auto; }
+html.deck-reflow .cf-r { gap: 12px; }
+@media (max-width: 370px) { html.deck-reflow .cf-k { letter-spacing: .08em; } }
+/* slide 08: status pill gets its own row instead of a cramped two-line pill */
+html.deck-reflow .wire-head .wire-ctl { flex-wrap: wrap; align-self: stretch; }
+html.deck-reflow .wire-head .wire-status { white-space: nowrap; min-height: 40px; padding: 8px 14px; }
+/* slide 17: chat mock sits in the tile flow, no dead band above it */
+html.deck-reflow .chat-photo.tile.photo:has(.chatmock) { min-height: 0; }
+html.deck-reflow .chat-photo .chatmock { position: relative !important; inset: auto !important; padding: 16px 12px; }
+/* landscape phones (reflow is on below 900 wide): title and Start CTA inside the first screen */
+@media (orientation: landscape) and (max-height: 500px) {
+  html.deck-reflow #cover { min-height: 100svh; }
+  html.deck-reflow #cover > .bg-photo img { top: -1px; height: calc(100% + 2px); object-position: 80% 62% !important; -webkit-mask-image: none; mask-image: none; }
+  html.deck-reflow #cover > .bg-photo::after { background: linear-gradient(90deg, rgb(26 27 74 / .9) 0, rgb(26 27 74 / .7) 45%, rgb(26 27 74 / .1) 75%, rgb(26 27 74 / 0) 100%), linear-gradient(180deg, rgb(26 27 74 / .5) 0, rgb(26 27 74 / 0) 30%); }
+  html.deck-reflow #cover .deck-stage { grid-template-columns: minmax(0, 560px) 1fr; grid-template-rows: auto auto; grid-template-areas: "logo stat" "block stat"; row-gap: 10px; padding: calc(var(--nav-h) + 12px) 24px 20px !important; }
+  html.deck-reflow #cover .cover-top { padding-top: 0; }
+  html.deck-reflow #cover .cover-top .client-logo { --h: 30px !important; }
+  html.deck-reflow #cover .cover-stat { width: 104px !important; height: 104px; min-width: 104px; }
+  html.deck-reflow #cover .cover-stat b { font-size: 54px; }
+  html.deck-reflow #cover .cover-title { font-size: clamp(40px, 11vh, 56px); }
+  html.deck-reflow #cover .cover-sub { font-size: 16px; margin-top: 10px; max-width: 40ch; }
+  html.deck-reflow #cover .cover-by { margin-top: 8px; }
+  html.deck-reflow #cover .cover-by { font-size: 12px; }
+  html.deck-reflow #cover .cover-by .by-m { display: none; }
+  html.deck-reflow #cover .btn-row { margin-top: 14px; flex-wrap: nowrap; }
+  html.deck-reflow #cover .btn-row .c-btn { flex: 0 0 auto; min-height: 48px; }
+  html.deck-reflow #cover > .bg-photo::before { display: none; }
+}
+@media (min-width: 600px) { html.deck-reflow #closing > .bg-photo::before { background-size: auto 1300px; } }
+@media (max-width: 370px) { html.deck-reflow #cover > .bg-photo img { top: -250px; } html.deck-reflow #cover .cover-stat { width: 110px !important; height: 110px; min-width: 110px; } html.deck-reflow #cover .cover-stat b { font-size: 58px; } }
+/* sweep round 2 */
+html.deck-reflow .bonus-t { white-space: normal; align-items: flex-start; }
+html.deck-reflow .swatch .sw-tag { left: auto; right: 14px; top: 14px; }
+html.deck-reflow .masonry { position: relative; inset: auto; margin: 12px -6px 0; height: 400px; }
+@media (max-width: 370px) { html.deck-reflow #cover .cover-by .by-m { letter-spacing: .1em; } }
+html.deck-reflow .hints li em { white-space: nowrap; }
+/* chapter 13: keep the monitor and hands in frame (inline object-position is the desktop crop) */
+html.deck-reflow #chapter-build > .bg-photo img { object-position: 82% 50% !important; }
+/* nav: 44px hit areas on phones */
+html.deck-reflow .site-nav .nav-btn { min-height: 44px; min-width: 44px; justify-content: center; }
+html.deck-reflow .site-nav .brand { min-height: 44px; }
+/* round 4: slide 23 roles (desktop's margin-top:auto collapses to 0 in the reflow flow); cover lift at 371-400 */
+html.deck-reflow #share-at-home .purpose .roles { margin-top: 22px; }
+/* <=400 wide the first title line lands on the laptop's lit keyboard: the scrim starts darkening just above it */
+@media (max-width: 400px) { html.deck-reflow #cover > .bg-photo::after { background: linear-gradient(180deg, rgb(12 13 36 / .6) 0, rgb(12 13 36 / .12) 18%, rgb(12 13 36 / 0) 30%, rgb(12 13 36 / .05) 36%, rgb(12 13 36 / .5) 42%, rgb(12 13 36 / .66) 50%, rgb(12 13 36 / .72) 62%, rgb(12 13 36 / .74) 78%, rgb(12 13 36 / .8) 100%); } }
+/* round 5 */
+/* cover: the 11 disc gets the same sticker tilt as the closing seal */
+html.deck-reflow #cover .cover-stat { rotate: 6deg; }
+/* cover, 600-899 wide: the under-text photo layer stops before the photo's laptop half (no second laptop behind Present) */
+@media (min-width: 600px) { html.deck-reflow #cover > .bg-photo::before { right: auto; width: 760px; background-position: 0 -100px;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 40%), linear-gradient(90deg, #000 560px, transparent 760px); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(180deg, transparent 0, #000 40%), linear-gradient(90deg, #000 560px, transparent 760px); mask-composite: intersect; } }
+/* closing: Chloé's tail points at the laser impact on the laptop. The scene img is 520px tall (932px wide) at object-position 42%,
+   so the impact sits at about 42vw - 40px; the tail box is 26px wide and the bubble starts at the 20px gutter */
+html.deck-reflow #closing .close-bub::after { left: calc(42vw - 73px); }
+/* closing: the IPR mark shares the presenter row (name left, mark right), a composed sign-off */
+html.deck-reflow #closing .close-logo { align-self: flex-end; margin: -56px 0 0; }
+@media (max-width: 370px) { html.deck-reflow #closing .close-logo { margin-top: -50px; } html.deck-reflow #closing .close-logo .client-logo { --h: 48px !important; } html.deck-reflow #closing .close-logo .client-logo img { height: 48px; } }
+/* closing: the rooftop echo under the sign-off reads as a dark night texture, not a second copy of the scene */
+html.deck-reflow #closing > .bg-photo::after { background: linear-gradient(180deg, rgb(26 27 74 / 0) 0, rgb(26 27 74 / 0) 600px, rgb(26 27 74 / .86) 740px, rgb(26 27 74 / .86) 900px, rgb(26 27 74 / .88) calc(100% - 420px), rgb(26 27 74 / .86) calc(100% - 200px), rgb(26 27 74 / .84) 100%); }
+/* closing typography: no one-word last lines */
+html.deck-reflow #closing :is(.close-lead, .take-card p) { text-wrap: pretty; }
+/* closing buttons: Celebrate is the one filled gold; Open it spans the card as a gold outline button */
+html.deck-reflow #closing .qr-fallback { align-items: stretch; }
+html.deck-reflow #closing .qr-fallback .c-btn { justify-content: center; min-height: 50px; font-size: 17px; background: transparent; color: var(--tone-gold); box-shadow: inset 0 0 0 2px var(--tone-gold); }
+/* closing, landscape phones: no stretched rooftop echo; lead + presenter left, cheat sheet right */
+@media (orientation: landscape) and (max-height: 500px) {
+  html.deck-reflow #closing > .bg-photo::before { display: none; }
+  html.deck-reflow #closing .deck-stage { display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 32px !important; align-items: start;
+    grid-template-areas: "title title" "bub bub" "lead card" "pres card" "btns btns"; }
+  html.deck-reflow #closing .close-title { grid-area: title; }
+  html.deck-reflow #closing .close-bub { grid-area: bub; }
+  html.deck-reflow #closing .close-lead { grid-area: lead; }
+  html.deck-reflow #closing .presenter { grid-area: pres; align-self: center; margin-top: 22px; }
+  html.deck-reflow #closing .close-logo { grid-area: pres; justify-self: end; align-self: center; margin: 22px 0 0; }
+  html.deck-reflow #closing .take-card { grid-area: card; margin-top: 26px; }
+  html.deck-reflow #closing .close-btns { grid-area: btns; margin-top: 26px; }
+}
+} /* end @media screen (mobile polish) */
