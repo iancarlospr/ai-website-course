@@ -2353,3 +2353,29 @@ html.deck-reflow #closing .qr-fallback .c-btn { justify-content: center; min-hei
   html.deck-reflow #closing .close-btns { grid-area: btns; margin-top: 26px; }
 }
 } /* end @media screen (mobile polish) */
+
+/* ==== Cover eyebrow 2026-09-29 ====
+   One logo (the navbar's); the "11 steps" disc becomes an eyebrow pill above the title, desktop and phones. */
+.cover-eyebrow { display: flex; width: fit-content; align-items: center; gap: 16px; margin: 0 0 30px; padding: 8px 30px 8px 8px; border-radius: 999px; background: var(--tone-gold); color: var(--tone-dark); box-shadow: 0 10px 28px rgb(0 0 0 / .35); }
+.cover-eyebrow b { display: grid; place-items: center; width: 62px; height: 62px; border-radius: 50%; background: var(--tone-dark); color: var(--tone-gold); font: var(--display-weight) 42px/1 var(--font-display); padding-top: .08em; }
+.cover-eyebrow span { font: 700 21px/1 var(--font-label); letter-spacing: var(--label-tracking); text-transform: uppercase; }
+@media print { .cover-eyebrow { box-shadow: none; } }
+html.deck-reflow #cover .deck-stage { grid-template-columns: 1fr; grid-template-rows: 1fr auto; grid-template-areas: "." "block"; }
+html.deck-reflow #cover .cover-eyebrow { gap: 10px; margin-bottom: 18px; padding: 5px 16px 5px 5px; box-shadow: 0 8px 22px rgb(0 0 0 / .35); }
+html.deck-reflow #cover .cover-eyebrow b { width: 38px; height: 38px; font-size: 26px; }
+html.deck-reflow #cover .cover-eyebrow span { font-size: 12px; line-height: 1.2; }
+/* phones: Present is a projector feature, desktop only; Start the course takes the full row */
+html.deck-reflow #cover .btn-row [data-present] { display: none; }
+/* phones: Chloé floats in the navbar, no box behind her */
+html.deck-reflow.c-chloe-docked .chloe-layer .chloe::before { display: none; }
+@media (orientation: landscape) and (max-height: 500px) {
+  html.deck-reflow #cover .deck-stage { grid-template-columns: minmax(0, 560px) 1fr; grid-template-rows: auto; grid-template-areas: "block ."; }
+  html.deck-reflow #cover .cover-eyebrow { margin-bottom: 10px; }
+}
+html.deck-reflow.c-chloe-docked .chloe-layer .chloe canvas { filter: drop-shadow(0 0 1px rgb(26 27 74 / .9)) drop-shadow(0 3px 6px rgb(26 27 74 / .35)) !important; }
+html.deck-reflow #cover .cover-eyebrow span { text-wrap: balance; }
+@media (max-width: 400px) {
+  html.deck-reflow #cover .cover-eyebrow { gap: 8px; padding-right: 14px; }
+  html.deck-reflow #cover .cover-eyebrow b { width: 34px; height: 34px; font-size: 24px; flex: none; }
+  html.deck-reflow #cover .cover-eyebrow span { letter-spacing: .06em; }
+}

@@ -293,7 +293,11 @@
   $$('[data-go]').forEach(function (b) {
     b.addEventListener('click', function () {
       var g = b.getAttribute('data-go');
-      if (g === 'next') Deck.next(); else Deck.go(parseInt(g, 10) || 0);
+      if (g !== 'next') { Deck.go(parseInt(g, 10) || 0); return; }
+      /* scroll mode: the slide after the button's own slide. Deck.next() counts from the most-visible slide,
+         which on phones is often the next one already, so it skipped a slide. Present mode keeps next() (build steps). */
+      var own = b.closest('[data-slide]'), i = own ? Deck.slides.indexOf(own) : -1;
+      if (!Deck.isPresenting && i >= 0) Deck.go(i + 1); else Deck.next();
     });
   });
 
